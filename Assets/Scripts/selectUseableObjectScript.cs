@@ -35,8 +35,8 @@ public class selectUseableObjectScript : MonoBehaviour
             if (Vector3.Distance(player.transform.position, hit.point) < selectDistance) {
                // Debug.Log("use hit");
                 var selectedObject = hit.transform;
-                Debug.Log(selectedObject.gameObject.tag);
-                if (selectedObject.CompareTag("ladder")) {
+           ///    Debug.Log(selectedObject.gameObject.tag);
+                if (selectedObject.CompareTag("ladder") || selectedObject.CompareTag("door")) {
                     var selectedObjectRenderer = selectedObject.GetComponent<Renderer>();
                     if (selectedObjectRenderer != null) {
                        // selectedObjectRenderer.material = highlightMaterial;

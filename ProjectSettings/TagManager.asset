@@ -8,6 +8,7 @@ TagManager:
   - EnemyFootCollider
   - FootCollider
   - ladder
+  - door
   layers:
   - Default
   - TransparentFX

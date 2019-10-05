@@ -12,6 +12,8 @@ public class AI : MonoBehaviour
     Vector3 m_lastPlayerTransform;
     public NavMeshAgent navMeshAgent;
     int AIState = -1;
+    bool m_isOnLadder = false;
+    Transform ladderTransform;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,11 @@ public class AI : MonoBehaviour
                  navMeshAgent.SetDestination(m_lastPlayerTransform);
                 break;
         }
+        /*
+        if (m_isOnLadder)
+        {
+            rotateToLadder(ladderTransform);
+        }*/
     }
 
     public void setHeard(bool wasHeard,Transform lastPlayerTransform) {
@@ -105,4 +112,16 @@ public class AI : MonoBehaviour
             AIState = 0;
         }
     }
+
+    public void rotateToLadder(Transform ladderTransform) {
+        // transform.Rotate(Vector3.left);
+        transform.eulerAngles = new Vector3(0, ladderTransform.eulerAngles.y - 90, 0);
+        Debug.Log("rotate");
+    }
+
+    public void setIsOnLadder(bool isOnLadder) {
+        m_isOnLadder = isOnLadder;
+    }
+
+   
 }

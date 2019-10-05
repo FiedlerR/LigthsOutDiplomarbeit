@@ -51,7 +51,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -138,11 +138,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp
       objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240517, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -198,26 +193,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -30
       objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.40000007
-      objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.10000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694145587983692681, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2625921799839871869, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956, type: 3}
 --- !u!4 &353147448181355842 stripped
@@ -237,11 +212,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lamp (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240517, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
         type: 3}
@@ -298,31 +268,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -35
       objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.40000018
-      objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.10000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.10000006
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694145587983692681, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2625921799839871869, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956, type: 3}
 --- !u!4 &6680004400092500436 stripped
@@ -342,11 +287,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lamp (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240517, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
         type: 3}
@@ -403,31 +343,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 35
       objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.40000018
-      objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.10000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.10000006
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694145587983692681, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2625921799839871869, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956, type: 3}
 --- !u!4 &6205832113755890140 stripped
@@ -447,11 +362,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lamp (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240517, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
         type: 3}
@@ -507,26 +417,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.40000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 2213266003872240521, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.10000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694145587983692681, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2625921799839871869, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e2f5ab6457bd9d4bb0c2980cdb0d956, type: 3}

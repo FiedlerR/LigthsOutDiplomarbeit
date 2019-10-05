@@ -22,6 +22,10 @@ public class WaypointPatrol : MonoBehaviour
     //
     float m_WaitingTimer;
 
+    //
+    Animator m_Animator;
+
+
     void Start()
     {
 
@@ -31,6 +35,8 @@ public class WaypointPatrol : MonoBehaviour
         {
             navMeshAgent.SetDestination(waypoints[0].position);
         }
+        ///
+        m_Animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -50,8 +56,18 @@ public class WaypointPatrol : MonoBehaviour
             if (navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance)
             {
                 //
+
+                m_Animator.SetBool("isWalking", false);
+                m_Animator.SetBool("isStanding", true);
+
                 m_WaitingTimer += Time.deltaTime;
-                if (m_WaitingTimer > timeToWait) {
+                if (m_WaitingTimer > timeToWait)
+                {
+                    //
+                        m_Animator.SetBool("isWalking", true);
+                        m_Animator.SetBool("isStanding", false);
+                   
+
                     //
                     m_WaitingTimer = 0;
                     //calculate the current waypoint index
@@ -59,6 +75,7 @@ public class WaypointPatrol : MonoBehaviour
                     //use the calculated waypoint to set a new destination
                     navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
                 }
+             
             }
         }
     }

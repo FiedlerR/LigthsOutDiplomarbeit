@@ -1,0 +1,17 @@
+--platform=Windows
+--backend=burst-llvm
+--target=X64_SSE4
+--noalias
+--dump=Function
+--float-precision=Standard
+--format=Coff
+--debug
+--output=C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Temp\StagingArea\Data\Plugins\lib_burst_generated
+--root-assembly=C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Temp\StagingArea\Data\Managed\Unity.Postprocessing.Runtime.dll
+--root-assembly=C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Temp\StagingArea\Data\Managed\Unity.TextMeshPro.dll
+--root-assembly=C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Temp\StagingArea\Data\Managed\Unity.Timeline.dll
+--root-assembly=C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Temp\StagingArea\Data\Managed\Unity.Mathematics.dll
+--root-assembly=C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Temp\StagingArea\Data\Managed\Unity.Analytics.DataPrivacy.dll
+--root-assembly=C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Temp\StagingArea\Data\Managed\Unity.Burst.dll
+--root-assembly=C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
+--assembly-folder=C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Temp\StagingArea\Data\Managed\

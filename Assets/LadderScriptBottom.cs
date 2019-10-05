@@ -21,7 +21,10 @@ public class LadderScriptBottom : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             other.GetComponent<PlayerMovement>().setIsOnLadder(true);
-           // other.GetComponent<Transform>().position = new Vector3(transform.localPosition.x, other.GetComponent<Transform>().position.y, other.GetComponent<Transform>().position.z);
+            // other.GetComponent<Transform>().position = new Vector3(transform.localPosition.x, other.GetComponent<Transform>().position.y, other.GetComponent<Transform>().position.z);
+        }
+        else if(other.gameObject.CompareTag("Enemy")) {
+            other.GetComponent<AI>().setIsOnLadder(true);
         }
     }
 
@@ -31,6 +34,10 @@ public class LadderScriptBottom : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             other.GetComponent<PlayerMovement>().setIsOnLadder(false);
+        }
+        else if (other.gameObject.CompareTag("Enemy"))
+        {
+            other.GetComponent<AI>().setIsOnLadder(false);
         }
     }
 }

@@ -1,0 +1,746 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 6
+  lastUpdatedAtString: 2019-10-05T14:14:49.012+02:00
+  initializedAtString: 2019-10-05T11:54:20.957+02:00
+  entries:
+  - path: Assets\Animation\Animation\06_13.fbx
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animation\06_13.fbx
+    projectPath: Assets\Animation\Animation\06_13.fbx
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Animation\Animation\06_13.fbx.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animation\06_13.fbx.meta
+    projectPath: Assets\Animation\Animation\06_13.fbx.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Animation\Animators\DoorAnimationController.controller
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\DoorAnimationController.controller
+    projectPath: Assets\Animation\Animators\DoorAnimationController.controller
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Animation\Animators\DoorAnimationController.controller.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\DoorAnimationController.controller.meta
+    projectPath: Assets\Animation\Animators\DoorAnimationController.controller.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Animation\Animators\unitController.controller
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\unitController.controller
+    projectPath: Assets\Animation\Animators\unitController.controller
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\LadderScript.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\LadderScript.cs
+    projectPath: Assets\LadderScript.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\LadderScriptBottom.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\LadderScriptBottom.cs
+    projectPath: Assets\LadderScriptBottom.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Models.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models.meta
+    projectPath: Assets\Models.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\ArchitectualScene.blend
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ArchitectualScene.blend
+    projectPath: Assets\Models\ArchitectualScene.blend
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\ArchitectualScene.blend.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ArchitectualScene.blend.meta
+    projectPath: Assets\Models\ArchitectualScene.blend.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\Characters.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Characters.meta
+    projectPath: Assets\Models\Characters.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\Characters\BodySubdivideLvl3.blend
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Characters\BodySubdivideLvl3.blend
+    projectPath: Assets\Models\Characters\BodySubdivideLvl3.blend
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\Characters\BodySubdivideLvl3.blend.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Characters\BodySubdivideLvl3.blend.meta
+    projectPath: Assets\Models\Characters\BodySubdivideLvl3.blend.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\Characters\CharacterMergedV1.blend
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Characters\CharacterMergedV1.blend
+    projectPath: Assets\Models\Characters\CharacterMergedV1.blend
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\Characters\CharacterMergedV1.blend.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Characters\CharacterMergedV1.blend.meta
+    projectPath: Assets\Models\Characters\CharacterMergedV1.blend.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\Characters\CharacterMergedV1.blend1
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Characters\CharacterMergedV1.blend1
+    projectPath: Assets\Models\Characters\CharacterMergedV1.blend1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\Characters\CharacterMergedV1.blend1.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Characters\CharacterMergedV1.blend1.meta
+    projectPath: Assets\Models\Characters\CharacterMergedV1.blend1.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\Characters\test.blend
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Characters\test.blend
+    projectPath: Assets\Models\Characters\test.blend
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\Characters\test.blend.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Characters\test.blend.meta
+    projectPath: Assets\Models\Characters\test.blend.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\Characters\test.blend1
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Characters\test.blend1
+    projectPath: Assets\Models\Characters\test.blend1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Models\Characters\test.blend1.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Characters\test.blend1.meta
+    projectPath: Assets\Models\Characters\test.blend1.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\NavMeshComponents.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents.meta
+    projectPath: Assets\NavMeshComponents.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor.meta
+    projectPath: Assets\NavMeshComponents\Editor.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs.meta
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshAssetManager.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef.meta
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs.meta
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs.meta
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshLinkEditor.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs.meta
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshModifierEditor.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs.meta
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs.meta
+    projectPath: Assets\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models.meta
+    projectPath: Assets\NavMeshComponents\Models.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door.meta
+    projectPath: Assets\NavMeshComponents\Models\Door.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door\DoorFinal2.fbx
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door\DoorFinal2.fbx
+    projectPath: Assets\NavMeshComponents\Models\Door\DoorFinal2.fbx
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door\DoorFinal2.fbx.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door\DoorFinal2.fbx.meta
+    projectPath: Assets\NavMeshComponents\Models\Door\DoorFinal2.fbx.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door\doorTexture1.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door\doorTexture1.mat
+    projectPath: Assets\NavMeshComponents\Models\Door\doorTexture1.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door\doorTexture1.mat.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door\doorTexture1.mat.meta
+    projectPath: Assets\NavMeshComponents\Models\Door\doorTexture1.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door\doorTexture2.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door\doorTexture2.mat
+    projectPath: Assets\NavMeshComponents\Models\Door\doorTexture2.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door\doorTexture2.mat.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door\doorTexture2.mat.meta
+    projectPath: Assets\NavMeshComponents\Models\Door\doorTexture2.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door\doorTexture3.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door\doorTexture3.mat
+    projectPath: Assets\NavMeshComponents\Models\Door\doorTexture3.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door\doorTexture3.mat.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door\doorTexture3.mat.meta
+    projectPath: Assets\NavMeshComponents\Models\Door\doorTexture3.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door\Klinke.png
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door\Klinke.png
+    projectPath: Assets\NavMeshComponents\Models\Door\Klinke.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door\Klinke.png.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door\Klinke.png.meta
+    projectPath: Assets\NavMeshComponents\Models\Door\Klinke.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door\testMaterial.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door\testMaterial.mat
+    projectPath: Assets\NavMeshComponents\Models\Door\testMaterial.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Models\Door\testMaterial.mat.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Models\Door\testMaterial.mat.meta
+    projectPath: Assets\NavMeshComponents\Models\Door\testMaterial.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "Assets\\NavMeshComponents\\Models\\Door\\T\xFCr.png"
+    fullPath: "C:\\Users\\Rafael\\Desktop\\Diplom\\3D Stealth Game\\Assets\\NavMeshComponents\\Models\\Door\\T\xFCr.png"
+    projectPath: "Assets\\NavMeshComponents\\Models\\Door\\T\xFCr.png"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "Assets\\NavMeshComponents\\Models\\Door\\T\xFCr.png.meta"
+    fullPath: "C:\\Users\\Rafael\\Desktop\\Diplom\\3D Stealth Game\\Assets\\NavMeshComponents\\Models\\Door\\T\xFCr.png.meta"
+    projectPath: "Assets\\NavMeshComponents\\Models\\Door\\T\xFCr.png.meta"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "Assets\\NavMeshComponents\\Models\\Door\\T\xFCrstock.png"
+    fullPath: "C:\\Users\\Rafael\\Desktop\\Diplom\\3D Stealth Game\\Assets\\NavMeshComponents\\Models\\Door\\T\xFCrstock.png"
+    projectPath: "Assets\\NavMeshComponents\\Models\\Door\\T\xFCrstock.png"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "Assets\\NavMeshComponents\\Models\\Door\\T\xFCrstock.png.meta"
+    fullPath: "C:\\Users\\Rafael\\Desktop\\Diplom\\3D Stealth Game\\Assets\\NavMeshComponents\\Models\\Door\\T\xFCrstock.png.meta"
+    projectPath: "Assets\\NavMeshComponents\\Models\\Door\\T\xFCrstock.png.meta"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Scripts.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Scripts.meta
+    projectPath: Assets\NavMeshComponents\Scripts.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef
+    projectPath: Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef.meta
+    projectPath: Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Scripts\NavMeshLink.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Scripts\NavMeshLink.cs
+    projectPath: Assets\NavMeshComponents\Scripts\NavMeshLink.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Scripts\NavMeshLink.cs.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Scripts\NavMeshLink.cs.meta
+    projectPath: Assets\NavMeshComponents\Scripts\NavMeshLink.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Scripts\NavMeshModifier.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Scripts\NavMeshModifier.cs
+    projectPath: Assets\NavMeshComponents\Scripts\NavMeshModifier.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Scripts\NavMeshModifier.cs.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Scripts\NavMeshModifier.cs.meta
+    projectPath: Assets\NavMeshComponents\Scripts\NavMeshModifier.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs
+    projectPath: Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs.meta
+    projectPath: Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Scripts\NavMeshSurface.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Scripts\NavMeshSurface.cs
+    projectPath: Assets\NavMeshComponents\Scripts\NavMeshSurface.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\NavMeshComponents\Scripts\NavMeshSurface.cs.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\NavMeshComponents\Scripts\NavMeshSurface.cs.meta
+    projectPath: Assets\NavMeshComponents\Scripts\NavMeshSurface.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\cube.fbx
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\cube.fbx
+    projectPath: Assets\Prefabs\cube.fbx
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\cube.fbx.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\cube.fbx.meta
+    projectPath: Assets\Prefabs\cube.fbx.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Door1-2Bake.fbx
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Door1-2Bake.fbx
+    projectPath: Assets\Prefabs\Door1-2Bake.fbx
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Door1-2Bake.fbx.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Door1-2Bake.fbx.meta
+    projectPath: Assets\Prefabs\Door1-2Bake.fbx.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\DoorFinal 1.prefab
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\DoorFinal
+      1.prefab
+    projectPath: Assets\Prefabs\DoorFinal 1.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\DoorFinal 1.prefab.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\DoorFinal
+      1.prefab.meta
+    projectPath: Assets\Prefabs\DoorFinal 1.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\DoorFinal.prefab
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\DoorFinal.prefab
+    projectPath: Assets\Prefabs\DoorFinal.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\DoorFinal.prefab.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\DoorFinal.prefab.meta
+    projectPath: Assets\Prefabs\DoorFinal.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\DoorFinal2.prefab
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\DoorFinal2.prefab
+    projectPath: Assets\Prefabs\DoorFinal2.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\DoorFinal2.prefab.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\DoorFinal2.prefab.meta
+    projectPath: Assets\Prefabs\DoorFinal2.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Environment\CityLigths.prefab
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Environment\CityLigths.prefab
+    projectPath: Assets\Prefabs\Environment\CityLigths.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Prefabs\Environment\ladderTrigger.prefab
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Environment\ladderTrigger.prefab
+    projectPath: Assets\Prefabs\Environment\ladderTrigger.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Environment\ladderTrigger.prefab.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Environment\ladderTrigger.prefab.meta
+    projectPath: Assets\Prefabs\Environment\ladderTrigger.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Environment\Lamp.prefab
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Environment\Lamp.prefab
+    projectPath: Assets\Prefabs\Environment\Lamp.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Prefabs\Green.png
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Green.png
+    projectPath: Assets\Prefabs\Green.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Green.png.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Green.png.meta
+    projectPath: Assets\Prefabs\Green.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials.meta
+    projectPath: Assets\Prefabs\Materials.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\door1.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\door1.mat
+    projectPath: Assets\Prefabs\Materials\door1.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\door1.mat.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\door1.mat.meta
+    projectPath: Assets\Prefabs\Materials\door1.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\Door1Texture.png
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\Door1Texture.png
+    projectPath: Assets\Prefabs\Materials\Door1Texture.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\Door1Texture.png.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\Door1Texture.png.meta
+    projectPath: Assets\Prefabs\Materials\Door1Texture.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\door2.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\door2.mat
+    projectPath: Assets\Prefabs\Materials\door2.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\door2.mat.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\door2.mat.meta
+    projectPath: Assets\Prefabs\Materials\door2.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\Door2Texture.png
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\Door2Texture.png
+    projectPath: Assets\Prefabs\Materials\Door2Texture.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\Door2Texture.png.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\Door2Texture.png.meta
+    projectPath: Assets\Prefabs\Materials\Door2Texture.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\door3.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\door3.mat
+    projectPath: Assets\Prefabs\Materials\door3.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\door3.mat.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\door3.mat.meta
+    projectPath: Assets\Prefabs\Materials\door3.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\DoorMTexture.png
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\DoorMTexture.png
+    projectPath: Assets\Prefabs\Materials\DoorMTexture.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\DoorMTexture.png.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\DoorMTexture.png.meta
+    projectPath: Assets\Prefabs\Materials\DoorMTexture.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\Material.001.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\Material.001.mat
+    projectPath: Assets\Prefabs\Materials\Material.001.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\Material.001.mat.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\Material.001.mat.meta
+    projectPath: Assets\Prefabs\Materials\Material.001.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\Material.002.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\Material.002.mat
+    projectPath: Assets\Prefabs\Materials\Material.002.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\Material.002.mat.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\Material.002.mat.meta
+    projectPath: Assets\Prefabs\Materials\Material.002.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\Material.003.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\Material.003.mat
+    projectPath: Assets\Prefabs\Materials\Material.003.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\Material.003.mat.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\Material.003.mat.meta
+    projectPath: Assets\Prefabs\Materials\Material.003.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\Material.004.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\Material.004.mat
+    projectPath: Assets\Prefabs\Materials\Material.004.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Materials\Material.004.mat.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Materials\Material.004.mat.meta
+    projectPath: Assets\Prefabs\Materials\Material.004.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Player.prefab
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Player.prefab
+    projectPath: Assets\Prefabs\Player.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Prefabs\Red.png
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Red.png
+    projectPath: Assets\Prefabs\Red.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Red.png.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Red.png.meta
+    projectPath: Assets\Prefabs\Red.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Prefabs\Unit.prefab
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Unit.prefab
+    projectPath: Assets\Prefabs\Unit.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scenes\TutorialArea.unity
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea.unity
+    projectPath: Assets\Scenes\TutorialArea.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scenes\TutorialArea\LightingData.asset
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\LightingData.asset
+    projectPath: Assets\Scenes\TutorialArea\LightingData.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scenes\TutorialArea\NavMesh.asset
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\NavMesh.asset
+    projectPath: Assets\Scenes\TutorialArea\NavMesh.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scenes\TutorialArea\OcclusionCullingData.asset
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\OcclusionCullingData.asset
+    projectPath: Assets\Scenes\TutorialArea\OcclusionCullingData.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scripts\AI.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\AI.cs
+    projectPath: Assets\Scripts\AI.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scripts\DoorScript.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\DoorScript.cs
+    projectPath: Assets\Scripts\DoorScript.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\DoorScript.cs.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\DoorScript.cs.meta
+    projectPath: Assets\Scripts\DoorScript.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\PlayerLook.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\PlayerLook.cs
+    projectPath: Assets\Scripts\PlayerLook.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scripts\PlayerMovement.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\PlayerMovement.cs
+    projectPath: Assets\Scripts\PlayerMovement.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scripts\selectUseableObjectScript.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\selectUseableObjectScript.cs
+    projectPath: Assets\Scripts\selectUseableObjectScript.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scripts\WaypointPatrol.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\WaypointPatrol.cs
+    projectPath: Assets\Scripts\WaypointPatrol.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ProjectSettings\QualitySettings.asset
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ProjectSettings\TagManager.asset
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\ProjectSettings\TagManager.asset
+    projectPath: ProjectSettings\TagManager.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: README.md
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\README.md
+    projectPath: README.md
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1

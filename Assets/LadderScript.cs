@@ -20,8 +20,20 @@ public class LadderScript : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        //Debug.Log("LadderTrigger");
+        if (other.gameObject.CompareTag("EnemyFootCollider"))
+            {
+           
+                other.GetComponent<AI>().setIsOnLadder(true);
+            }
+    }
+
     void OnTriggerStay(Collider other)
     {
+
+        //Debug.Log("LadderTrigger");
         if (other.gameObject.CompareTag("Player"))
         {
             //if (Input.GetKey("f")) {
@@ -53,6 +65,12 @@ public class LadderScript : MonoBehaviour
                 other.GetComponent<CharacterController>().simpleMove(Vector3.ClampMagnitude(forwardMovement + rightMovement, 1f));*/
             }
             other.GetComponent<PlayerMovement>().setIsOnLadder(false);
+        }
+        else if (other.gameObject.CompareTag("Enemy"))
+        {
+            other.GetComponent<AI>().setIsOnLadder(false);
+            Debug.Log("NPC on Ladder");
+            other.GetComponent<AI>().rotateToLadder(transform);
         }
     }
 }

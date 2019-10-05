@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     GameObject m_selectedGameObject;
     Transform m_transform;
 
+    public PlayerLook cameraScript;
+
 
 
 
@@ -37,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         m_CharacterController = GetComponent<CharacterController>();
         m_Animator = GetComponentInChildren<Animator>();
         m_transform = GetComponent<Transform>();
-
+        
     }
 
     // Update is called once per frame
@@ -48,6 +50,8 @@ public class PlayerMovement : MonoBehaviour
         setMovementSpeed();
 
         useSelectedObject();
+
+       // Debug.Log(m_selectedGameObject);
     }
 
     private void useSelectedObject()
@@ -58,6 +62,12 @@ public class PlayerMovement : MonoBehaviour
                 Debug.Log(m_selectedGameObject);
                 transform.transform.position = new Vector3( m_selectedGameObject.transform.position.x, transform.transform.position.y, m_selectedGameObject.transform.position.z) + m_selectedGameObject.GetComponent<LadderScript>().climpOffset;
                 setIsOnLadder(true);
+            }
+            else if (m_selectedGameObject.CompareTag("door"))
+            {
+                Debug.Log("door");
+                m_selectedGameObject.GetComponent<DoorScript>().useDoor();
+                m_selectedGameObject = null;
             }
         }
     }
@@ -163,6 +173,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void setIsOnLadder(bool isOnLadder) {
         //Debug.Log(isOnLadder);
+        if (isOnLadder)
+        {
+           cameraScript.setIsCameraControlActiv(!isOnLadder, m_selectedGameObject.transform);
+        }
+        else {
+            cameraScript.setIsCameraControlActiv(!isOnLadder);
+        }
         m_isOnLadder = isOnLadder;
     }
 
