@@ -11,6 +11,7 @@ public class DoorScript : MonoBehaviour
     void Start()
     {
         // m_animator = GetComponentInChildren<Animator>();
+        isDoorOpen = !isDoorOpen;
         useDoor();
     }
 
