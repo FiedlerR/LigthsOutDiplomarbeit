@@ -38,4 +38,9 @@ public class DoorScript : MonoBehaviour
             isDoorOpen = true;
         }
     }
+
+
+    public void script() {
+        useDoor();
+    }
 }

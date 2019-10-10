@@ -36,7 +36,7 @@ public class selectUseableObjectScript : MonoBehaviour
                // Debug.Log("use hit");
                 var selectedObject = hit.transform;
            ///    Debug.Log(selectedObject.gameObject.tag);
-                if (selectedObject.CompareTag("ladder") || selectedObject.CompareTag("door")) {
+                if (selectedObject.CompareTag("ladder") || selectedObject.CompareTag("door") || selectedObject.CompareTag("switch")) {
                     var selectedObjectRenderer = selectedObject.GetComponent<Renderer>();
                     if (selectedObjectRenderer != null) {
                        // selectedObjectRenderer.material = highlightMaterial;

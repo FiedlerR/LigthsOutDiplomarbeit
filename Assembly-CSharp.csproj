@@ -62,19 +62,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AlarmLight.cs" />
-    <Compile Include="Assets\DoorTrigger.cs" />
-    <Compile Include="Assets\LadderScript.cs" />
-    <Compile Include="Assets\LadderScriptBottom.cs" />
-    <Compile Include="Assets\LadderScriptTop.cs" />
     <Compile Include="Assets\Scripts\AI.cs" />
+    <Compile Include="Assets\Scripts\AlarmLight.cs" />
     <Compile Include="Assets\Scripts\DoorScript.cs" />
+    <Compile Include="Assets\Scripts\DoorTrigger.cs" />
     <Compile Include="Assets\Scripts\EnemySight.cs" />
+    <Compile Include="Assets\Scripts\LadderScript.cs" />
     <Compile Include="Assets\Scripts\PlayerLook.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\selectUseableObjectScript.cs" />
+    <Compile Include="Assets\Scripts\SwitchScript.cs" />
     <Compile Include="Assets\Scripts\WaypointPatrol.cs" />
-    <Compile Include="Assets\SingleDoorTrigger.cs" />
     <None Include="Assets\UltimateOutline.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Rafael/Desktop/Diplom/3D Stealth Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

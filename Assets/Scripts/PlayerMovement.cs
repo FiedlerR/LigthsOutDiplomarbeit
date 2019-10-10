@@ -59,14 +59,17 @@ public class PlayerMovement : MonoBehaviour
         if (m_selectedGameObject != null && Input.GetButtonDown("Action"))
         {
             if (m_selectedGameObject.CompareTag("ladder")) {
-                Debug.Log(m_selectedGameObject);
                 transform.transform.position = new Vector3( m_selectedGameObject.transform.position.x, transform.transform.position.y, m_selectedGameObject.transform.position.z) + m_selectedGameObject.GetComponent<LadderScript>().climpOffset;
                 setIsOnLadder(true);
             }
             else if (m_selectedGameObject.CompareTag("door"))
             {
-                Debug.Log("door");
                 m_selectedGameObject.GetComponent<DoorScript>().useDoor();
+                m_selectedGameObject = null;
+            }
+            else if (m_selectedGameObject.CompareTag("switch"))
+            {
+                m_selectedGameObject.GetComponent<SwitchScript>().useSwitch();
                 m_selectedGameObject = null;
             }
         }
