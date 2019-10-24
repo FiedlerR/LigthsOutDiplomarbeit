@@ -19,37 +19,27 @@ public class EnemySight : MonoBehaviour
         col = GetComponent<SphereCollider>();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerStay(Collider other)
     {
         if (other.transform == player)
         {
+            //Debug.Log(player.position);
 
             playerInSight = false;
-            Vector3 direction = other.transform.position - transform.position;
+            Vector3 direction = player.position - transform.position;
             float angle = Vector3.Angle(direction, transform.forward);
-            if (angle < fieldOfViewAngle* 0.5f) {
+
+            if (angle < fieldOfViewAngle * 0.5f) {
                 RaycastHit hit;
 
-                if (Physics.Raycast(transform.position,direction.normalized,out hit, col.radius)) {
-
+                if (Physics.Raycast(transform.position, direction.normalized, out hit, col.radius)) {
+                    Debug.DrawRay(transform.position, direction.normalized, Color.green, 2, false);
                     if (hit.collider.transform == player)
                     {
                         playerInSight = true;
                         GetComponent<AI>().setSeen(true, other.GetComponent<Transform>());
-                        Debug.DrawRay(transform.position, direction.normalized, Color.green, 2, false);
-                       // Debug.Log("Player was seen");
+                        //Debug.Log("Player was seen");
+                        return;
                     }
                     else
                     {
@@ -58,22 +48,24 @@ public class EnemySight : MonoBehaviour
 
                 }
             }
+            if (!playerInSight) {
             if (calculatePathLength(player.position) <= col.radius)
             {
                 if (!other.GetComponent<PlayerMovement>().getIsSneaking())
                 {
                     GetComponent<AI>().setHeard(true, other.GetComponent<Transform>());
-                  //  Debug.Log("Player was heard");
+                    //  Debug.Log("Player was heard");
                 }
                 else {
                     GetComponent<AI>().setHeard(false, other.GetComponent<Transform>());
                 }
-               
+
             }
             else
             {
                 GetComponent<AI>().setHeard(false, other.GetComponent<Transform>());
             }
+        }
         }
     } 
 

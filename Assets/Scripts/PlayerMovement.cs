@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
             float verticalInput = Input.GetAxis("Vertical");
             float horizontalInput = Input.GetAxis("Horizontal");
 
-            m_CharacterController.Move(Vector3.up*walkSpeed * verticalInput* Time.deltaTime);
+            m_CharacterController.Move(Vector3.up*walkSpeed * verticalInput* Time.deltaTime + transform.forward);
 
 
             if (Input.GetAxis("Vertical") < 0 && m_CharacterController.collisionFlags == CollisionFlags.Below) {

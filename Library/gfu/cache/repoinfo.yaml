@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-10-10T13:36:47.020+02:00
-  initializedAtString: 2019-10-10T13:36:47.020+02:00
+  lastUpdatedAtString: 2019-10-24T10:15:51.116+02:00
+  initializedAtString: 2019-10-24T09:15:47.453+02:00
   currentGitRemote:
     name: origin
     url: https://github.com/FiedlerR/LigthsOutDiplomarbeit.git

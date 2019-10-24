@@ -10,6 +10,7 @@ TagManager:
   - ladder
   - door
   - switch
+  - NPCFootCollider
   layers:
   - Default
   - TransparentFX

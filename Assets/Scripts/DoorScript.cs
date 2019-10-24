@@ -7,6 +7,7 @@ public class DoorScript : MonoBehaviour
 
     public bool isDoorOpen;
     public Animator m_animator;
+    float m_time = 0;
 
     void Start()
     {
@@ -16,31 +17,47 @@ public class DoorScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         
-    }
-
+    }*/
+ 
 
     public void useDoor()
     {
         //Debug.Log("door");
-        if (isDoorOpen)
-        {
-            m_animator.SetBool("isClosed", true);
-            m_animator.SetBool("isOpen", false);
-            isDoorOpen = false;
-        }
-        else
-        {
-            m_animator.SetBool("isOpen", true);
-            m_animator.SetBool("isClosed", false);
-            isDoorOpen = true;
-        }
+        //if (m_time <= 0) {
+            if (isDoorOpen)
+            {
+                //m_time = m_animator.GetCurrentAnimatorStateInfo(0).length+1;
+                m_animator.SetBool("isClosed", true);
+                m_animator.SetBool("isOpen", false);
+                isDoorOpen = false;
+               // StartCoroutine("timer");
+            }
+            else
+            {
+                //m_time = m_animator.GetCurrentAnimatorStateInfo(0).length;
+                m_animator.SetBool("isOpen", true);
+                m_animator.SetBool("isClosed", false);
+                isDoorOpen = true;
+                //StartCoroutine("timer");
+            }
+      //  }
     }
 
 
     public void script() {
         useDoor();
+    }
+
+    private IEnumerator timer()
+    {
+        while (m_time >= 0)
+        {
+            m_time -= 1f;
+           // Debug.Log(m_animator.GetCurrentAnimatorStateInfo(0));
+            yield return new WaitForSeconds(1f);
+        }
     }
 }

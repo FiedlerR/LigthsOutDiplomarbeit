@@ -9,27 +9,31 @@ public class LadderScript : MonoBehaviour
     public Vector3 climpOffset;
     public Vector3 topOffset;
     // Start is called before the first frame update
-    void Start()
+   /* void Start()
     {
 
     }
-
+    */
     // Update is called once per frame
-    void Update()
+  /*  void Update()
     {
 
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("LadderTrigger");
+      //  Debug.Log("LadderTrigger");
         if (other.gameObject.CompareTag("EnemyFootCollider"))
             {
            
-                other.GetComponent<AI>().setIsOnLadder(true);
-            }
-    }
+                other.GetComponentInParent<AI>().setIsOnLadder(true, transform);
+            }else if (other.gameObject.CompareTag("NPCFootCollider"))
+        {
 
+            other.GetComponentInParent<NPC>().setIsOnLadder(true, transform);
+        }
+    }
+    /*
     void OnTriggerStay(Collider other)
     {
 
@@ -44,9 +48,9 @@ public class LadderScript : MonoBehaviour
             {
                 other.GetComponent<Transform>().position = new Vector3(transform.position.x, other.GetComponent<Transform>().position.y, transform.position.z) + climpOffset;
                 other.GetComponent<PlayerMovement>().setIsOnLadder(true);
-            }*/
+            }
         }
-    }
+    }*/
 
 
     void OnTriggerExit(Collider other)
@@ -66,11 +70,14 @@ public class LadderScript : MonoBehaviour
             }
             other.GetComponent<PlayerMovement>().setIsOnLadder(false);
         }
-        else if (other.gameObject.CompareTag("Enemy"))
+        else if (other.gameObject.CompareTag("EnemyFootCollider"))
         {
-            other.GetComponent<AI>().setIsOnLadder(false);
-            Debug.Log("NPC on Ladder");
-            other.GetComponent<AI>().rotateToLadder(transform);
+            other.GetComponentInParent<AI>().setIsOnLadder(false);
+        }
+        else if (other.gameObject.CompareTag("NPCFootCollider"))
+        {
+
+            other.GetComponentInParent<NPC>().setIsOnLadder(false);
         }
     }
 }
