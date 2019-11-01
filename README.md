@@ -1,1 +1,1 @@
-# LigthsOutDiplomarbeit
+# LightsOutDiplomarbeit
