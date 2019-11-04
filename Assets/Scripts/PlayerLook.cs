@@ -26,22 +26,6 @@ public class PlayerLook : MonoBehaviour
         // Debug.Log(m_isCameraControlActiv);
       
             cameraRotation();
-    /*    }
-        else {
-
-
-            //playerBody.eulerAngles = new Vector3(0,lookTaget.eulerAngles.y-90,0);
-            /*
-          //  correctEulerAllAngles(0);
-            Vector3 direction = (lookTaget.position - playerBody.position).normalized;
-            direction.x = playerBody.position.x;
-            //Quaternion lookRotation = Quaternion.LookRotation(direction);
-            playerBody.LookAt(direction);
-            // playerBody.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 50);
-            Debug.Log("rotate" + playerBody.rotation);
-            
-        }*/
-
 
     }
 
@@ -86,14 +70,6 @@ public class PlayerLook : MonoBehaviour
 
         lookTaget = target;
         playerBody.eulerAngles = new Vector3(0, lookTaget.eulerAngles.y - 90, 0);
-        /*if (!m_isCameraControlActiv && target != null) {
-            Vector3 targetDir = target.position - transform.position;
-
-            Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 25, 0.0f);
-            //Debug.DrawRay(transform.position, newDir, Color.red);
-            //transform.Rotate(newDir);
-            playerBody.Rotate(Vector3.up);
-        }*/
     }
 
     public void setIsCameraControlActiv(bool isCameraControlActiv)

@@ -46,11 +46,12 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         playerMovement();
+
         jump();
         setMovementSpeed();
 
         useSelectedObject();
-
+        KOMove();
        // Debug.Log(m_selectedGameObject);
     }
 
@@ -64,7 +65,10 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (m_selectedGameObject.CompareTag("door"))
             {
-                m_selectedGameObject.GetComponent<DoorScript>().useDoor();
+                // m_selectedGameObject.GetComponent<DoorScript>().useDoor();
+                if (m_selectedGameObject.GetComponent<DoorScript>().isPLayerUsable) {
+                    m_selectedGameObject.GetComponent<DoorScript>().useDoor();
+                }
                 m_selectedGameObject = null;
             }
             else if (m_selectedGameObject.CompareTag("switch"))
@@ -82,10 +86,18 @@ public class PlayerMovement : MonoBehaviour
             float verticalInput = Input.GetAxis("Vertical");
             float horizontalInput = Input.GetAxis("Horizontal");
 
-            m_CharacterController.Move(Vector3.up*walkSpeed * verticalInput* Time.deltaTime + transform.forward);
+            if (verticalInput > 0)
+            {
+                Vector3 moveDirection = Vector3.up * walkSpeed * verticalInput * Time.deltaTime + transform.forward;
+                m_CharacterController.Move(moveDirection);
+            }
+            else {
+                Vector3 moveDirection = Vector3.up * walkSpeed * verticalInput * Time.deltaTime;
+                m_CharacterController.Move(moveDirection);
+            }
 
 
-            if (Input.GetAxis("Vertical") < 0 && m_CharacterController.collisionFlags == CollisionFlags.Below) {
+            if (Input.GetAxis("Vertical") <= 0 && m_CharacterController.collisionFlags == CollisionFlags.Below) {
                 Vector3 forwardMovement = transform.forward * verticalInput;
                 Vector3 rightMovement = transform.right * horizontalInput;
                 setIsOnLadder(false);
@@ -95,11 +107,13 @@ public class PlayerMovement : MonoBehaviour
         else {
             float verticalInput = Input.GetAxis("Vertical");
             float horizontalInput = Input.GetAxis("Horizontal");
+           // if (verticalInput != 0 || horizontalInput != 0) {
+                Vector3 forwardMovement = transform.forward * verticalInput;
+                Vector3 rightMovement = transform.right * horizontalInput;
+                m_CharacterController.SimpleMove(Vector3.ClampMagnitude(forwardMovement + rightMovement, 1f) * m_MovementSpeed);
+           // }
 
-            Vector3 forwardMovement = transform.forward * verticalInput;
-            Vector3 rightMovement = transform.right * horizontalInput;
-            m_CharacterController.SimpleMove(Vector3.ClampMagnitude(forwardMovement + rightMovement, 1f) * m_MovementSpeed);
-            if ((verticalInput != 0 || horizontalInput != 0) && isOnRamp())
+            if ((verticalInput != 0 || horizontalInput != 0) && isOnRamp() )
             {
                 m_CharacterController.Move(Vector3.down * m_CharacterController.height / 2 * slopeForce * Time.deltaTime);
             }
@@ -115,6 +129,19 @@ public class PlayerMovement : MonoBehaviour
         {
             m_IsJumping = true;
             StartCoroutine(JumpEvent());
+        }
+    }
+
+
+    void KOMove()
+    {
+        if (Input.GetButtonDown("KOMove") && isSneaking)
+        {
+            if (m_selectedGameObject != null && m_selectedGameObject.CompareTag("Enemy") && !m_selectedGameObject.GetComponent<AI>().getWasSeen())
+            {
+                Debug.Log("KOMove");
+                m_selectedGameObject.GetComponent<AI>().setIsUnconscious(true);
+            }
         }
     }
 

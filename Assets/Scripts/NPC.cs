@@ -31,7 +31,7 @@ public class NPC : MonoBehaviour
     //
     Animator m_Animator;
 
-    int NpcState = 0;
+   // int NpcState = 0;
 
 
     void Start()

@@ -6,17 +6,28 @@ using UnityEngine.AI;
 
 public class AI : MonoBehaviour
 {
-
+    //Spieler wurde vom Bot gehört
     bool m_wasHeard;
+    //Spieler wurde vom Bot gesehen
     bool m_wasSeen;
+    // letzte bekannte Spielerposition
     Vector3 m_lastPlayerTransform;
+    //NavmeshAgent Referenz
     public NavMeshAgent navMeshAgent;
+    //Spielerposition
     public Transform player;
     //enum AIStates {};
     int AIState = 0;
-
+    //Ob der Bot auf einer Leiter ist
     bool m_isOnLadder = false;
+    // Die Position der Leiter auf der sich der Bot befindet
     Transform m_ladderTransform;
+    //
+    public float health = 300;
+    //
+    public float maxHealth = 300;
+    //
+    public bool isUnconscious = false;
 
     // Start is called before the first frame update
     void Start()
@@ -27,47 +38,50 @@ public class AI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        //Debug.Log("AIState: "+ AIState);
-         switch (AIState) {
-            case 0: //waypatrol
-                navMeshAgent.speed = 1.5f;
-                GetComponent<WaypointPatrol>().setIsPatrolActiv(true);
-                break;
-            case 1:// search
-                navMeshAgent.SetDestination(m_lastPlayerTransform);
-                if (m_wasSeen && Vector3.Distance(transform.position, player.position) < 10)
-                {
-                    AIState = 3;
-                    navMeshAgent.isStopped = true;
-                }
-                break;
-            case 2: // follow
-                lookTo();
-                navMeshAgent.SetDestination(m_lastPlayerTransform);
-                if (Vector3.Distance(transform.position, player.position) < 10)
-                {
-                    AIState = 3;
-                    navMeshAgent.isStopped = true;
-                }
-                    break;
-            case 3: // chase Mode
-               // Debug.Log("Shot");
-                lookTo();
-                if (Vector3.Distance(transform.position, player.position) >= 10)
-                {
-                    m_lastPlayerTransform = player.position;
-                    AIState = 2;
-
-                }
-                break;
-            default:
-                 //navMeshAgent.SetDestination(m_lastPlayerTransform);
-                break;
-        }
-        if (m_isOnLadder)
+        if (!isUnconscious)
         {
-            lookTo(m_ladderTransform);
+            //Debug.Log("AIState: "+ AIState);
+            switch (AIState)
+            {
+                case 0: //waypatrol
+                    navMeshAgent.speed = 1.5f;
+                    GetComponent<WaypointPatrol>().setIsPatrolActiv(true);
+                    break;
+                case 1:// search
+                    navMeshAgent.SetDestination(m_lastPlayerTransform);
+                    if (m_wasSeen && Vector3.Distance(transform.position, player.position) < 10)
+                    {
+                        AIState = 3;
+                        navMeshAgent.isStopped = true;
+                    }
+                    break;
+                case 2: // follow
+                    lookTo();
+                    navMeshAgent.SetDestination(m_lastPlayerTransform);
+                    if (Vector3.Distance(transform.position, player.position) < 10)
+                    {
+                        AIState = 3;
+                        navMeshAgent.isStopped = true;
+                    }
+                    break;
+                case 3: // chase Mode
+                        // Debug.Log("Shot");
+                    lookTo();
+                    if (Vector3.Distance(transform.position, player.position) >= 10)
+                    {
+                        m_lastPlayerTransform = player.position;
+                        AIState = 2;
+
+                    }
+                    break;
+                default:
+                    //navMeshAgent.SetDestination(m_lastPlayerTransform);
+                    break;
+            }
+            if (m_isOnLadder)
+            {
+                lookTo(m_ladderTransform);
+            }
         }
     }
 
@@ -185,5 +199,15 @@ public class AI : MonoBehaviour
         lookRotation.x = 0;
         lookRotation.z = 0;
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 12);
+    }
+
+    public void setIsUnconscious(bool isUnconscious) {
+        Debug.Log("setIsUnconscious: " + isUnconscious);
+        this.isUnconscious = isUnconscious;
+        navMeshAgent.isStopped = false;
+    }
+
+    public bool getWasSeen() {
+        return m_wasSeen;
     }
 }

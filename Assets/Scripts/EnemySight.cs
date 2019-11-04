@@ -21,6 +21,8 @@ public class EnemySight : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
+
+        //Spieler in Hör/Sichtbereich
         if (other.transform == player)
         {
             //Debug.Log(player.position);
@@ -32,8 +34,8 @@ public class EnemySight : MonoBehaviour
             if (angle < fieldOfViewAngle * 0.5f) {
                 RaycastHit hit;
 
-                if (Physics.Raycast(transform.position, direction.normalized, out hit, col.radius)) {
-                    Debug.DrawRay(transform.position, direction.normalized, Color.green, 2, false);
+                if (Physics.Raycast(transform.position + Vector3.up *0.8f, direction.normalized, out hit, col.radius)) {
+                    Debug.DrawRay(transform.position + Vector3.up*0.8f, direction.normalized, Color.green, 2, false);
                     if (hit.collider.transform == player)
                     {
                         playerInSight = true;
@@ -71,6 +73,7 @@ public class EnemySight : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        //Spieler verlässt Hör/Sichtbereich
         if (other.transform == player) { 
             playerInSight = false;
             GetComponent<AI>().setSeen(false);
@@ -78,7 +81,8 @@ public class EnemySight : MonoBehaviour
         }
     }
 
-            float calculatePathLength(Vector3 targetPosition) {
+    //Die Pfadlänge zum Ziel berechnen
+    float calculatePathLength(Vector3 targetPosition) {
 
         NavMeshPath path = new NavMeshPath();
         if (nav.enabled) {

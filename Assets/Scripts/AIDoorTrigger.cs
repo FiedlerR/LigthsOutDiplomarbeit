@@ -13,11 +13,19 @@ public class AIDoorTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
       
-        if (other.CompareTag("EnemyFootCollider"))
+        if ((other.CompareTag("EnemyFootCollider") || other.CompareTag("NPCFootCollider")) &&  isActiv)
         {
-            /*Debug.Log("collider test");
-            Debug.Log(scriptObject);*/
-            scriptObject.SendMessage("script");
+            scriptObject.SendMessage("open");
+        }
+
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+
+        if ((other.CompareTag("EnemyFootCollider") || other.CompareTag("NPCFootCollider")) && isActiv)
+        {
+            scriptObject.SendMessage("open");
         }
 
     }
@@ -25,9 +33,9 @@ public class AIDoorTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("EnemyFootCollider"))
+        if ((other.CompareTag("EnemyFootCollider") || other.CompareTag("NPCFootCollider")) && isActiv)
         {
-            scriptObject.SendMessage("script");
+            scriptObject.SendMessage("close");
         }
     }
 

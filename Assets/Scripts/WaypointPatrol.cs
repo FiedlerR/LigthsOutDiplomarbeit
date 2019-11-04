@@ -3,26 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-//Folow always the path. Also if the Player was seen by this unit.
 public class WaypointPatrol : MonoBehaviour
 {
     //binding navMeshAgent from AI Unit
     public NavMeshAgent navMeshAgent;
+
     //array of waypoints GameObject
     public Transform[] waypoints;
-    //
+
+    //Zeit die an einen waypoint gewartet wird
     public float timeToWait;
-    //
+
+    //legt fest ob die Patrolliere aktiv ist
     public bool isPatrolActiv;
-    //
+
+    //Auf welches Objekt schaut der Bot am Waypoint
     public Transform[] lookToWhileWaiting;
 
     // index for the current waypoint
     int m_CurrentWaypointIndex;
-    //
+
+    //Timer für das warten
     float m_WaitingTimer;
 
-    //
+    //Referenz zum Animator
     Animator m_Animator;
 
 
@@ -42,9 +46,9 @@ public class WaypointPatrol : MonoBehaviour
     void Update()
     {
 
-        if (isPatrolActiv) {
+        if (isPatrolActiv && waypoints.Length != 0) {
             //   
-            if (lookToWhileWaiting.Length != 0 && navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance + navMeshAgent.speed)
+            if (lookToWhileWaiting.Length != 0 && lookToWhileWaiting[m_CurrentWaypointIndex] == null && navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance + navMeshAgent.speed)
             {
                 Vector3 direction = (lookToWhileWaiting[m_CurrentWaypointIndex].position - transform.position).normalized;
                 Quaternion lookRotation = Quaternion.LookRotation(direction);

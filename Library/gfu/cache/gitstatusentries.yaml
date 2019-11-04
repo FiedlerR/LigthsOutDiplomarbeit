@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-10-24T10:38:11.584+02:00
-  initializedAtString: 2019-10-24T09:16:01.138+02:00
+  lastUpdatedAtString: 2019-11-01T17:00:58.484+01:00
+  initializedAtString: 2019-11-01T16:23:51.205+01:00
   entries:
   - path: Assembly-CSharp.csproj
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assembly-CSharp.csproj
@@ -22,473 +22,69 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Assets\Animation\Animators\buttonAnimationController.controller
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\buttonAnimationController.controller
-    projectPath: Assets\Animation\Animators\buttonAnimationController.controller
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Animation\Animators\buttonAnimationController.controller.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\buttonAnimationController.controller.meta
-    projectPath: Assets\Animation\Animators\buttonAnimationController.controller.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Assets\Animation\Animators\Door1AnimationController.controller
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\Door1AnimationController.controller
     projectPath: Assets\Animation\Animators\Door1AnimationController.controller
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Animation\Animators\Door1AnimationController.controller.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\Door1AnimationController.controller.meta
-    projectPath: Assets\Animation\Animators\Door1AnimationController.controller.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Assets\Animation\Animators\Door3AnimationController.controller
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\Door3AnimationController.controller
     projectPath: Assets\Animation\Animators\Door3AnimationController.controller
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Animation\Animators\Door3AnimationController.controller.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\Door3AnimationController.controller.meta
-    projectPath: Assets\Animation\Animators\Door3AnimationController.controller.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Assets\Animation\Animators\DoorAnimationController.controller
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\DoorAnimationController.controller
     projectPath: Assets\Animation\Animators\DoorAnimationController.controller
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Assets\Animation\Animators\New Animator Controller.controller
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\New
-      Animator Controller.controller
-    projectPath: Assets\Animation\Animators\New Animator Controller.controller
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Assets\Animation\Animators\New Animator Controller.controller.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\New
-      Animator Controller.controller.meta
-    projectPath: Assets\Animation\Animators\New Animator Controller.controller.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Assets\Materials\VFX\Lamp.mat
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Materials\VFX\Lamp.mat
-    projectPath: Assets\Materials\VFX\Lamp.mat
+  - path: Assets\Animation\Animators\unitController.controller
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Animation\Animators\unitController.controller
+    projectPath: Assets\Animation\Animators\unitController.controller
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Assets\Models\Door\Door1.fbx
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door1.fbx
-    projectPath: Assets\Models\Door\Door1.fbx
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door1.fbx.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door1.fbx.meta
-    projectPath: Assets\Models\Door\Door1.fbx.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door1_1.mat
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door1_1.mat
-    projectPath: Assets\Models\Door\Door1_1.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door1_1.mat.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door1_1.mat.meta
-    projectPath: Assets\Models\Door\Door1_1.mat.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door1_1.png
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door1_1.png
-    projectPath: Assets\Models\Door\Door1_1.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door1_1.png.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door1_1.png.meta
-    projectPath: Assets\Models\Door\Door1_1.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door1_2.mat
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door1_2.mat
-    projectPath: Assets\Models\Door\Door1_2.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door1_2.mat.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door1_2.mat.meta
-    projectPath: Assets\Models\Door\Door1_2.mat.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door1_2.png
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door1_2.png
-    projectPath: Assets\Models\Door\Door1_2.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door1_2.png.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door1_2.png.meta
-    projectPath: Assets\Models\Door\Door1_2.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door3.fbx
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door3.fbx
-    projectPath: Assets\Models\Door\Door3.fbx
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door3.fbx.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door3.fbx.meta
-    projectPath: Assets\Models\Door\Door3.fbx.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door3_1.mat
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door3_1.mat
-    projectPath: Assets\Models\Door\Door3_1.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door3_1.mat.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door3_1.mat.meta
-    projectPath: Assets\Models\Door\Door3_1.mat.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door3_1.png
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door3_1.png
-    projectPath: Assets\Models\Door\Door3_1.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door3_1.png.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door3_1.png.meta
-    projectPath: Assets\Models\Door\Door3_1.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door3_2.mat
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door3_2.mat
-    projectPath: Assets\Models\Door\Door3_2.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door3_2.mat.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door3_2.mat.meta
-    projectPath: Assets\Models\Door\Door3_2.mat.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door3_2.png
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door3_2.png
-    projectPath: Assets\Models\Door\Door3_2.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\Door3_2.png.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\Door3_2.png.meta
-    projectPath: Assets\Models\Door\Door3_2.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Door\doorTexture1.mat
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\doorTexture1.mat
-    projectPath: Assets\Models\Door\doorTexture1.mat
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\Models\Door\doorTexture2.mat
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\doorTexture2.mat
-    projectPath: Assets\Models\Door\doorTexture2.mat
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\Models\Door\doorTexture3.mat
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Door\doorTexture3.mat
-    projectPath: Assets\Models\Door\doorTexture3.mat
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\Models\ladder\Leiter_5parts.fbx
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter_5parts.fbx
-    projectPath: Assets\Models\ladder\Leiter_5parts.fbx
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Assets\Models\ladder\Leiter_5parts.fbx.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter_5parts.fbx.meta
-    projectPath: Assets\Models\ladder\Leiter_5parts.fbx.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Assets\Models\ladder\Leiter1.blend
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter1.blend
-    projectPath: Assets\Models\ladder\Leiter1.blend
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Assets\Models\ladder\Leiter1.blend.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter1.blend.meta
-    projectPath: Assets\Models\ladder\Leiter1.blend.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Assets\Models\ladder\Leiter1.fbx
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter1.fbx
-    projectPath: Assets\Models\ladder\Leiter1.fbx
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\Leiter1.fbx.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter1.fbx.meta
-    projectPath: Assets\Models\ladder\Leiter1.fbx.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\Leiter1.mat
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter1.mat
-    projectPath: Assets\Models\ladder\Leiter1.mat
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\Models\ladder\Leiter1.png
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter1.png
-    projectPath: Assets\Models\ladder\Leiter1.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\Models\ladder\Leiter1.png.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter1.png.meta
-    projectPath: Assets\Models\ladder\Leiter1.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\Models\ladder\Leiter1.prefab
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter1.prefab
-    projectPath: Assets\Models\ladder\Leiter1.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Assets\Models\ladder\Leiter1.prefab.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter1.prefab.meta
-    projectPath: Assets\Models\ladder\Leiter1.prefab.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Assets\Models\ladder\Leiter2.fbx
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter2.fbx
-    projectPath: Assets\Models\ladder\Leiter2.fbx
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Assets\Models\ladder\Leiter2.fbx.meta
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter2.fbx.meta
     projectPath: Assets\Models\ladder\Leiter2.fbx.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\Leiter2.mat
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter2.mat
-    projectPath: Assets\Models\ladder\Leiter2.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\Leiter2.mat.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter2.mat.meta
-    projectPath: Assets\Models\ladder\Leiter2.mat.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\Leiter2.png
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter2.png
-    projectPath: Assets\Models\ladder\Leiter2.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\Leiter2.png.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter2.png.meta
-    projectPath: Assets\Models\ladder\Leiter2.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\Leiter3.fbx
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter3.fbx
-    projectPath: Assets\Models\ladder\Leiter3.fbx
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\Leiter3.fbx.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter3.fbx.meta
-    projectPath: Assets\Models\ladder\Leiter3.fbx.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\Leiter3.mat
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter3.mat
-    projectPath: Assets\Models\ladder\Leiter3.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\Leiter3.mat.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter3.mat.meta
-    projectPath: Assets\Models\ladder\Leiter3.mat.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\Leiter3.png
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter3.png
-    projectPath: Assets\Models\ladder\Leiter3.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\Leiter3.png.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\Leiter3.png.meta
-    projectPath: Assets\Models\ladder\Leiter3.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\RAW.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\RAW.meta
-    projectPath: Assets\Models\ladder\RAW.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\RAW\Leiter1.fbx
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\RAW\Leiter1.fbx
-    projectPath: Assets\Models\ladder\RAW\Leiter1.fbx
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\RAW\Leiter1.fbx.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\RAW\Leiter1.fbx.meta
-    projectPath: Assets\Models\ladder\RAW\Leiter1.fbx.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\RAW\Leiter2.fbx
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\RAW\Leiter2.fbx
-    projectPath: Assets\Models\ladder\RAW\Leiter2.fbx
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\RAW\Leiter2.fbx.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\RAW\Leiter2.fbx.meta
-    projectPath: Assets\Models\ladder\RAW\Leiter2.fbx.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\RAW\Leiter3.fbx
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\RAW\Leiter3.fbx
-    projectPath: Assets\Models\ladder\RAW\Leiter3.fbx
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\ladder\RAW\Leiter3.fbx.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\ladder\RAW\Leiter3.fbx.meta
-    projectPath: Assets\Models\ladder\RAW\Leiter3.fbx.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Switch\Button.fbx
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Switch\Button.fbx
-    projectPath: Assets\Models\Switch\Button.fbx
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Switch\Button.fbx.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Switch\Button.fbx.meta
-    projectPath: Assets\Models\Switch\Button.fbx.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Assets\Models\Switch\Button.mat
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Switch\Button.mat
     projectPath: Assets\Models\Switch\Button.mat
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Switch\Button.mat.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Switch\Button.mat.meta
-    projectPath: Assets\Models\Switch\Button.mat.meta
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Models\Switch\HebelGross.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Switch\HebelGross.mat
+    projectPath: Assets\Models\Switch\HebelGross.mat
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Switch\Button.png
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Switch\Button.png
-    projectPath: Assets\Models\Switch\Button.png
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Models\Switch\HebelKlein.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Switch\HebelKlein.mat
+    projectPath: Assets\Models\Switch\HebelKlein.mat
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Models\Switch\Button.png.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Switch\Button.png.meta
-    projectPath: Assets\Models\Switch\Button.png.meta
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Models\Switch\HebelMittel.mat
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Models\Switch\HebelMittel.mat
+    projectPath: Assets\Models\Switch\HebelMittel.mat
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Prefabs\AIDoorTrigger.prefab
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\AIDoorTrigger.prefab
-    projectPath: Assets\Prefabs\AIDoorTrigger.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Prefabs\AIDoorTrigger.prefab.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\AIDoorTrigger.prefab.meta
-    projectPath: Assets\Prefabs\AIDoorTrigger.prefab.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Prefabs\Button.prefab
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Button.prefab
-    projectPath: Assets\Prefabs\Button.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Prefabs\Button.prefab.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Button.prefab.meta
-    projectPath: Assets\Prefabs\Button.prefab.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Assets\Prefabs\Door1.prefab
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Door1.prefab
     projectPath: Assets\Prefabs\Door1.prefab
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Prefabs\Door1.prefab.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Door1.prefab.meta
-    projectPath: Assets\Prefabs\Door1.prefab.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Assets\Prefabs\Door3.prefab
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Door3.prefab
     projectPath: Assets\Prefabs\Door3.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Prefabs\Door3.prefab.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Door3.prefab.meta
-    projectPath: Assets\Prefabs\Door3.prefab.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Prefabs\HebelMittel.prefab
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\HebelMittel.prefab
-    projectPath: Assets\Prefabs\HebelMittel.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -496,14 +92,14 @@ MonoBehaviour:
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\NPC.prefab
     projectPath: Assets\Prefabs\NPC.prefab
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Prefabs\NPC.prefab.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\NPC.prefab.meta
-    projectPath: Assets\Prefabs\NPC.prefab.meta
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Prefabs\SimpleDoor.prefab
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\SimpleDoor.prefab
+    projectPath: Assets\Prefabs\SimpleDoor.prefab
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Assets\Prefabs\Unit.prefab
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Prefabs\Unit.prefab
     projectPath: Assets\Prefabs\Unit.prefab
@@ -630,12 +226,114 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Assets\Scenes\TutorialArea\Lightmap-25_comp_light.exr
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-25_comp_light.exr
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-25_comp_light.exr
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scenes\TutorialArea\Lightmap-26_comp_light.exr
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-26_comp_light.exr
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-26_comp_light.exr
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-26_comp_light.exr.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-26_comp_light.exr.meta
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-26_comp_light.exr.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-27_comp_light.exr
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-27_comp_light.exr
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-27_comp_light.exr
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-27_comp_light.exr.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-27_comp_light.exr.meta
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-27_comp_light.exr.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-28_comp_light.exr
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-28_comp_light.exr
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-28_comp_light.exr
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-28_comp_light.exr.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-28_comp_light.exr.meta
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-28_comp_light.exr.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-29_comp_light.exr
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-29_comp_light.exr
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-29_comp_light.exr
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-29_comp_light.exr.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-29_comp_light.exr.meta
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-29_comp_light.exr.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Assets\Scenes\TutorialArea\Lightmap-3_comp_light.exr
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-3_comp_light.exr
     projectPath: Assets\Scenes\TutorialArea\Lightmap-3_comp_light.exr
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Assets\Scenes\TutorialArea\Lightmap-30_comp_light.exr
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-30_comp_light.exr
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-30_comp_light.exr
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-30_comp_light.exr.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-30_comp_light.exr.meta
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-30_comp_light.exr.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-31_comp_light.exr
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-31_comp_light.exr
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-31_comp_light.exr
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-31_comp_light.exr.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-31_comp_light.exr.meta
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-31_comp_light.exr.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-32_comp_light.exr
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-32_comp_light.exr
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-32_comp_light.exr
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-32_comp_light.exr.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-32_comp_light.exr.meta
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-32_comp_light.exr.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-33_comp_light.exr
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-33_comp_light.exr
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-33_comp_light.exr
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\TutorialArea\Lightmap-33_comp_light.exr.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-33_comp_light.exr.meta
+    projectPath: Assets\Scenes\TutorialArea\Lightmap-33_comp_light.exr.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Assets\Scenes\TutorialArea\Lightmap-4_comp_light.exr
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\Lightmap-4_comp_light.exr
     projectPath: Assets\Scenes\TutorialArea\Lightmap-4_comp_light.exr
@@ -678,18 +376,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Assets\Scenes\TutorialArea\NavMesh-ladderTrigger.asset
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\NavMesh-ladderTrigger.asset
-    projectPath: Assets\Scenes\TutorialArea\NavMesh-ladderTrigger.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Scenes\TutorialArea\NavMesh-ladderTrigger.asset.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\NavMesh-ladderTrigger.asset.meta
-    projectPath: Assets\Scenes\TutorialArea\NavMesh-ladderTrigger.asset.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Assets\Scenes\TutorialArea\OcclusionCullingData.asset
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scenes\TutorialArea\OcclusionCullingData.asset
     projectPath: Assets\Scenes\TutorialArea\OcclusionCullingData.asset
@@ -706,26 +392,8 @@ MonoBehaviour:
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\AIDoorTrigger.cs
     projectPath: Assets\Scripts\AIDoorTrigger.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Scripts\AIDoorTrigger.cs.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\AIDoorTrigger.cs.meta
-    projectPath: Assets\Scripts\AIDoorTrigger.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Scripts\AlarmScript.cs
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\AlarmScript.cs
-    projectPath: Assets\Scripts\AlarmScript.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Scripts\AlarmScript.cs.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\AlarmScript.cs.meta
-    projectPath: Assets\Scripts\AlarmScript.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Assets\Scripts\DoorScript.cs
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\DoorScript.cs
     projectPath: Assets\Scripts\DoorScript.cs
@@ -748,23 +416,41 @@ MonoBehaviour:
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\NPC.cs
     projectPath: Assets\Scripts\NPC.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Scripts\NPC.cs.meta
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\NPC.cs.meta
-    projectPath: Assets\Scripts\NPC.cs.meta
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scripts\PlayerLook.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\PlayerLook.cs
+    projectPath: Assets\Scripts\PlayerLook.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Assets\Scripts\PlayerMovement.cs
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\PlayerMovement.cs
     projectPath: Assets\Scripts\PlayerMovement.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Assets\Scripts\SwitchScript.cs
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\SwitchScript.cs
-    projectPath: Assets\Scripts\SwitchScript.cs
+  - path: Assets\Scripts\PlayerScript.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\PlayerScript.cs
+    projectPath: Assets\Scripts\PlayerScript.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\PlayerScript.cs.meta
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\PlayerScript.cs.meta
+    projectPath: Assets\Scripts\PlayerScript.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\selectUseableObjectScript.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\selectUseableObjectScript.cs
+    projectPath: Assets\Scripts\selectUseableObjectScript.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scripts\WaypointPatrol.cs
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Assets\Scripts\WaypointPatrol.cs
+    projectPath: Assets\Scripts\WaypointPatrol.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -780,15 +466,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\CurrentMaximizeLayout.dwlt
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\CurrentMaximizeLayout.dwlt
-    projectPath: Library\CurrentMaximizeLayout.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\expandedItems
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\expandedItems
-    projectPath: Library\expandedItems
+  - path: Library\EditorUserBuildSettings.asset
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\EditorUserBuildSettings.asset
+    projectPath: Library\EditorUserBuildSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -815,7 +495,7 @@ MonoBehaviour:
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
+    workTreeStatus: 5
   - path: Library\gfu\cache\gittrackingstatus.yaml
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
@@ -918,12 +598,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\22\22c9633edd8abef4eb771369c4c135bd.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\22\22c9633edd8abef4eb771369c4c135bd.info
-    projectPath: Library\metadata\22\22c9633edd8abef4eb771369c4c135bd.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\metadata\26\26f9897b3c73937419cf0ef4f016ed00
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\26\26f9897b3c73937419cf0ef4f016ed00
     projectPath: Library\metadata\26\26f9897b3c73937419cf0ef4f016ed00
@@ -936,9 +610,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\2b\2b9fbc02533d0b64e9ac6495168a5f2b
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\2b\2b9fbc02533d0b64e9ac6495168a5f2b
-    projectPath: Library\metadata\2b\2b9fbc02533d0b64e9ac6495168a5f2b
+  - path: Library\metadata\2b\2b9fbc02533d0b64e9ac6495168a5f2b.info
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\2b\2b9fbc02533d0b64e9ac6495168a5f2b.info
+    projectPath: Library\metadata\2b\2b9fbc02533d0b64e9ac6495168a5f2b.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -954,15 +628,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\33\3349e881796f1174e91c9268886b1eb8
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\33\3349e881796f1174e91c9268886b1eb8
-    projectPath: Library\metadata\33\3349e881796f1174e91c9268886b1eb8
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\metadata\33\3349e881796f1174e91c9268886b1eb8.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\33\3349e881796f1174e91c9268886b1eb8.info
-    projectPath: Library\metadata\33\3349e881796f1174e91c9268886b1eb8.info
+  - path: Library\metadata\39\390fb7ab536c79e41a1157aa86142e5d
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\39\390fb7ab536c79e41a1157aa86142e5d
+    projectPath: Library\metadata\39\390fb7ab536c79e41a1157aa86142e5d
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -978,33 +646,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\4e\4e2f5ab6457bd9d4bb0c2980cdb0d956.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\4e\4e2f5ab6457bd9d4bb0c2980cdb0d956.info
-    projectPath: Library\metadata\4e\4e2f5ab6457bd9d4bb0c2980cdb0d956.info
+  - path: Library\metadata\4e\4e24a0170a4d46a4e8a86dddb906d09c
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\4e\4e24a0170a4d46a4e8a86dddb906d09c
+    projectPath: Library\metadata\4e\4e24a0170a4d46a4e8a86dddb906d09c
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\4e\4e5d80e2248d0254886b1bf66e2da40b
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\4e\4e5d80e2248d0254886b1bf66e2da40b
-    projectPath: Library\metadata\4e\4e5d80e2248d0254886b1bf66e2da40b
+  - path: Library\metadata\54\543f1120e16e31b4898bcb819175c9bc
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\54\543f1120e16e31b4898bcb819175c9bc
+    projectPath: Library\metadata\54\543f1120e16e31b4898bcb819175c9bc
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\4e\4e5d80e2248d0254886b1bf66e2da40b.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\4e\4e5d80e2248d0254886b1bf66e2da40b.info
-    projectPath: Library\metadata\4e\4e5d80e2248d0254886b1bf66e2da40b.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\metadata\54\54ac79ea3360d584a8e0dda366e13c75
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\54\54ac79ea3360d584a8e0dda366e13c75
-    projectPath: Library\metadata\54\54ac79ea3360d584a8e0dda366e13c75
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\metadata\54\54ac79ea3360d584a8e0dda366e13c75.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\54\54ac79ea3360d584a8e0dda366e13c75.info
-    projectPath: Library\metadata\54\54ac79ea3360d584a8e0dda366e13c75.info
+  - path: Library\metadata\54\543f1120e16e31b4898bcb819175c9bc.info
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\54\543f1120e16e31b4898bcb819175c9bc.info
+    projectPath: Library\metadata\54\543f1120e16e31b4898bcb819175c9bc.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1038,18 +694,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\60\606c93b7c899fa84da1ad890b827a494
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\60\606c93b7c899fa84da1ad890b827a494
-    projectPath: Library\metadata\60\606c93b7c899fa84da1ad890b827a494
+  - path: Library\metadata\65\65856f990dea6fc4c8942e21664c7eef.info
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\65\65856f990dea6fc4c8942e21664c7eef.info
+    projectPath: Library\metadata\65\65856f990dea6fc4c8942e21664c7eef.info
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\metadata\60\606c93b7c899fa84da1ad890b827a494.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\60\606c93b7c899fa84da1ad890b827a494.info
-    projectPath: Library\metadata\60\606c93b7c899fa84da1ad890b827a494.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    workTreeStatus: 3
   - path: Library\metadata\69\6931ac408dd20fe4a8be52b2741ace4e
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\69\6931ac408dd20fe4a8be52b2741ace4e
     projectPath: Library\metadata\69\6931ac408dd20fe4a8be52b2741ace4e
@@ -1065,12 +715,6 @@ MonoBehaviour:
   - path: Library\metadata\70\70ce0058320a9534ba81e58d7752188a
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\70\70ce0058320a9534ba81e58d7752188a
     projectPath: Library\metadata\70\70ce0058320a9534ba81e58d7752188a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\metadata\70\70ce0058320a9534ba81e58d7752188a.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\70\70ce0058320a9534ba81e58d7752188a.info
-    projectPath: Library\metadata\70\70ce0058320a9534ba81e58d7752188a.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1134,12 +778,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\91\913c42e27d627cb439ef56461e168262.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\91\913c42e27d627cb439ef56461e168262.info
-    projectPath: Library\metadata\91\913c42e27d627cb439ef56461e168262.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\metadata\9a\9ac073a96ac5716479eef35d82296f17
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\9a\9ac073a96ac5716479eef35d82296f17
     projectPath: Library\metadata\9a\9ac073a96ac5716479eef35d82296f17
@@ -1152,24 +790,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library\metadata\a0\a0c1ec202f870274685f28c47250939c.info
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\a0\a0c1ec202f870274685f28c47250939c.info
+    projectPath: Library\metadata\a0\a0c1ec202f870274685f28c47250939c.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library\metadata\a8\a803c4a5518c54846bd63a66612afc28
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\a8\a803c4a5518c54846bd63a66612afc28
     projectPath: Library\metadata\a8\a803c4a5518c54846bd63a66612afc28
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\ac\acf7e32e616857a4f97e459a5773e567
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\ac\acf7e32e616857a4f97e459a5773e567
-    projectPath: Library\metadata\ac\acf7e32e616857a4f97e459a5773e567
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\metadata\ac\acf7e32e616857a4f97e459a5773e567.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\ac\acf7e32e616857a4f97e459a5773e567.info
-    projectPath: Library\metadata\ac\acf7e32e616857a4f97e459a5773e567.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: Library\metadata\ae\ae9063f0892b0a646834b5e6b7d61d0d
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\ae\ae9063f0892b0a646834b5e6b7d61d0d
     projectPath: Library\metadata\ae\ae9063f0892b0a646834b5e6b7d61d0d
@@ -1179,6 +811,12 @@ MonoBehaviour:
   - path: Library\metadata\ae\ae9063f0892b0a646834b5e6b7d61d0d.info
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\ae\ae9063f0892b0a646834b5e6b7d61d0d.info
     projectPath: Library\metadata\ae\ae9063f0892b0a646834b5e6b7d61d0d.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\metadata\b6\b688aafa97437d54386965aa7f0993c2.info
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\b6\b688aafa97437d54386965aa7f0993c2.info
+    projectPath: Library\metadata\b6\b688aafa97437d54386965aa7f0993c2.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1194,18 +832,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\c3\c314dabec32907142a9d36cf6941ef27
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\c3\c314dabec32907142a9d36cf6941ef27
-    projectPath: Library\metadata\c3\c314dabec32907142a9d36cf6941ef27
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\metadata\c3\c314dabec32907142a9d36cf6941ef27.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\c3\c314dabec32907142a9d36cf6941ef27.info
-    projectPath: Library\metadata\c3\c314dabec32907142a9d36cf6941ef27.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\metadata\c3\c399dad7774e9a347a287e4bc9e7eabe
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\c3\c399dad7774e9a347a287e4bc9e7eabe
     projectPath: Library\metadata\c3\c399dad7774e9a347a287e4bc9e7eabe
@@ -1218,18 +844,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\c8\c81271b0117849c44a0713ce608f5af5
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\c8\c81271b0117849c44a0713ce608f5af5
-    projectPath: Library\metadata\c8\c81271b0117849c44a0713ce608f5af5
+  - path: Library\metadata\c8\c80ea1150acb3d74e8dd6cc6d60208ab
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\c8\c80ea1150acb3d74e8dd6cc6d60208ab
+    projectPath: Library\metadata\c8\c80ea1150acb3d74e8dd6cc6d60208ab
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\metadata\c8\c81271b0117849c44a0713ce608f5af5.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\c8\c81271b0117849c44a0713ce608f5af5.info
-    projectPath: Library\metadata\c8\c81271b0117849c44a0713ce608f5af5.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    workTreeStatus: 3
   - path: Library\metadata\cc\cc5afc8aff54cab409811390c8929383
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\cc\cc5afc8aff54cab409811390c8929383
     projectPath: Library\metadata\cc\cc5afc8aff54cab409811390c8929383
@@ -1254,36 +874,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\de\de8f29e8cd2d02049baab0a2491ca0ab
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\de\de8f29e8cd2d02049baab0a2491ca0ab
-    projectPath: Library\metadata\de\de8f29e8cd2d02049baab0a2491ca0ab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\metadata\de\de8f29e8cd2d02049baab0a2491ca0ab.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\de\de8f29e8cd2d02049baab0a2491ca0ab.info
-    projectPath: Library\metadata\de\de8f29e8cd2d02049baab0a2491ca0ab.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\metadata\de\dec130ea317774f4aa997463a359f1d5
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\de\dec130ea317774f4aa997463a359f1d5
-    projectPath: Library\metadata\de\dec130ea317774f4aa997463a359f1d5
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\metadata\de\dec130ea317774f4aa997463a359f1d5.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\de\dec130ea317774f4aa997463a359f1d5.info
-    projectPath: Library\metadata\de\dec130ea317774f4aa997463a359f1d5.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\metadata\e0\e01ec35e10993244ba810f228d997bf4.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\e0\e01ec35e10993244ba810f228d997bf4.info
-    projectPath: Library\metadata\e0\e01ec35e10993244ba810f228d997bf4.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\metadata\e4\e4f4fb310a0d2c348b3da622179e4a22
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\e4\e4f4fb310a0d2c348b3da622179e4a22
     projectPath: Library\metadata\e4\e4f4fb310a0d2c348b3da622179e4a22
@@ -1296,18 +886,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\metadata\e7\e79fe3a403f928b49aaa1f6dafdff780
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\e7\e79fe3a403f928b49aaa1f6dafdff780
-    projectPath: Library\metadata\e7\e79fe3a403f928b49aaa1f6dafdff780
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\metadata\f7\f78685f076f611a42b9721f1676f5aad.info
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\f7\f78685f076f611a42b9721f1676f5aad.info
-    projectPath: Library\metadata\f7\f78685f076f611a42b9721f1676f5aad.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\metadata\fd\fd69e0019758f8c46bdceb4522ee8d44
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\fd\fd69e0019758f8c46bdceb4522ee8d44
     projectPath: Library\metadata\fd\fd69e0019758f8c46bdceb4522ee8d44
@@ -1317,6 +895,18 @@ MonoBehaviour:
   - path: Library\metadata\fd\fd69e0019758f8c46bdceb4522ee8d44.info
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\fd\fd69e0019758f8c46bdceb4522ee8d44.info
     projectPath: Library\metadata\fd\fd69e0019758f8c46bdceb4522ee8d44.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\metadata\fe\fe2971637f20ea74aa3cb0698d956886
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\fe\fe2971637f20ea74aa3cb0698d956886
+    projectPath: Library\metadata\fe\fe2971637f20ea74aa3cb0698d956886
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\metadata\fe\fe2971637f20ea74aa3cb0698d956886.info
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\metadata\fe\fe2971637f20ea74aa3cb0698d956886.info
+    projectPath: Library\metadata\fe\fe2971637f20ea74aa3cb0698d956886.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1344,150 +934,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.caw
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.caw
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.caw
+  - path: Library\PlayerDataCache\Win64\Data\boot.config
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\boot.config
+    projectPath: Library\PlayerDataCache\Win64\Data\boot.config
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.ecm
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.ecm
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.ecm
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.iws.sse
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.iws.sse
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.iws.sse
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.rgb
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.rgb
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.rgb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.rsc.sse
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.rsc.sse
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.rsc.sse
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.vis
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.vis
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\1b\1baa3ac8a786707cddc2c10f5e36d72e.vis
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.caw
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.caw
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.caw
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.ecm
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.ecm
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.ecm
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.iws.sse
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.iws.sse
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.iws.sse
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.rgb
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.rgb
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.rgb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.rsc.sse
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.rsc.sse
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.rsc.sse
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.vis
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.vis
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\52\52d74e42bc9f179a23253db3270f9728.vis
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.caw
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.caw
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.caw
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.ecm
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.ecm
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.ecm
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.iws.sse
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.iws.sse
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.iws.sse
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.rgb
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.rgb
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.rgb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.rsc.sse
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.rsc.sse
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.rsc.sse
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.vis
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.vis
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\9e\9ec2b5181a59aa20232350f56e396ac2.vis
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.caw
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.caw
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.caw
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.ecm
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.ecm
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.ecm
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.iws.sse
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.iws.sse
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.iws.sse
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.rgb
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.rgb
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.rgb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.rsc.sse
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.rsc.sse
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.rsc.sse
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.vis
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.vis
-    projectPath: Library\PlayerDataCache\Win64\Data\GI\level0\c1\c1048d295923c465e83f878fa70e8145.vis
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    workTreeStatus: 3
   - path: Library\PlayerDataCache\Win64\Data\globalgamemanagers
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\globalgamemanagers
     projectPath: Library\PlayerDataCache\Win64\Data\globalgamemanagers
@@ -1560,12 +1012,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\PlayerDataCache\Win64\Data\Resources\unity_builtin_extra
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\Resources\unity_builtin_extra
-    projectPath: Library\PlayerDataCache\Win64\Data\Resources\unity_builtin_extra
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\PlayerDataCache\Win64\Data\sharedassets0.assets
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\Data\sharedassets0.assets
     projectPath: Library\PlayerDataCache\Win64\Data\sharedassets0.assets
@@ -1581,6 +1027,12 @@ MonoBehaviour:
   - path: Library\PlayerDataCache\Win64\ScriptsOnlyCache.yaml
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\PlayerDataCache\Win64\ScriptsOnlyCache.yaml
     projectPath: Library\PlayerDataCache\Win64\ScriptsOnlyCache.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\ProjectSettings.asset
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\ProjectSettings.asset
+    projectPath: Library\ProjectSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1698,12 +1150,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\StateCache\Hierarchy\5bb2e3-0ec82af9fd68743479.json
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\StateCache\Hierarchy\5bb2e3-0ec82af9fd68743479.json
-    projectPath: Library\StateCache\Hierarchy\5bb2e3-0ec82af9fd68743479.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\StateCache\Hierarchy\5bb2e3-2b9fbc02533d0b64e9.json
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\StateCache\Hierarchy\5bb2e3-2b9fbc02533d0b64e9.json
     projectPath: Library\StateCache\Hierarchy\5bb2e3-2b9fbc02533d0b64e9.json
@@ -1716,27 +1162,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\StateCache\Hierarchy\5bb2e3-a91a3f22af7c4004cb.json
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\StateCache\Hierarchy\5bb2e3-a91a3f22af7c4004cb.json
-    projectPath: Library\StateCache\Hierarchy\5bb2e3-a91a3f22af7c4004cb.json
+  - path: Library\StateCache\Hierarchy\5bb2e3-fe2971637f20ea74aa.json
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\StateCache\Hierarchy\5bb2e3-fe2971637f20ea74aa.json
+    projectPath: Library\StateCache\Hierarchy\5bb2e3-fe2971637f20ea74aa.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\StateCache\Hierarchy\5bb2e3-mainStage.json
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\StateCache\Hierarchy\5bb2e3-mainStage.json
     projectPath: Library\StateCache\Hierarchy\5bb2e3-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\StateCache\SceneView\90b780-2b9fbc02533d0b64e9.json
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\StateCache\SceneView\90b780-2b9fbc02533d0b64e9.json
-    projectPath: Library\StateCache\SceneView\90b780-2b9fbc02533d0b64e9.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\StateCache\SceneView\90b780-mainStage.json
-    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\Library\StateCache\SceneView\90b780-mainStage.json
-    projectPath: Library\StateCache\SceneView\90b780-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1749,6 +1183,36 @@ MonoBehaviour:
   - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: obj\Debug\NavMeshComponents.csprojAssemblyReference.cache
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\obj\Debug\NavMeshComponents.csprojAssemblyReference.cache
+    projectPath: obj\Debug\NavMeshComponents.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: obj\Debug\NavMeshComponentsEditor.csprojAssemblyReference.cache
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\obj\Debug\NavMeshComponentsEditor.csprojAssemblyReference.cache
+    projectPath: obj\Debug\NavMeshComponentsEditor.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ProjectSettings\InputManager.asset
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\ProjectSettings\InputManager.asset
+    projectPath: ProjectSettings\InputManager.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ProjectSettings\ProjectSettings.asset
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\ProjectSettings\ProjectSettings.asset
+    projectPath: ProjectSettings\ProjectSettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ProjectSettings\QualitySettings.asset
+    fullPath: C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\PlayerLook.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\selectUseableObjectScript.cs" />
     <Compile Include="Assets\Scripts\SwitchScript.cs" />
     <Compile Include="Assets\Scripts\WaypointPatrol.cs" />

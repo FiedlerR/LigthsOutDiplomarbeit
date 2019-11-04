@@ -11,6 +11,7 @@ TagManager:
   - door
   - switch
   - NPCFootCollider
+  - BotCollider
   layers:
   - Default
   - TransparentFX

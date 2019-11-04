@@ -8,11 +8,12 @@ public class DoorScript : MonoBehaviour
     public bool isDoorOpen;
     public Animator m_animator;
     float m_time = 0;
+    public bool isPLayerUsable = true;
 
     void Start()
     {
         // m_animator = GetComponentInChildren<Animator>();
-        isDoorOpen = !isDoorOpen;
+       // isDoorOpen = !isDoorOpen;
         useDoor();
     }
 
@@ -29,26 +30,42 @@ public class DoorScript : MonoBehaviour
         //if (m_time <= 0) {
             if (isDoorOpen)
             {
-                //m_time = m_animator.GetCurrentAnimatorStateInfo(0).length+1;
-                m_animator.SetBool("isClosed", true);
-                m_animator.SetBool("isOpen", false);
-                isDoorOpen = false;
-               // StartCoroutine("timer");
-            }
-            else
+            close();
+            //m_time = m_animator.GetCurrentAnimatorStateInfo(0).length+1;
+            /* m_animator.SetBool("isClosed", true);
+             m_animator.SetBool("isOpen", false);
+             isDoorOpen = false;*/
+            // StartCoroutine("timer");
+        }
+        else
             {
-                //m_time = m_animator.GetCurrentAnimatorStateInfo(0).length;
-                m_animator.SetBool("isOpen", true);
-                m_animator.SetBool("isClosed", false);
-                isDoorOpen = true;
-                //StartCoroutine("timer");
-            }
+            open();
+            //m_time = m_animator.GetCurrentAnimatorStateInfo(0).length;
+            /* m_animator.SetBool("isOpen", true);
+             m_animator.SetBool("isClosed", false);
+             isDoorOpen = true;*/
+            //StartCoroutine("timer");
+        }
       //  }
     }
 
 
     public void script() {
         useDoor();
+    }
+
+    public void close()
+    {
+            m_animator.SetBool("isClosed", true);
+            m_animator.SetBool("isOpen", false);
+            isDoorOpen = false;
+    }
+
+    public void open()
+    {
+            m_animator.SetBool("isOpen", true);
+            m_animator.SetBool("isClosed", false);
+            isDoorOpen = true;
     }
 
     private IEnumerator timer()
