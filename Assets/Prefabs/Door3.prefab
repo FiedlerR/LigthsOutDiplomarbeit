@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4593332965490200705}
   - component: {fileID: 5851521990668991995}
+  - component: {fileID: 3343890948581627376}
   m_Layer: 0
   m_Name: Door3
-  m_TagString: Untagged
+  m_TagString: door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,6 +54,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3343890948581627376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713136808731632274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eeb5dc026fdf4b488bc7ae0138ab719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_StartPoint: {x: 0, y: 0, z: -1}
+  m_EndPoint: {x: 0, y: 0, z: 1}
+  m_Width: 0
+  m_CostModifier: -1
+  m_Bidirectional: 1
+  m_AutoUpdatePosition: 0
+  m_Area: 0
 --- !u!1 &3001761119048336168
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +144,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 3447038591770236762, guid: 3d53d97c0be2571499c84241dce0794a, type: 3}
   m_Bones:
@@ -242,7 +263,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 70948873267775455, guid: 3d53d97c0be2571499c84241dce0794a, type: 3}
   m_Bones:
@@ -466,6 +487,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AIDoorTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7040386329883118287, guid: 58e7981dccd5cac48b7e6eef15b8fa11,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7040386329883118285, guid: 58e7981dccd5cac48b7e6eef15b8fa11,
         type: 3}

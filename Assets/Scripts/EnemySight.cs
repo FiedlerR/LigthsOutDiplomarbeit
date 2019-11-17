@@ -12,6 +12,8 @@ public class EnemySight : MonoBehaviour
 
     private NavMeshAgent nav;
     private SphereCollider col;
+
+    public float hearRadius;
     public Transform player;
 
     void Awake() {
@@ -39,33 +41,33 @@ public class EnemySight : MonoBehaviour
                     if (hit.collider.transform == player)
                     {
                         playerInSight = true;
-                        GetComponent<AI>().setSeen(true, other.GetComponent<Transform>());
+                        GetComponent<Guard>().setSeen(true, other.GetComponent<Transform>());
                         //Debug.Log("Player was seen");
                         return;
                     }
                     else
                     {
-                        GetComponent<AI>().setSeen(false, other.GetComponent<Transform>());
+                        GetComponent<Guard>().setSeen(false, other.GetComponent<Transform>());
                     }
 
                 }
             }
             if (!playerInSight) {
-            if (calculatePathLength(player.position) <= col.radius)
+            if (calculatePathLength(player.position) <= hearRadius) //col.radius)
             {
                 if (!other.GetComponent<PlayerMovement>().getIsSneaking())
                 {
-                    GetComponent<AI>().setHeard(true, other.GetComponent<Transform>());
+                    GetComponent<Guard>().setHeard(true, other.GetComponent<Transform>());
                     //  Debug.Log("Player was heard");
                 }
                 else {
-                    GetComponent<AI>().setHeard(false, other.GetComponent<Transform>());
+                    GetComponent<Guard>().setHeard(false, other.GetComponent<Transform>());
                 }
 
             }
             else
             {
-                GetComponent<AI>().setHeard(false, other.GetComponent<Transform>());
+                GetComponent<Guard>().setHeard(false, other.GetComponent<Transform>());
             }
         }
         }
@@ -76,8 +78,8 @@ public class EnemySight : MonoBehaviour
         //Spieler verlässt Hör/Sichtbereich
         if (other.transform == player) { 
             playerInSight = false;
-            GetComponent<AI>().setSeen(false);
-            GetComponent<AI>().setHeard(false);
+            GetComponent<Guard>().setSeen(false);
+            GetComponent<Guard>().setHeard(false);
         }
     }
 

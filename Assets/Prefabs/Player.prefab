@@ -155,7 +155,7 @@ Camera:
   m_GameObject: {fileID: 1751866559336296743}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -170,7 +170,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 1000
+  far clip plane: 100
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -214,7 +214,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
+  finalBlitToCameraTarget: 1
   antialiasingMode: 1
   temporalAntialiasing:
     jitterSpread: 0.75
@@ -227,7 +227,7 @@ MonoBehaviour:
     fastMode: 1
     keepAlpha: 0
   fog:
-    enabled: 0
+    enabled: 1
     excludeSkybox: 0
   debugLayer:
     lightMeter:
@@ -298,7 +298,6 @@ GameObject:
   - component: {fileID: 1751866559525262273}
   - component: {fileID: 1751866559525262274}
   - component: {fileID: 1751866559525262272}
-  - component: {fileID: 1751866559525262279}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -334,12 +333,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 1.8
-  m_Radius: 0.4
+  m_Radius: 0.34
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 0.13, z: 0}
+  m_Center: {x: 0, y: 0.08, z: 0}
 --- !u!114 &1751866559525262272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,6 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718c381a0a479ff449991904524a990d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_CharacterController: {fileID: 0}
   slopeForce: 5
   slopeForceRayLength: 1.5
   jumpMultiplier: 4
@@ -379,28 +379,12 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  walkSpeed: 2
+  walkSpeed: 2.5
   runSpeed: 6
-  sneakSpeed: 1
+  sneakSpeed: 1.5
   runBuildUpSpeed: 4
   runSlowDownSpeed: 2
   cameraScript: {fileID: 1751866559336296746}
---- !u!208 &1751866559525262279
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751866559525262275}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Shape: 0
-  m_Extents: {x: 0.4, y: 1, z: 0.4}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0.08, z: 0}
-  m_TimeToStationary: 0
 --- !u!1 &7084779489299742513
 GameObject:
   m_ObjectHideFlags: 0

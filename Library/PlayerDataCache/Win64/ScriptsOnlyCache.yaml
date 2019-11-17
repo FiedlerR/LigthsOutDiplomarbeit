@@ -3,11 +3,10 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AI
     - AIDoorTrigger
+    - BadRestartScript
     - DoorScript
-    - DoorTrigger
     - EnemySight
     - LadderScript
-    - NPC
     - PlayerLook
     - PlayerMovement
     - SwitchScript
@@ -43,13 +42,22 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/TutorialArea.unity:
+    Assets/Scenes/Area1/Area1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -101,13 +109,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9396}
     - Class: 114
+      Script: {instanceID: 9524}
+    - Class: 114
+      Script: {instanceID: 9530}
+    - Class: 114
+      Script: {instanceID: 9536}
+    - Class: 114
+      Script: {instanceID: 9544}
+    - Class: 114
+      Script: {instanceID: 9580}
+    - Class: 114
+      Script: {instanceID: 9582}
+    - Class: 114
       Script: {instanceID: 9788}
     - Class: 114
       Script: {instanceID: 9798}
     - Class: 114
       Script: {instanceID: 9840}
-    - Class: 114
-      Script: {instanceID: 9946}
     - Class: 114
       Script: {instanceID: 10020}
     - Class: 114
@@ -115,24 +133,26 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10138}
     - Class: 114
-      Script: {instanceID: 10202}
-    - Class: 114
       Script: {instanceID: 10378}
     - Class: 114
       Script: {instanceID: 10452}
     - Class: 114
-      Script: {instanceID: 10694}
+      Script: {instanceID: 10698}
     - Class: 114
-      Script: {instanceID: 10896}
+      Script: {instanceID: 10900}
     - Class: 114
-      Script: {instanceID: 11078}
+      Script: {instanceID: 11082}
     - Class: 114
-      Script: {instanceID: 11296}
+      Script: {instanceID: 11300}
     - Class: 114
-      Script: {instanceID: 11314}
+      Script: {instanceID: 11318}
     - Class: 114
-      Script: {instanceID: 11346}
+      Script: {instanceID: 11350}
+    - Class: 114
+      Script: {instanceID: 11444}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -150,9 +170,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 208
       Script: {instanceID: 0}
-    - Class: 238
+    - Class: 213
       Script: {instanceID: 0}
-    - Class: 258
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 238
       Script: {instanceID: 0}
     - Class: 363
       Script: {instanceID: 0}
@@ -663,7 +689,7 @@ ScriptsOnlyBuild:
     className: Vignette
   - hash:
       serializedVersion: 2
-      Hash: c6e9c511e41dde726b6a4e1a7e36c7af
+      Hash: 4bc4589a8b392914f1aefb029411b341
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AI
@@ -807,6 +833,12 @@ ScriptsOnlyBuild:
     className: AutoExposure
   - hash:
       serializedVersion: 2
+      Hash: 0f8840b9d55070ef70b149d11207b4cb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WindowScript
+  - hash:
+      serializedVersion: 2
       Hash: 50c443b12ccc0b475183318b5088bcc5
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -819,13 +851,19 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 2d95093fed36827905ca5901e26c9072
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthController
+  - hash:
+      serializedVersion: 2
       Hash: 3f8d7b92a6be3c715e55d5cfa7cc8384
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 665d26ee0bdea7c0c2bbe24234e5cb68
+      Hash: 3a133b7320aafae72b1ab4981f2a62eb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -945,7 +983,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 47b1bead6c1e89b3f0956fec7d925dd5
+      Hash: 138cd2305d78e94a646a21e0b6252792
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LadderScript
@@ -987,10 +1025,22 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
+      Hash: 63a3e5112033aba0e6a78b00b00d12b5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerScript
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BadRestartScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1005,5 +1055,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 19
   scenePathNames:
-  - Assets/Scenes/TutorialArea.unity
-  playerPath: C:/Users/Rafael/Desktop/testDemo/3D Stealth Game.exe
+  - Assets/Scenes/Area1/Area1.unity
+  playerPath: C:/Users/Rafael/Desktop/toftDemoV26/3D Stealth Game.exe

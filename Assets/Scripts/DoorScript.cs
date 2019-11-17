@@ -9,44 +9,51 @@ public class DoorScript : MonoBehaviour
     public Animator m_animator;
     float m_time = 0;
     public bool isPLayerUsable = true;
+    private int count = 0;
 
-    void Start()
+
+
+    void Awake()
     {
-        // m_animator = GetComponentInChildren<Animator>();
-       // isDoorOpen = !isDoorOpen;
-        useDoor();
+
+        StartCoroutine(setAnmiationToStartState());
+       
     }
 
-    // Update is called once per frame
-    /*void Update()
+    
+    void Start()
     {
-        
-    }*/
+  
+    }
+
  
 
     public void useDoor()
     {
         //Debug.Log("door");
-        //if (m_time <= 0) {
+        if (m_time <= 0) {
             if (isDoorOpen)
             {
             close();
-            //m_time = m_animator.GetCurrentAnimatorStateInfo(0).length+1;
-            /* m_animator.SetBool("isClosed", true);
-             m_animator.SetBool("isOpen", false);
-             isDoorOpen = false;*/
-            // StartCoroutine("timer");
+                //m_time = m_animator.GetCurrentAnimatorStateInfo(0).length+1;
+                /* m_animator.SetBool("isClosed", true);
+                 m_animator.SetBool("isOpen", false);
+                 isDoorOpen = false*/
+                m_time = 3;
+             StartCoroutine("timer");
         }
         else
             {
             open();
-            //m_time = m_animator.GetCurrentAnimatorStateInfo(0).length;
-            /* m_animator.SetBool("isOpen", true);
-             m_animator.SetBool("isClosed", false);
-             isDoorOpen = true;*/
-            //StartCoroutine("timer");
+                //m_time = m_animator.GetCurrentAnimatorStateInfo(0).length;
+                /* m_animator.SetBool("isOpen", true);
+                 m_animator.SetBool("isClosed", false);
+                 isDoorOpen = true;*/
+                m_time = 3;
+                StartCoroutine("timer");
         }
-      //  }
+       }
+
     }
 
 
@@ -59,6 +66,7 @@ public class DoorScript : MonoBehaviour
             m_animator.SetBool("isClosed", true);
             m_animator.SetBool("isOpen", false);
             isDoorOpen = false;
+       // Debug.Log(count);
     }
 
     public void open()
@@ -66,6 +74,21 @@ public class DoorScript : MonoBehaviour
             m_animator.SetBool("isOpen", true);
             m_animator.SetBool("isClosed", false);
             isDoorOpen = true;
+        //Debug.Log("open");
+    }
+
+   public int getBotCount() {
+        return count;
+    }
+
+    public void addBotCount()
+    {
+        count++;
+    }
+
+    public void subBotCount()
+    {
+        count--;
     }
 
     private IEnumerator timer()
@@ -76,5 +99,14 @@ public class DoorScript : MonoBehaviour
            // Debug.Log(m_animator.GetCurrentAnimatorStateInfo(0));
             yield return new WaitForSeconds(1f);
         }
+    }
+
+
+    private IEnumerator setAnmiationToStartState()
+    {
+        m_animator.speed = 1000;
+        useDoor();
+        yield return new WaitForSeconds(1f);
+        m_animator.speed = 1;
     }
 }

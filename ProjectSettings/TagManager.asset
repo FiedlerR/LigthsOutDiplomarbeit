@@ -12,6 +12,7 @@ TagManager:
   - switch
   - NPCFootCollider
   - BotCollider
+  - window
   layers:
   - Default
   - TransparentFX

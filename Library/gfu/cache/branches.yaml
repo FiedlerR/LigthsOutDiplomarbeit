@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-11-01T16:49:34.168+01:00
-  initializedAtString: 2019-11-01T16:43:21.488+01:00
+  lastUpdatedAtString: 2019-11-16T23:25:33.433+01:00
+  initializedAtString: 2019-11-16T23:25:33.401+01:00
   localBranches:
   - name: master
-    tracking: 
+    tracking: origin/master
   remoteBranches:
   - name: origin/master
     tracking: '[None]'
@@ -35,9 +35,9 @@ MonoBehaviour:
     values:
     - name: master
       remote:
-        name: 
-        url: 
-      trackingBranch: 
+        name: origin
+        url: https://github.com/FiedlerR/LigthsOutDiplomarbeit.git
+      trackingBranch: master
   remoteConfigBranches:
     keys:
     - origin

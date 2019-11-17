@@ -10,16 +10,16 @@ public class SwitchScript : MonoBehaviour
     public GameObject scriptObject;
     public float scriptDelay;
     float m_time = 0;
-    void Start()
+    bool firstStart = true;
+
+
+
+    void Awake()
     {
         m_animator = GetComponent<Animator>();
-        useSwitch();
+        StartCoroutine(setAnmiationToStartState());
     }
 
-    // Update is called once per frame
-    /*void Update()
-    {
-    }*/
 
 
     public void useSwitch()
@@ -54,8 +54,23 @@ public class SwitchScript : MonoBehaviour
            // Debug.Log(m_time);
             yield return new WaitForSeconds(1f);
         }
+        if (!firstStart)
+        {
+            scriptObject.SendMessage("script");
+        }
+        else
+        {
+            firstStart = false;
+        }
+       
+    }
 
-        scriptObject.SendMessage("script");
+    private IEnumerator setAnmiationToStartState()
+    {
+        m_animator.speed = 1000;
+        useSwitch();
+        yield return new WaitForSeconds(1f);
+        m_animator.speed = 1;
     }
 
 

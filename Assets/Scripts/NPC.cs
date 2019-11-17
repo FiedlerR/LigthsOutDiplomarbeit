@@ -1,14 +1,22 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
-public class NPC : MonoBehaviour
+public class NPC : AI
 {
     //binding navMeshAgent from AI Unit
     public NavMeshAgent navMeshAgent;
     //array of waypoints GameObject
     public GameObject[] waypoints;
     //0 wait; 1 Talk to the destination
-    public int[] waypointType;
+    // public int[] waypointType;
+
+    public enum WaypointType
+    {
+        waitForCertainTime,
+        talkToOtherNPC
+    }
+
+    public WaypointType[] waypointType;
     //
     public float[] waypointTime;
     //
@@ -20,9 +28,9 @@ public class NPC : MonoBehaviour
     //
     int ísOtherNpcTalking = -1;
     //
-    bool m_isOnLadder = false;
+   // bool m_isOnLadder = false;
     //
-    Transform m_ladderTransform;
+   // Transform m_ladderTransform;
 
 
 
@@ -31,7 +39,7 @@ public class NPC : MonoBehaviour
     //
     Animator m_Animator;
 
-   // int NpcState = 0;
+  
 
 
     void Start()
@@ -43,7 +51,7 @@ public class NPC : MonoBehaviour
         {
             navMeshAgent.SetDestination(waypoints[0].transform.position);
         }
-        ///
+        //
         m_Animator = GetComponentInChildren<Animator>();
     }
 
@@ -56,7 +64,7 @@ public class NPC : MonoBehaviour
         else {
             lookTo(m_ladderTransform);
         }
-   
+        NavMeshLinkBehaviour(navMeshAgent);
 
     }
 
@@ -71,15 +79,15 @@ public class NPC : MonoBehaviour
 
 
         //check if the unit arrived the waypoint
-        if (navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance + (waypointType[m_CurrentWaypointIndex] == 1 ? 1.3 : 0))
+        if (navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance + (waypointType[m_CurrentWaypointIndex] == WaypointType.talkToOtherNPC ? 1.3 : 0))
         {
             //
 
-            if (waypointType[m_CurrentWaypointIndex] == 1)
+            if (waypointType[m_CurrentWaypointIndex] == WaypointType.talkToOtherNPC)
             {
                 navMeshAgent.isStopped = true;
-                waypoints[m_CurrentWaypointIndex].GetComponent<NPC>().rotateTo(transform);
-                rotateTo(lookToWhileWaitingOnWaypoint[m_CurrentWaypointIndex].transform);
+                waypoints[m_CurrentWaypointIndex].GetComponent<NPC>().lookTo(transform);
+                lookTo(lookToWhileWaitingOnWaypoint[m_CurrentWaypointIndex].transform);
             }
 
             m_WaitingTimer += Time.deltaTime;
@@ -97,7 +105,7 @@ public class NPC : MonoBehaviour
                 m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
                 //use the calculated waypoint to set a new destination
                 navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].transform.position);
-                if (waypointType[m_CurrentWaypointIndex] == 1) {
+                if (waypointType[m_CurrentWaypointIndex] == WaypointType.talkToOtherNPC) {
                     waypoints[m_CurrentWaypointIndex].GetComponent<NPC>().enableTalkMode();
                     ísOtherNpcTalking = m_CurrentWaypointIndex;
                 }
@@ -113,14 +121,14 @@ public class NPC : MonoBehaviour
         navMeshAgent.isStopped = true;
     }
 
-    
+    /*
     void rotateTo(Transform transfrom) {
         Vector3 direction = (transfrom.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 2);
     }
 
-
+    /*
     public void setIsOnLadder(bool isOnLadder,Transform ladderTransform)
     {
         m_isOnLadder = isOnLadder;
@@ -141,7 +149,7 @@ public class NPC : MonoBehaviour
         lookRotation.x = 0;
         lookRotation.z = 0;
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 12);
-    }
+    }*/
 
     void disableTalkMode()
     {
