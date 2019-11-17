@@ -14,6 +14,7 @@ TagManager:
   - BotCollider
   - window
   - NavMeshObject
+  - Inventory
   layers:
   - Default
   - TransparentFX

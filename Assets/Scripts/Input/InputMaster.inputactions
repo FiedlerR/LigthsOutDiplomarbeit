@@ -20,6 +20,22 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "OpenInventory",
+                    "type": "Button",
+                    "id": "506bcac7-d256-4442-b1ca-57490c125674",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "CloseInventory",
+                    "type": "Button",
+                    "id": "983fe936-4f23-4ecb-86ec-e4894a37b2e2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -209,6 +225,28 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "044b745b-5ea7-4ddb-9c62-62861c8efc2c",
+                    "path": "<Keyboard>/i",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "OpenInventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c4aa65ce-ba04-4b25-9ce8-407754777d09",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "CloseInventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
