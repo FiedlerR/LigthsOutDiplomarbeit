@@ -1,2 +1,0 @@
-C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-C:\Users\Rafael\Desktop\Diplom\3D Stealth Game\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
