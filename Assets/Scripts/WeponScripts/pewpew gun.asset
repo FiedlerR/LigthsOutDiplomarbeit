@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da4334bec673324b984acc1e318b0cb, type: 3}
+  m_Name: pewpew gun
+  m_EditorClassIdentifier: 
+  name: Pew Pew Gun
+  invIcon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  damagePerShot: 12
+  shotsPerSecond: 2.1
+  XrecoilPerShot: 10
+  YrecoilPerShot: 7
+  reloadtime: 1.56
+  clipSize: 30
+  maxAmmo: 12
+  shotSound: {fileID: 0}
+  shotVolume: 1
+  reloadSound: {fileID: 0}
+  reloadVolume: 0.5
+  shotAnim: {fileID: 0}
+  reloadAnim: {fileID: 0}
+  soundSource: {x: 0, y: 0, z: 0}
+  shotSource: {fileID: 0}
