@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActiv: 0
   scriptObject: {fileID: 0}
+  scriptDelay: 0
 --- !u!65 &6252471046382719818
 BoxCollider:
   m_ObjectHideFlags: 0

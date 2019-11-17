@@ -13,6 +13,7 @@ public class DoorScript : MonoBehaviour
 
 
 
+
     void Awake()
     {
 

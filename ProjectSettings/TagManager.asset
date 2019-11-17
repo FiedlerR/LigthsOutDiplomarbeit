@@ -13,6 +13,7 @@ TagManager:
   - NPCFootCollider
   - BotCollider
   - window
+  - NavMeshObject
   layers:
   - Default
   - TransparentFX

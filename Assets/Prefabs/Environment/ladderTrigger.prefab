@@ -111,3 +111,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   climpOffset: {x: 0, y: 0, z: 0}
   topOffset: {x: 0, y: 0, z: 0}
+  endDir: {x: 0, y: 0, z: 0}
+  endBack: 0
