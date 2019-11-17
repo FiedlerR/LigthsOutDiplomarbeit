@@ -13,21 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-11-17T12:51:29.063+01:00
+  lastUpdatedAtString: 2019-11-17T13:09:58.753+01:00
   initializedAtString: 2019-11-17T12:31:58.533+01:00
   entries:
-  - path: Library\assetDatabase3
-    fullPath: D:\3D Stealth Game\Library\assetDatabase3
-    projectPath: Library\assetDatabase3
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\CurrentLayout.dwlt
-    fullPath: D:\3D Stealth Game\Library\CurrentLayout.dwlt
-    projectPath: Library\CurrentLayout.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\gfu\cache\branches.yaml
     fullPath: D:\3D Stealth Game\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
@@ -45,7 +33,7 @@ MonoBehaviour:
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
+    workTreeStatus: 5
   - path: Library\gfu\cache\gitstatusentries.yaml
     fullPath: D:\3D Stealth Game\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
@@ -55,18 +43,6 @@ MonoBehaviour:
   - path: Library\gfu\cache\gittrackingstatus.yaml
     fullPath: D:\3D Stealth Game\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\gfu\cache\repoinfo.yaml
-    fullPath: D:\3D Stealth Game\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\StateCache\SceneView\23f431-mainStage.json
-    fullPath: D:\3D Stealth Game\Library\StateCache\SceneView\23f431-mainStage.json
-    projectPath: Library\StateCache\SceneView\23f431-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
