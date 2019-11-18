@@ -460,6 +460,12 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     m_ActionId: c5ac11df-4c3b-44de-bbf9-77f2c9402878
     m_ActionName: Player/Look[/Mouse/position/y,/Mouse/position/y,/Mouse/position/x,/Mouse/position/x]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.InputSystem.PlayerInput+ActionEvent, Unity.InputSystem,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_ActionId: 7d92be76-83b2-4e6a-b42e-cccd07f99c7c
+    m_ActionName: Player/Jump[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard & Mouse
   m_DefaultActionMap: Player
@@ -636,27 +642,6 @@ Transform:
   m_Father: {fileID: 1710980124}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1102622191 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7229893933994155664, guid: 6bd54fdedc1542540a4a1d33a1822bff,
-    type: 3}
-  m_PrefabInstance: {fileID: 6212482491929846768}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1102622196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102622191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93105506d2cc6c34ea9733165906c205, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: []
-  Parent: {fileID: 0}
-  UIPrefab: {fileID: 0}
 --- !u!1 &1139770533
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +749,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1303559670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7229893934531934777, guid: 6bd54fdedc1542540a4a1d33a1822bff,
+    type: 3}
+  m_PrefabInstance: {fileID: 6212482491929846768}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1303559677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303559670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93105506d2cc6c34ea9733165906c205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: []
+  Parent: {fileID: 1303559670}
+  UIPrefab: {fileID: 3895666874092994549, guid: c5e61766104cab5419a0ff9668975a61,
+    type: 3}
 --- !u!1 &1330691109
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +899,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375945640}
   m_CullTransparentMesh: 1
+--- !u!1 &1417956794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6212482492686854463, guid: 6bd54fdedc1542540a4a1d33a1822bff,
+    type: 3}
+  m_PrefabInstance: {fileID: 6212482491929846768}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1417956800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417956794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93105506d2cc6c34ea9733165906c205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory:
+  - {fileID: 11400000, guid: e661f3dae462515439503ecd52e9a49e, type: 2}
+  Parent: {fileID: 1417956794}
+  UIPrefab: {fileID: 3895666874092994549, guid: c5e61766104cab5419a0ff9668975a61,
+    type: 3}
 --- !u!1 &1549917181
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,7 +987,18 @@ MonoBehaviour:
     m_ActionId: f8674420-7572-4d4c-a9af-885a930cbce5
     m_ActionName: Player/Shoot[/Mouse/leftButton]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 562751742}
+        m_MethodName: playerMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.InputSystem.PlayerInput+ActionEvent, Unity.InputSystem,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     m_ActionId: 6e7eb8d7-b521-4ec8-b0d6-f86897bcb07e
@@ -1309,34 +1350,17 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     m_ActionId: c5ac11df-4c3b-44de-bbf9-77f2c9402878
     m_ActionName: Player/Look[/Mouse/position/y,/Mouse/position/y,/Mouse/position/x,/Mouse/position/x]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.InputSystem.PlayerInput+ActionEvent, Unity.InputSystem,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_ActionId: 7d92be76-83b2-4e6a-b42e-cccd07f99c7c
+    m_ActionName: Player/Jump[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard & Mouse
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 122302791}
---- !u!1 &1914617433 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6212482491061702038, guid: 6bd54fdedc1542540a4a1d33a1822bff,
-    type: 3}
-  m_PrefabInstance: {fileID: 6212482491929846768}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1914617438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1914617433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93105506d2cc6c34ea9733165906c205, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory:
-  - {fileID: 11400000, guid: e661f3dae462515439503ecd52e9a49e, type: 2}
-  Parent: {fileID: 0}
-  UIPrefab: {fileID: 3895666874092994549, guid: c5e61766104cab5419a0ff9668975a61,
-    type: 3}
 --- !u!1 &1961256558
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,12 +1547,12 @@ PrefabInstance:
     - target: {fileID: 6212482492686854432, guid: 6bd54fdedc1542540a4a1d33a1822bff,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6212482492686854432, guid: 6bd54fdedc1542540a4a1d33a1822bff,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 270
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6212482491120597952, guid: 6bd54fdedc1542540a4a1d33a1822bff,
         type: 3}
@@ -1723,12 +1747,12 @@ PrefabInstance:
     - target: {fileID: 7229893934531934758, guid: 6bd54fdedc1542540a4a1d33a1822bff,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7229893934531934758, guid: 6bd54fdedc1542540a4a1d33a1822bff,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 270
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7229893935246202547, guid: 6bd54fdedc1542540a4a1d33a1822bff,
         type: 3}
@@ -1805,5 +1829,7 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8927805482893553184, guid: 6bd54fdedc1542540a4a1d33a1822bff, type: 3}
+    - {fileID: 5298337746661653798, guid: 6bd54fdedc1542540a4a1d33a1822bff, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6bd54fdedc1542540a4a1d33a1822bff, type: 3}
