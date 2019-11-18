@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da4334bec673324b984acc1e318b0cb, type: 3}
+  m_Name: shootymctooty
+  m_EditorClassIdentifier: 
+  isEquipped: 0
+  name: This gun sucks
+  invIcon: {fileID: 0}
+  damagePerShot: 0
+  shotsPerSecond: 0
+  XrecoilPerShot: 0
+  YrecoilPerShot: 0
+  reloadtime: 0
+  clipSize: 0
+  maxAmmo: 0
+  shotSound: {fileID: 0}
+  shotVolume: 0
+  reloadSound: {fileID: 0}
+  reloadVolume: 0
+  shotAnim: {fileID: 0}
+  reloadAnim: {fileID: 0}
+  soundSource: {x: 0, y: 0, z: 0}
+  shotSource: {fileID: 0}

@@ -6,6 +6,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Weapon", menuName ="Items/Weapon")]
 public class Weapon : ScriptableObject {
 
+    //Equipped
+    public bool isEquipped = false;
+
     //UI
     public new string name;
     public Sprite invIcon;
@@ -48,9 +51,5 @@ public class Weapon : ScriptableObject {
         if (! reloadAnim.IsPlaying(reloadAnim.name)) {
             shootable = true;
         }
-    }
-
-    void fire() {
-        
     }
 }

@@ -65,6 +65,22 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""Switch Weapon UP"",
+                    ""type"": ""Button"",
+                    ""id"": ""9c211298-8db0-4347-98a6-1155a710e80b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""Switch Weapon DOWN"",
+                    ""type"": ""Button"",
+                    ""id"": ""2d38f531-ab4c-441c-81b1-a8bdd76443ca"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -353,6 +369,28 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2a1debe1-6bcf-425c-93ca-33cd4606e503"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard & Mouse"",
+                    ""action"": ""Switch Weapon UP"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bda057f0-1d24-40a7-abc8-071488ca4197"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard & Mouse"",
+                    ""action"": ""Switch Weapon DOWN"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -395,6 +433,8 @@ public class @InputMaster : IInputActionCollection, IDisposable
         m_Player_CloseInventory = m_Player.FindAction("CloseInventory", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
+        m_Player_SwitchWeaponUP = m_Player.FindAction("Switch Weapon UP", throwIfNotFound: true);
+        m_Player_SwitchWeaponDOWN = m_Player.FindAction("Switch Weapon DOWN", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -450,6 +490,8 @@ public class @InputMaster : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_CloseInventory;
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Jump;
+    private readonly InputAction m_Player_SwitchWeaponUP;
+    private readonly InputAction m_Player_SwitchWeaponDOWN;
     public struct PlayerActions
     {
         private @InputMaster m_Wrapper;
@@ -460,6 +502,8 @@ public class @InputMaster : IInputActionCollection, IDisposable
         public InputAction @CloseInventory => m_Wrapper.m_Player_CloseInventory;
         public InputAction @Look => m_Wrapper.m_Player_Look;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
+        public InputAction @SwitchWeaponUP => m_Wrapper.m_Player_SwitchWeaponUP;
+        public InputAction @SwitchWeaponDOWN => m_Wrapper.m_Player_SwitchWeaponDOWN;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -487,6 +531,12 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                @SwitchWeaponUP.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwitchWeaponUP;
+                @SwitchWeaponUP.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwitchWeaponUP;
+                @SwitchWeaponUP.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwitchWeaponUP;
+                @SwitchWeaponDOWN.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwitchWeaponDOWN;
+                @SwitchWeaponDOWN.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwitchWeaponDOWN;
+                @SwitchWeaponDOWN.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwitchWeaponDOWN;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -509,6 +559,12 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
+                @SwitchWeaponUP.started += instance.OnSwitchWeaponUP;
+                @SwitchWeaponUP.performed += instance.OnSwitchWeaponUP;
+                @SwitchWeaponUP.canceled += instance.OnSwitchWeaponUP;
+                @SwitchWeaponDOWN.started += instance.OnSwitchWeaponDOWN;
+                @SwitchWeaponDOWN.performed += instance.OnSwitchWeaponDOWN;
+                @SwitchWeaponDOWN.canceled += instance.OnSwitchWeaponDOWN;
             }
         }
     }
@@ -539,5 +595,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         void OnCloseInventory(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnSwitchWeaponUP(InputAction.CallbackContext context);
+        void OnSwitchWeaponDOWN(InputAction.CallbackContext context);
     }
 }
