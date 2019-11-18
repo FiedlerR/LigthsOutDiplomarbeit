@@ -2,19 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class shootRaycastTriggerable : MonoBehaviour
-{
-    //public InputAction fireAction;
-    //public InputActionMap gameplayActions;
+public class shootRaycastTriggerable : MonoBehaviour {
 
-    public Camera fpsCam;
     [HideInInspector] public float gDamage = 1;
     [HideInInspector] public float gFireRate = .25f;
     [HideInInspector] public float gReloadSpeed = 1.5f;
     [HideInInspector] public float gWeaponRange = 50f;
     private float hitForce = 10f;
+    private Camera fpsCam;
 
     private float nextFire;
 
@@ -26,21 +22,6 @@ public class shootRaycastTriggerable : MonoBehaviour
         fpsCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         nextFire = Time.time - gFireRate;                                                       //To fix a bug to be able to start shooting 
     }
-    /*
-    private void Awake() {
-        fireAction.performed += Shoot_performed;
-        gameplayActions["shoot"].performed += Shoot_performed;
-    }
-
-    private void OnEnable() {
-        fireAction.Enable();
-        gameplayActions.Enable();
-    }
-
-    private void Disable() {
-        fireAction.Disable();
-        gameplayActions.Disable();
-    }*/
 
     public void Shoot(){
         if (Time.time > nextFire) {
