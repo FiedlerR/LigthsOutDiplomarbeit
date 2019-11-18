@@ -46,9 +46,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerMovement();
+       // playerMovement();
 
-        jump();
+       // jump();
         setMovementSpeed();
 
         useSelectedObject();
@@ -88,7 +88,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void playerMovement() {
+    public void playerMovement() {
+
+        Debug.Log("move");
         //m_CharacterController.SimpleMove(Vector3.ClampMagnitude(transform.up*5, 1f) * m_MovementSpeed);
         if (m_isOnLadder)
         {
@@ -146,9 +148,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    void jump() {
-        if (Input.GetButtonDown("Jump") && !m_IsJumping)
+    public void jump() {
+        Debug.Log("Jump");
+        if (/*Input.GetButtonDown("Jump") && */ !m_IsJumping)
         {
+           
             m_IsJumping = true;
             StartCoroutine(JumpEvent());
         }
