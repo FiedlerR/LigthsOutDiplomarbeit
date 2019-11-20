@@ -20,13 +20,13 @@ public class shootRaycastTriggerable : MonoBehaviour {
     void Start()
     {
         fpsCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        nextFire = Time.time - gFireRate;                                                       //To fix a bug to be able to start shooting 
+        nextFire = Time.time - gFireRate;                                                       // Verhindert einen Fehler, der den Spieler daran hindert anzufangen zu schießen
     }
 
     public void Shoot(){
-        if (Time.time > nextFire) {
-            nextFire = Time.time + gFireRate;                                                   // Next Fire setzen um zu verhindern, dass jede Waffe eine MG ist
-            Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));        //raycast Ursprung zum Zentrum des Bildschirms setzen
+        if (Time.time >= nextFire) {                                                            // nextFire überprüfen
+            nextFire = Time.time + gFireRate;                                                   // Next Fire setzen um zu verhindern, dass jede Waffe so schnell schießen kann wie man will
+            Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));        // raycast Ursprung zum Zentrum des Bildschirms setzen
             RaycastHit hit;
 
             if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, gWeaponRange)) {  // Wenn der Raycast in Richtung fpsCam.transform.forward etwas trifft -> true
@@ -41,19 +41,24 @@ public class shootRaycastTriggerable : MonoBehaviour {
                     shootable = hit.collider.GetComponent<ShootableCollider>();
                 }
                 else {                                                                          // Es wurde nichts Shottable getroffen also wird Shottable ein notShootable (Siehe notShottable für Erklärung)
-                    shootable = new notShootable();
+                    shootable = new NotShootable();
                 }
 
-                if (shootable != null) {
-                    Debug.Log("shootable not null");
-                    shootable.Damage(gDamage);
+                if (shootable != null) {                                                        // Check nach einem Shootable
+                    if (shootable.critHitbox == hit.collider)                                   // Check nach einem Headshot
+                    {
+                        shootable.CriticalDamage(gDamage);
+                    }
+                    else {                                                                      // nur ein normaler Treffer
+                        shootable.Damage(gDamage);
+                    }
                 }
-                if (hit.rigidbody != null) {
+                if (hit.rigidbody != null) {                                                    // Check nach einem rigidbody für hitForce
                     Debug.Log("rigidbody not null");
                     hit.rigidbody.AddForce(-hit.normal * hitForce);
                 }
             }
-            else {
+            else {                                                                              //  kein Hit vorhanden
                 //no hit
                 Debug.Log("No hit detected");
             }

@@ -18,8 +18,12 @@ public abstract class ShootableObj : MonoBehaviour
 {
     [HideInInspector] public float MaxHealth; // Eine MaxHealth Variable die von den einzelen Teilklassen gesetz wird
     [HideInInspector] public float currentHealth;
+    public Collider critHitbox = null;         // Collider für eine Headshot-hitbox
+    public float headshotMult = 1.5f;   // Headshot-Schaden Multiplikator
 
     public abstract void Damage(float damageAmount); // Eine abstrakte Klasse die in den einzelnen Kindern gehandelt werden soll
+
+    public abstract void CriticalDamage(float damageAmount); // Eine abstrakte Klasse die in den einzelnen Kindern gehandelt werden soll
 
     public abstract void Die(); // Eine abstrakte Klasse die in den einzelnen Kindern gehandelt werden soll
 }

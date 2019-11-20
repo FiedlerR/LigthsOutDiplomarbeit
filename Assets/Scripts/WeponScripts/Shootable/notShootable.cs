@@ -16,9 +16,13 @@ using UnityEngine;
      * Wenn er ein Object trifft, dass nicht Shottable (nicht auf den Spielershuss reagieren soll) ist, verhindert diese Klasse das auftreten eines Fehlers.
 */
 
-public class notShootable : ShootableObj
+public class NotShootable : ShootableObj
 {
-    
+    public override void CriticalDamage(float damageAmount)
+    {
+        //Nothing to do here
+    }
+
     public override void Damage(float damageAmount) {
         //Nothing to do here
     }
