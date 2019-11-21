@@ -286,6 +286,10 @@ public class Guard: AI
 
     }
 
+    public Vector3 getLastPlayerV3() { return m_lastPlayerTransform; } // Um in AIShoot auf das Sehen zu reagieren
+
+    public float getSearchCounter() { return m_searchCounter; } // Um in AIShoot auf das Sehen zu reagieren und damit der Gegner auch wieder aufhört zu schießen
+
     /*
     private IEnumerator searchInFullSpeed(float time)
     {

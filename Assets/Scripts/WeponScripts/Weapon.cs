@@ -18,8 +18,9 @@ public class Weapon : ScriptableObject {
     public float shotsPerSecond;
 
     //Weaponcontrol
-    public float XrecoilPerShot;
-    public float YrecoilPerShot;
+    public float XrecoilMax;
+    public float recoilSpeed;
+    public float recoil;
     public float reloadtime;
 
     //Ammomanagement
