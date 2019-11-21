@@ -284,12 +284,12 @@ PrefabInstance:
     - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 4.81
       objectReference: {fileID: 0}
     - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.99
       objectReference: {fileID: 0}
     - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
         type: 3}
@@ -777,7 +777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 0
   currentHealth: 0
-  critHitbox: {fileID: 0}
+  critHitbox: {fileID: 948143565}
   headshotMult: 1.5
   maximumHealth: 100
 --- !u!65 &948143565
