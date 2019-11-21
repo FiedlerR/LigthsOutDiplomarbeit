@@ -6,6 +6,7 @@ public class AIShoot : MonoBehaviour {
 
     public float reactionTime = 0.45f; // Delay for the Guard to react when the player enters/leaves his FOV for him to shoot
     public Transform shotOrigin;
+    public Weapon weapon;               // Waffe die dieser Gegner asugerüstet hat
 
     private shootRaycastTriggerable shootTriggerable;
     private Guard guard; // To get last seen transform
@@ -16,6 +17,8 @@ public class AIShoot : MonoBehaviour {
     void Start()
     {
         shootTriggerable = GetComponent<shootRaycastTriggerable>();
+        guard = GetComponent<Guard>();
+        shootTriggerable.setWeapon(weapon);
     }
 
     // Update is called once per frame

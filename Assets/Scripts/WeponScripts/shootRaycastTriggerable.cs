@@ -84,7 +84,7 @@ public class shootRaycastTriggerable : MonoBehaviour {
                 shootable = hit.collider.GetComponent<ShootableCollider>();
             }
             else
-            {                                                                          // Es wurde nichts Shottable getroffen also wird Shottable ein notShootable (Siehe notShottable für Erklärung)
+            {                                                                          // Es wurde nichts Shootable getroffen also wird Shottable ein notShootable (Siehe notShottable für Erklärung)
                 shootable = new NotShootable();
             }
 

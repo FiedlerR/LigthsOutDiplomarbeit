@@ -269,6 +269,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71002692}
   m_CullTransparentMesh: 0
+--- !u!1001 &76276260
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4878523458919617367, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_Name
+      value: Unit
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -486
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4878523458919617360, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126698537231430785, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: isWaiting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964634934, guid: 70ce0058320a9534ba81e58d7752188a, type: 3}
+      propertyPath: isUnconscious
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317368536152451319, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: e661f3dae462515439503ecd52e9a49e,
+        type: 2}
+    - target: {fileID: 6048262910442533348, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.266
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 70ce0058320a9534ba81e58d7752188a, type: 3}
 --- !u!20 &122302791 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1751866559336296741, guid: 0ec82af9fd68743479f45055a70c0e17,
@@ -466,6 +555,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
     m_ActionId: 7d92be76-83b2-4e6a-b42e-cccd07f99c7c
     m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.InputSystem.PlayerInput+ActionEvent, Unity.InputSystem,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_ActionId: 9c211298-8db0-4347-98a6-1155a710e80b
+    m_ActionName: Player/Switch Weapon UP[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.InputSystem.PlayerInput+ActionEvent, Unity.InputSystem,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_ActionId: 2d38f531-ab4c-441c-81b1-a8bdd76443ca
+    m_ActionName: Player/Switch Weapon DOWN[/Keyboard/1]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard & Mouse
   m_DefaultActionMap: Player
@@ -1410,10 +1511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c206753ba4c1c4789acc116bdf609c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gDamage: 1
-  gFireRate: 0.25
-  gReloadSpeed: 1.5
-  gWeaponRange: 50
+  Weaponholder: {fileID: 0}
 --- !u!114 &1897734655
 MonoBehaviour:
   m_ObjectHideFlags: 0
