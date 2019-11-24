@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: e98e6ef03373caa42941bae91614897c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Apex
+  fontNames:
+  - Apex
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e30458b9e6e07cf49973dd56d348cdc7, type: 3}
+  - {fileID: 12800000, guid: 5ec4514af611e7e42af31807a0b0dd69, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

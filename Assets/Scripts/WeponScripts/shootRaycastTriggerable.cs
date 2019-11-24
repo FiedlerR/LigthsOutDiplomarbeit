@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class shootRaycastTriggerable : MonoBehaviour {
-
+    
     [SerializeField] private Transform Weaponholder;
     private Weapon gun;
 
@@ -152,5 +152,18 @@ public class shootRaycastTriggerable : MonoBehaviour {
 
     public void SetWeapon(Weapon weapon) {                                                             // Werte der angegebenen Waffe setzen
         gun = weapon;
+    }
+
+    public Weapon GetWeapon() {
+        return gun;
+    }
+
+    public float getAmmoinClip (){
+        return gAmmoInClip;
+    }
+
+    public float getCurrentAmmo()
+    {
+        return gCurrentAmmo;
     }
 }

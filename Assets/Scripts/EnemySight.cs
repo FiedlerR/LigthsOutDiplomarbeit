@@ -5,6 +5,10 @@ using UnityEngine.AI;
 
 public class EnemySight : MonoBehaviour
 {
+    // Variablen für das Delay des "erkennen" des Spielers
+    public float MaxReactionTime = 1.5f;
+    [HideInInspector]
+    public float reactionTime = 0;
 
     public float fieldOfViewAngle = 110f;
     public bool playerInSight;
@@ -19,6 +23,13 @@ public class EnemySight : MonoBehaviour
     void Awake() {
         nav = GetComponent<NavMeshAgent>();
         col = GetComponent<SphereCollider>();
+    }
+
+    private void Update()
+    {
+        if (reactionTime > MaxReactionTime) {                                                                           // damit der Spieler nicht länger gesehen wird als er wiklich wird (Chase funktioniert normal)
+            reactionTime = MaxReactionTime;
+        }
     }
 
     void OnTriggerStay(Collider other)
@@ -41,7 +52,10 @@ public class EnemySight : MonoBehaviour
                     if (hit.collider.transform == player)
                     {
                         playerInSight = true;
-                        GetComponent<Guard>().setSeen(true, other.GetComponent<Transform>());
+                        reactionTime += Time.deltaTime;                                                                     // Delay für die Erkennung des Spielers
+                        if (reactionTime >= MaxReactionTime){
+                            GetComponent<Guard>().setSeen(true, other.GetComponent<Transform>());
+                        }
                         //Debug.Log("Player was seen");
                         return;
                     }
@@ -53,6 +67,7 @@ public class EnemySight : MonoBehaviour
                 }
             }
             if (!playerInSight) {
+                reactionTime -= Time.deltaTime;                                                                             // Gegner "vergisst" Spieler
             if (calculatePathLength(player.position) <= hearRadius) //col.radius)
             {
                 if (!other.GetComponent<PlayerMovement>().getIsSneaking())

@@ -7,6 +7,7 @@ using UnityEngine.AI;
 
 public class Guard: AI
 {
+
     //Spieler wurde vom Bot gehört
     bool m_wasHeard = false;
     //Spieler wurde vom Bot gesehen
@@ -45,7 +46,6 @@ public class Guard: AI
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
