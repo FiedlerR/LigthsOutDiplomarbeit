@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class WeaponSwitcher : MonoBehaviour
 {
-    public List<Weapon> inventory;
+    public InventoryItem[] items;
     private int EquippedID = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        inventory[EquippedID].isEquipped = true;
+        items[EquippedID].setActive();
     }
 
     public void switchWeaponUP() {
@@ -23,8 +23,9 @@ public class WeaponSwitcher : MonoBehaviour
     }
 
     private void Equip(int id) {
-        inventory[EquippedID].isEquipped = false;
-        inventory[id].isEquipped = true;
+        items[EquippedID].setInactive();
+        items[id].setActive();
+
         EquippedID = id;
     }
 }

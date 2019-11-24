@@ -6,19 +6,17 @@ using UnityEngine;
 public class shootRaycastTriggerable : MonoBehaviour {
 
     [SerializeField] private Transform Weaponholder;
-
-    [HideInInspector] private float gDamage = 1;
-    [HideInInspector] private float gFireRate = .25f;
-    [HideInInspector] private float gReloadSpeed = 1.5f;
-    [HideInInspector] private float gWeaponRange = 50f;
-    [HideInInspector] private float gRecoilSpeed = .5f;
-    [HideInInspector] private float gRecoilMax = -20f;
-    [HideInInspector] private float gRecoil = 0f;
+    
+    private float gDamage = 1;
+    private float gFireRate = .25f;
+    private float gReloadSpeed = 1.5f;
+    private float gWeaponRange = 50f;
+    private float gRecoilSpeed = .5f;
+    private float gRecoilMax = -20f;
+    private float gRecoil = 0f;
     private float hitForce = 10f;
-    private Camera fpsCam;
-
     private float nextFire;
-
+    private Camera fpsCam;
     private ShootableObj shootable;
 
     // Start is called before the first frame update
@@ -52,16 +50,14 @@ public class shootRaycastTriggerable : MonoBehaviour {
     private void HandleRecoil() {
         if (gRecoil > 0)
         {
-            var maxRecoil = Quaternion.Euler(gRecoilMax, 0, 0);
-            // Dampen towards the target rotation
+            var maxRecoil = Quaternion.Euler(gRecoilMax, 0, 0);                                // Dampen towards the target rotation
             Weaponholder.rotation = Quaternion.Slerp(Weaponholder.rotation, maxRecoil, Time.deltaTime * gRecoilSpeed);
             gRecoil -= Time.deltaTime;
         }
         else
         {
             gRecoil = 0;
-            var minRecoil = Quaternion.Euler(0, 0, 0);
-            // Dampen towards the target rotation
+            var minRecoil = Quaternion.Euler(0, 0, 0);                                          // Dampen towards the target rotation
             Weaponholder.rotation = Quaternion.Slerp(Weaponholder.rotation, minRecoil, Time.deltaTime * gRecoilSpeed / 2);
         }
     }
@@ -69,50 +65,41 @@ public class shootRaycastTriggerable : MonoBehaviour {
     private void ReactToRaycastHit(Vector3 rayOrigin, Vector3 shotDirection) {
         RaycastHit hit;
 
-        if (Physics.Raycast(rayOrigin, shotDirection, out hit, gWeaponRange))
-        {  // Wenn der Raycast in Richtung fpsCam.transform.forward etwas trifft -> true
+        if (Physics.Raycast(rayOrigin, shotDirection, out hit, gWeaponRange)) {                 // Wenn der Raycast in Richtung fpsCam.transform.forward etwas trifft -> true
             Debug.Log("Hit detected");
             //hit
 
 
-            if (hit.collider.GetComponent<ShootableEnemy>() != null)
-            {                      // Wenn das getroffene Object eine Componente von ShootableEnemy hat -> true
+            if (hit.collider.GetComponent<ShootableEnemy>() != null) {                          // Wenn das getroffene Object eine Componente von ShootableEnemy hat -> true
                 shootable = hit.collider.GetComponent<ShootableEnemy>();
             }
-            else if (hit.collider.GetComponent<ShootableCollider>() != null)
-            {              // Wenn das getroffene Object eine Componente von ShootableCollider hat -> true
+            else if (hit.collider.GetComponent<ShootableCollider>() != null) {                  // Wenn das getroffene Object eine Componente von ShootableCollider hat -> true
                 shootable = hit.collider.GetComponent<ShootableCollider>();
             }
-            else
-            {                                                                          // Es wurde nichts Shootable getroffen also wird Shottable ein notShootable (Siehe notShottable für Erklärung)
+            else {                                                                              // Es wurde nichts Shootable getroffen also wird Shottable ein notShootable (Siehe notShottable für Erklärung)
                 shootable = new NotShootable();
             }
 
-            if (shootable != null)
-            {                                                        // Check nach einem Shootable
-                if (shootable.critHitbox == hit.collider)                                   // Check nach einem Headshot
+            if (shootable != null) {                                                            // Check nach einem Shootable
+                if (shootable.critHitbox == hit.collider)                                       // Check nach einem Headshot
                 {
                     shootable.CriticalDamage(gDamage);
                 }
-                else
-                {                                                                      // nur ein normaler Treffer
+                else {                                                                          // nur ein normaler Treffer
                     shootable.Damage(gDamage);
                 }
             }
-            if (hit.rigidbody != null)
-            {                                                    // Check nach einem rigidbody für hitForce
+            if (hit.rigidbody != null) {                                                        // Check nach einem rigidbody für hitForce
                 Debug.Log("rigidbody not null");
                 hit.rigidbody.AddForce(-hit.normal * hitForce);
             }
         }
-        else
-        {                                                                              //  kein Hit vorhanden
-                                                                                       //no hit
+        else {                                                                                  //  kein Hit vorhanden
             Debug.Log("No hit detected");
         }
     }
 
-    public void setWeapon(Weapon weapon) {
+    public void setWeapon(Weapon weapon) {                                                      // Werte der angegebenen Waffe setzen
         gRecoil = weapon.recoil;
         gRecoilMax = weapon.XrecoilMax;
         gDamage = weapon.damagePerShot;
