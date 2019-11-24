@@ -6,15 +6,7 @@ using UnityEngine;
 public class shootRaycastTriggerable : MonoBehaviour {
 
     [SerializeField] private Transform Weaponholder;
-    //Damage/Range/Reload
-    private float gDamage = 1;
-    private float gFireRate = .25f;
-    private float gReloadSpeed = 1.5f;
-    private float gWeaponRange = 50f;
-    //Recoil
-    private float gRecoilSpeed = .5f;
-    private float gRecoilMax = -20f;
-    private float gRecoil = 0f;
+    private Weapon gun;
 
     private float hitForce = 10f;
     private float nextFire;
@@ -22,8 +14,6 @@ public class shootRaycastTriggerable : MonoBehaviour {
     // Ammo Variablen
     private float gCurrentAmmo;
     private float gAmmoInClip;
-    private float gClipSize;
-    private float gMaxAmmo;
 
     private Camera fpsCam;
     private ShootableObj shootable;
@@ -31,8 +21,17 @@ public class shootRaycastTriggerable : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
+        gun.damagePerShot = 1;
+        gun.shotsPerSecond = .25f;
+        gun.reloadtime = 1.5f;
+        gun.range = 50f;
+
+        gun.recoilSpeed = .5f;
+        gun.XrecoilMax = -20f;
+        gun.recoil = 0f;
+
         fpsCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        nextFire = Time.time - gFireRate;                                                       // Verhindert einen Fehler, der den Spieler daran hindert anzufangen zu schießen
+        nextFire = Time.time - gun.shotsPerSecond;                                                       // Verhindert einen Fehler, der den Spieler daran hindert anzufangen zu schießen
     }
 
     public void Shoot() {
@@ -43,7 +42,7 @@ public class shootRaycastTriggerable : MonoBehaviour {
             }
             else {
                 gAmmoInClip--;
-                nextFire = Time.time + gFireRate;                                                   // Next Fire setzen um zu verhindern, dass jede Waffe so schnell schießen kann wie man will
+                nextFire = Time.time + gun.shotsPerSecond;                                                   // Next Fire setzen um zu verhindern, dass jede Waffe so schnell schießen kann wie man will
                 Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));        // raycast Ursprung zum Zentrum des Bildschirms setzen
                 ReactToRaycastHit(rayOrigin, fpsCam.transform.forward);
                 HandleRecoil();
@@ -63,7 +62,7 @@ public class shootRaycastTriggerable : MonoBehaviour {
             }
             else {
                 gAmmoInClip--;
-                nextFire = Time.time + gFireRate;
+                nextFire = Time.time + gun.shotsPerSecond;
                 ReactToRaycastHit(rayOrigin, shotDirection);
                 HandleRecoil();
             }
@@ -71,24 +70,24 @@ public class shootRaycastTriggerable : MonoBehaviour {
     }
 
     private void HandleRecoil() {
-        if (gRecoil > 0)
+        if (gun.recoil > 0)
         {
-            var maxRecoil = Quaternion.Euler(gRecoilMax, 0, 0);                                // Dampen towards the target rotation
-            Weaponholder.rotation = Quaternion.Slerp(Weaponholder.rotation, maxRecoil, Time.deltaTime * gRecoilSpeed);
-            gRecoil -= Time.deltaTime;
+            var maxRecoil = Quaternion.Euler(gun.XrecoilMax, 0, 0);                                // Dampen towards the target rotation
+            Weaponholder.rotation = Quaternion.Slerp(Weaponholder.rotation, maxRecoil, Time.deltaTime * gun.recoilSpeed);
+            gun.recoil -= Time.deltaTime;
         }
         else
         {
-            gRecoil = 0;
+            gun.recoil = 0;
             var minRecoil = Quaternion.Euler(0, 0, 0);                                          // Dampen towards the target rotation
-            Weaponholder.rotation = Quaternion.Slerp(Weaponholder.rotation, minRecoil, Time.deltaTime * gRecoilSpeed / 2);
+            Weaponholder.rotation = Quaternion.Slerp(Weaponholder.rotation, minRecoil, Time.deltaTime * gun.recoilSpeed / 2);
         }
     }
 
     private void ReactToRaycastHit(Vector3 rayOrigin, Vector3 shotDirection) {
         RaycastHit hit;
 
-        if (Physics.Raycast(rayOrigin, shotDirection, out hit, gWeaponRange)) {                 // Wenn der Raycast in Richtung fpsCam.transform.forward etwas trifft -> true
+        if (Physics.Raycast(rayOrigin, shotDirection, out hit, gun.range)) {                 // Wenn der Raycast in Richtung fpsCam.transform.forward etwas trifft -> true
             Debug.Log("Hit detected");
             //hit
 
@@ -106,10 +105,10 @@ public class shootRaycastTriggerable : MonoBehaviour {
             if (shootable != null) {                                                            // Check nach einem Shootable
                 if (shootable.critHitbox == hit.collider)                                       // Check nach einem Headshot
                 {
-                    shootable.CriticalDamage(gDamage);
+                    shootable.CriticalDamage(gun.damagePerShot);
                 }
                 else {                                                                          // nur ein normaler Treffer
-                    shootable.Damage(gDamage);
+                    shootable.Damage(gun.damagePerShot);
                 }
             }
             if (hit.rigidbody != null) {                                                        // Check nach einem rigidbody für hitForce
@@ -128,8 +127,9 @@ public class shootRaycastTriggerable : MonoBehaviour {
      */
 
     private void Reload() {                                                                     // Manages Reload Math of the Ammo values
-        if (gClipSize > gAmmoInClip) {
-            if (gCurrentAmmo < gClipSize - gAmmoInClip) {
+        if (gun.clipSize > gAmmoInClip) {
+
+            if (gCurrentAmmo < gun.clipSize - gAmmoInClip) {
                 ReloadToRemaining();
             }
             else {
@@ -144,22 +144,13 @@ public class shootRaycastTriggerable : MonoBehaviour {
     }
 
     private void ReloadToFullFlexible() {                                                       // Manages Reloads from anyPoint to Full
-        if (gCurrentAmmo > gClipSize - gAmmoInClip) {
-            gCurrentAmmo -= gClipSize - gAmmoInClip;
-            gAmmoInClip = gClipSize;
+        if (gCurrentAmmo > gun.clipSize - gAmmoInClip) {
+            gCurrentAmmo -= gun.clipSize - gAmmoInClip;
+            gAmmoInClip = gun.clipSize;
         }
     }
 
     public void SetWeapon(Weapon weapon) {                                                      // Werte der angegebenen Waffe setzen
-        gRecoil = weapon.recoil;
-        gRecoilMax = weapon.XrecoilMax;
-        gDamage = weapon.damagePerShot;
-        gFireRate = weapon.shotsPerSecond;
-        gReloadSpeed = weapon.reloadtime;
-        gWeaponRange = weapon.damagePerShot;
-        gRecoilSpeed = weapon.recoilSpeed;
-
-        gMaxAmmo = weapon.maxAmmo;
-        gClipSize = weapon.clipSize;
+        gun = weapon;
     }
 }

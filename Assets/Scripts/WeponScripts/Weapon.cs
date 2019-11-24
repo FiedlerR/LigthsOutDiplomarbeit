@@ -22,6 +22,7 @@ public class Weapon : ScriptableObject {
     public float recoilSpeed;
     public float recoil;
     public float reloadtime;
+    public float range;
 
     //Ammomanagement
     public int clipSize;
