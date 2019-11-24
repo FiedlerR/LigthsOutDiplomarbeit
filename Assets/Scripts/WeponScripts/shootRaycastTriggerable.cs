@@ -122,21 +122,31 @@ public class shootRaycastTriggerable : MonoBehaviour {
         }
     }
 
-    private void Reload() {                                                                     
-        if (gClipSize - gAmmoInClip > 0) {
-            if (gAmmoInClip <= 0) {
-                if (gCurrentAmmo - gClipSize < 0) {
-                    if (gCurrentAmmo == 0) {
-                        return;
-                    }
-                    gAmmoInClip = gCurrentAmmo;
-                    gCurrentAmmo = 0;
-                }
-                else {
-                    gCurrentAmmo -= gClipSize;
-                    gAmmoInClip = gClipSize;
-                }
+    /*
+     * Reload:
+     * The Player does NOT loose any Bullets by reloading with a non-Empty mag (Quality of Life)
+     */
+
+    private void Reload() {                                                                     // Manages Reload Math of the Ammo values
+        if (gClipSize > gAmmoInClip) {
+            if (gCurrentAmmo < gClipSize - gAmmoInClip) {
+                ReloadToRemaining();
             }
+            else {
+                ReloadToFullFlexible();
+            }
+        }
+    }
+
+    private void ReloadToRemaining() {                                                          // Manages Reload from any Point to Maximum Possible with remaining Bullets
+        gAmmoInClip = gCurrentAmmo + gAmmoInClip;
+        gCurrentAmmo = 0;
+    }
+
+    private void ReloadToFullFlexible() {                                                       // Manages Reloads from anyPoint to Full
+        if (gCurrentAmmo > gClipSize - gAmmoInClip) {
+            gCurrentAmmo -= gClipSize - gAmmoInClip;
+            gAmmoInClip = gClipSize;
         }
     }
 
