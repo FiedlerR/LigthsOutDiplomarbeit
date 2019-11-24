@@ -21,6 +21,7 @@ using UnityEngine;
 public class ShootableEnemy : ShootableObj
 {
     public float maximumHealth = 100f;  // eine Variable die einen Editor das Maximumleben für jeden Gegner spezifisch setzen lässt.
+    public bool wasKilled = false;
 
     private void Start() { // Zuweisungen um das Startelben und das maximale Leben gleich zu setzen
         MaxHealth = maximumHealth;
@@ -39,7 +40,7 @@ public class ShootableEnemy : ShootableObj
     }
 
     public override void Die() { //Tote Gegner aktivieren noch sachen nach ihrem Tod Bsp:(Animation, ragdoll, etc. )
-        
+        wasKilled = true;
         //Do death stuff here
         gameObject.SetActive(false);
     }

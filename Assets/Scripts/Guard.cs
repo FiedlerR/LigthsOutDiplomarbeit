@@ -10,7 +10,8 @@ public class Guard: AI
     //Spieler wurde vom Bot gehört
     bool m_wasHeard = false;
     //Spieler wurde vom Bot gesehen
-    bool m_wasSeen = false;
+    [HideInInspector]
+    public bool m_wasSeen = false;
     // letzte bekannte Spielerposition
     Vector3 m_lastPlayerTransform;
     //NavmeshAgent Referenz

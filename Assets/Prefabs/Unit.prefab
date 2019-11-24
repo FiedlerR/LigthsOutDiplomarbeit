@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 1964634935}
   - component: {fileID: 2317368536152451319}
   - component: {fileID: 1761453306090447748}
+  - component: {fileID: 112529523884484728}
   m_Layer: 10
   m_Name: Unit
   m_TagString: Enemy
@@ -199,6 +200,7 @@ MonoBehaviour:
   m_isOnLadder: 0
   m_ladderTransform: {fileID: 0}
   MoveAcrossNavMesh: 0
+  m_wasSeen: 0
   navMeshAgent: {fileID: 6075630838066945826}
   player: {fileID: 1751866559525262273, guid: 0ec82af9fd68743479f45055a70c0e17, type: 3}
   runSpeed: 6
@@ -237,6 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactionTime: 0
   shotOrigin: {fileID: 6048262910442533348}
+  weapon: {fileID: 0}
 --- !u!114 &1761453306090447748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,6 +253,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Weaponholder: {fileID: 6048262910442533348}
+--- !u!114 &112529523884484728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4878523458919617367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2019b87d1df63ca4e8fb9127029fd398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 0
+  currentHealth: 0
+  critHitbox: {fileID: 0}
+  headshotMult: 1.5
+  maximumHealth: 100
 --- !u!1 &5003955022856969468
 GameObject:
   m_ObjectHideFlags: 0

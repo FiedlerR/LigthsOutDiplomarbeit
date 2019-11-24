@@ -31,19 +31,19 @@ public class shootRaycastTriggerable : MonoBehaviour {
         gun.recoil = 0f;
 
         fpsCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        nextFire = Time.time - gun.shotsPerSecond;                                                       // Verhindert einen Fehler, der den Spieler daran hindert anzufangen zu schießen
+        nextFire = Time.time - gun.shotsPerSecond;                                                      // Verhindert einen Fehler, der den Spieler daran hindert anzufangen zu schießen
     }
 
     public void Shoot() {
-        if (Time.time >= nextFire) {                                                            // nextFire überprüfen
+        if (Time.time >= nextFire) {                                                                    // nextFire überprüfen
             if (gAmmoInClip <= 0)
             {
                 Reload();
             }
             else {
                 gAmmoInClip--;
-                nextFire = Time.time + gun.shotsPerSecond;                                                   // Next Fire setzen um zu verhindern, dass jede Waffe so schnell schießen kann wie man will
-                Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));        // raycast Ursprung zum Zentrum des Bildschirms setzen
+                nextFire = Time.time + gun.shotsPerSecond;                                              // Next Fire setzen um zu verhindern, dass jede Waffe so schnell schießen kann wie man will
+                Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));            // raycast Ursprung zum Zentrum des Bildschirms setzen
                 ReactToRaycastHit(rayOrigin, fpsCam.transform.forward);
                 HandleRecoil();
             }
@@ -54,7 +54,7 @@ public class shootRaycastTriggerable : MonoBehaviour {
      * AIs dont have a Camera so they cant use Shoot()
      * AIShoot() lets then comunicate thier own origin and direction
      */
-    public void AIShoot(Vector3 rayOrigin, Vector3 shotDirection) {                             // Shoot but for AIs
+    public void AIShoot(Vector3 rayOrigin, Vector3 shotDirection) {                                     // Shoot but for AIs
         if (Time.time >= nextFire) {
             if (gAmmoInClip <= 0)
             {
@@ -72,14 +72,14 @@ public class shootRaycastTriggerable : MonoBehaviour {
     private void HandleRecoil() {
         if (gun.recoil > 0)
         {
-            var maxRecoil = Quaternion.Euler(gun.XrecoilMax, 0, 0);                                // Dampen towards the target rotation
+            var maxRecoil = Quaternion.Euler(gun.XrecoilMax, 0, 0);                                     // Dampen towards the target rotation
             Weaponholder.rotation = Quaternion.Slerp(Weaponholder.rotation, maxRecoil, Time.deltaTime * gun.recoilSpeed);
             gun.recoil -= Time.deltaTime;
         }
         else
         {
             gun.recoil = 0;
-            var minRecoil = Quaternion.Euler(0, 0, 0);                                          // Dampen towards the target rotation
+            var minRecoil = Quaternion.Euler(0, 0, 0);                                                  // Dampen towards the target rotation
             Weaponholder.rotation = Quaternion.Slerp(Weaponholder.rotation, minRecoil, Time.deltaTime * gun.recoilSpeed / 2);
         }
     }
@@ -87,36 +87,36 @@ public class shootRaycastTriggerable : MonoBehaviour {
     private void ReactToRaycastHit(Vector3 rayOrigin, Vector3 shotDirection) {
         RaycastHit hit;
 
-        if (Physics.Raycast(rayOrigin, shotDirection, out hit, gun.range)) {                 // Wenn der Raycast in Richtung fpsCam.transform.forward etwas trifft -> true
+        if (Physics.Raycast(rayOrigin, shotDirection, out hit, gun.range)) {                            // Wenn der Raycast in Richtung fpsCam.transform.forward etwas trifft -> true
             Debug.Log("Hit detected");
             //hit
 
 
-            if (hit.collider.GetComponent<ShootableEnemy>() != null) {                          // Wenn das getroffene Object eine Componente von ShootableEnemy hat -> true
+            if (hit.collider.GetComponent<ShootableEnemy>() != null) {                                 // Wenn das getroffene Object eine Componente von ShootableEnemy hat -> true
                 shootable = hit.collider.GetComponent<ShootableEnemy>();
             }
-            else if (hit.collider.GetComponent<ShootableCollider>() != null) {                  // Wenn das getroffene Object eine Componente von ShootableCollider hat -> true
+            else if (hit.collider.GetComponent<ShootableCollider>() != null) {                         // Wenn das getroffene Object eine Componente von ShootableCollider hat -> true
                 shootable = hit.collider.GetComponent<ShootableCollider>();
             }
-            else {                                                                              // Es wurde nichts Shootable getroffen also wird Shottable ein notShootable (Siehe notShottable für Erklärung)
+            else {                                                                                     // Es wurde nichts Shootable getroffen also wird Shottable ein notShootable (Siehe notShottable für Erklärung)
                 shootable = new NotShootable();
             }
 
-            if (shootable != null) {                                                            // Check nach einem Shootable
-                if (shootable.critHitbox == hit.collider)                                       // Check nach einem Headshot
+            if (shootable != null) {                                                                   // Check nach einem Shootable
+                if (shootable.critHitbox == hit.collider)                                              // Check nach einem Headshot
                 {
                     shootable.CriticalDamage(gun.damagePerShot);
                 }
-                else {                                                                          // nur ein normaler Treffer
+                else {                                                                                 // nur ein normaler Treffer
                     shootable.Damage(gun.damagePerShot);
                 }
             }
-            if (hit.rigidbody != null) {                                                        // Check nach einem rigidbody für hitForce
+            if (hit.rigidbody != null) {                                                               // Check nach einem rigidbody für hitForce
                 Debug.Log("rigidbody not null");
                 hit.rigidbody.AddForce(-hit.normal * hitForce);
             }
         }
-        else {                                                                                  //  kein Hit vorhanden
+        else {                                                                                         //  kein Hit vorhanden
             Debug.Log("No hit detected");
         }
     }
@@ -126,7 +126,7 @@ public class shootRaycastTriggerable : MonoBehaviour {
      * The Player does NOT loose any Bullets by reloading with a non-Empty mag (Quality of Life)
      */
 
-    private void Reload() {                                                                     // Manages Reload Math of the Ammo values
+    private void Reload() {                                                                            // Manages Reload Math of the Ammo values
         if (gun.clipSize > gAmmoInClip) {
 
             if (gCurrentAmmo < gun.clipSize - gAmmoInClip) {
@@ -138,19 +138,19 @@ public class shootRaycastTriggerable : MonoBehaviour {
         }
     }
 
-    private void ReloadToRemaining() {                                                          // Manages Reload from any Point to Maximum Possible with remaining Bullets
+    private void ReloadToRemaining() {                                                                 // Manages Reload from any Point to Maximum Possible with remaining Bullets
         gAmmoInClip = gCurrentAmmo + gAmmoInClip;
         gCurrentAmmo = 0;
     }
 
-    private void ReloadToFullFlexible() {                                                       // Manages Reloads from anyPoint to Full
+    private void ReloadToFullFlexible() {                                                              // Manages Reloads from anyPoint to Full
         if (gCurrentAmmo > gun.clipSize - gAmmoInClip) {
             gCurrentAmmo -= gun.clipSize - gAmmoInClip;
             gAmmoInClip = gun.clipSize;
         }
     }
 
-    public void SetWeapon(Weapon weapon) {                                                      // Werte der angegebenen Waffe setzen
+    public void SetWeapon(Weapon weapon) {                                                             // Werte der angegebenen Waffe setzen
         gun = weapon;
     }
 }
