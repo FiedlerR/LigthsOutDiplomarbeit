@@ -45,11 +45,13 @@ public class Weapon : ScriptableObject {
     private bool shootable = true;
 
 
-    void reload() {
+    public void Reload()
+    {
         shootable = false;
         AudioSource.PlayClipAtPoint(reloadSound, soundSource);
         reloadAnim.Play();
-        if (! reloadAnim.IsPlaying(reloadAnim.name)) {
+        if (!reloadAnim.IsPlaying(reloadAnim.name))
+        {
             shootable = true;
         }
     }

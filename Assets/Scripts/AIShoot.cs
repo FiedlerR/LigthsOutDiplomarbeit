@@ -18,7 +18,7 @@ public class AIShoot : MonoBehaviour {
     {
         shootTriggerable = GetComponent<shootRaycastTriggerable>();
         guard = GetComponent<Guard>();
-        shootTriggerable.setWeapon(weapon);
+        shootTriggerable.SetWeapon(weapon);
     }
 
     // Update is called once per frame

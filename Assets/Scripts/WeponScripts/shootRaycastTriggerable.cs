@@ -6,16 +6,25 @@ using UnityEngine;
 public class shootRaycastTriggerable : MonoBehaviour {
 
     [SerializeField] private Transform Weaponholder;
-    
+    //Damage/Range/Reload
     private float gDamage = 1;
     private float gFireRate = .25f;
     private float gReloadSpeed = 1.5f;
     private float gWeaponRange = 50f;
+    //Recoil
     private float gRecoilSpeed = .5f;
     private float gRecoilMax = -20f;
     private float gRecoil = 0f;
+
     private float hitForce = 10f;
     private float nextFire;
+
+    // Ammo Variablen
+    private float gCurrentAmmo;
+    private float gAmmoInClip;
+    private float gClipSize;
+    private float gMaxAmmo;
+
     private Camera fpsCam;
     private ShootableObj shootable;
 
@@ -28,10 +37,17 @@ public class shootRaycastTriggerable : MonoBehaviour {
 
     public void Shoot() {
         if (Time.time >= nextFire) {                                                            // nextFire überprüfen
-            nextFire = Time.time + gFireRate;                                                   // Next Fire setzen um zu verhindern, dass jede Waffe so schnell schießen kann wie man will
-            Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));        // raycast Ursprung zum Zentrum des Bildschirms setzen
-            ReactToRaycastHit(rayOrigin, fpsCam.transform.forward);
-            HandleRecoil();
+            if (gAmmoInClip <= 0)
+            {
+                Reload();
+            }
+            else {
+                gAmmoInClip--;
+                nextFire = Time.time + gFireRate;                                                   // Next Fire setzen um zu verhindern, dass jede Waffe so schnell schießen kann wie man will
+                Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));        // raycast Ursprung zum Zentrum des Bildschirms setzen
+                ReactToRaycastHit(rayOrigin, fpsCam.transform.forward);
+                HandleRecoil();
+            }
         }
     }
 
@@ -41,9 +57,16 @@ public class shootRaycastTriggerable : MonoBehaviour {
      */
     public void AIShoot(Vector3 rayOrigin, Vector3 shotDirection) {                             // Shoot but for AIs
         if (Time.time >= nextFire) {
-            nextFire = Time.time + gFireRate;
-            ReactToRaycastHit(rayOrigin, shotDirection);
-            HandleRecoil();
+            if (gAmmoInClip <= 0)
+            {
+                Reload();
+            }
+            else {
+                gAmmoInClip--;
+                nextFire = Time.time + gFireRate;
+                ReactToRaycastHit(rayOrigin, shotDirection);
+                HandleRecoil();
+            }
         }
     }
 
@@ -99,7 +122,25 @@ public class shootRaycastTriggerable : MonoBehaviour {
         }
     }
 
-    public void setWeapon(Weapon weapon) {                                                      // Werte der angegebenen Waffe setzen
+    private void Reload() {                                                                     
+        if (gClipSize - gAmmoInClip > 0) {
+            if (gAmmoInClip <= 0) {
+                if (gCurrentAmmo - gClipSize < 0) {
+                    if (gCurrentAmmo == 0) {
+                        return;
+                    }
+                    gAmmoInClip = gCurrentAmmo;
+                    gCurrentAmmo = 0;
+                }
+                else {
+                    gCurrentAmmo -= gClipSize;
+                    gAmmoInClip = gClipSize;
+                }
+            }
+        }
+    }
+
+    public void SetWeapon(Weapon weapon) {                                                      // Werte der angegebenen Waffe setzen
         gRecoil = weapon.recoil;
         gRecoilMax = weapon.XrecoilMax;
         gDamage = weapon.damagePerShot;
@@ -107,5 +148,8 @@ public class shootRaycastTriggerable : MonoBehaviour {
         gReloadSpeed = weapon.reloadtime;
         gWeaponRange = weapon.damagePerShot;
         gRecoilSpeed = weapon.recoilSpeed;
+
+        gMaxAmmo = weapon.maxAmmo;
+        gClipSize = weapon.clipSize;
     }
 }
