@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: "Stra\xDFenlaterne"
+    second: {fileID: 2100000, guid: 2977c0a0af88f5d4cb569c37e04021da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Texture
     second: {fileID: 2100000, guid: 2977c0a0af88f5d4cb569c37e04021da, type: 2}
   materials:

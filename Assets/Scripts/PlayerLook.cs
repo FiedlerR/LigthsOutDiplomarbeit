@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
 using UnityEngine;
 
 public class PlayerLook : MonoBehaviour
@@ -10,6 +11,25 @@ public class PlayerLook : MonoBehaviour
     public Transform playerBody;
     public bool m_isCameraControlActiv;
 
+
+    private InputMaster controls = null;
+
+    private void Awake()
+    {
+        Cursor.visible = false;
+        controls = new InputMaster();
+    }
+
+
+    private void OnEnable()
+    {
+        controls.Player.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Player.Disable();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -30,10 +50,19 @@ public class PlayerLook : MonoBehaviour
     }
 
 
-    void cameraRotation()
+    public void cameraRotation()
     {
+
+        //Debug.Log("mouse");
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
+
+        //Vector2 lookInput = controls.Player.Look.ReadValue<Vector2>();
+
+
+
+        //float mouseX = lookInput.x;
+        //float mouseY = lookInput.y;
 
         m_xAxisClamp += mouseY;
 

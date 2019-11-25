@@ -7,6 +7,31 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Bordstein
+    second: {fileID: 2100000, guid: 58ed066011f0cf64b8d65ca19635ff30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gehsteig
+    second: {fileID: 2100000, guid: 28a380ad722fbdf479c76cc664aae048, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kanaldeckel
+    second: {fileID: 2100000, guid: 121b4e62e6df558449e1f29cb0627eaf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Kie\xDFWeg"
+    second: {fileID: 2100000, guid: 38de1128c1678d94f89c5f5e066bc55e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Kie\xDFWeg.001"
+    second: {fileID: 2100000, guid: 38de1128c1678d94f89c5f5e066bc55e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material.001
     second: {fileID: 2100000, guid: 58ed066011f0cf64b8d65ca19635ff30, type: 2}
   - first:
@@ -99,6 +124,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Material.025
     second: {fileID: 2100000, guid: 38de1128c1678d94f89c5f5e066bc55e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 58ed066011f0cf64b8d65ca19635ff30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Stra\xDFe"
+    second: {fileID: 2100000, guid: 2f10ce19053e6644abaec8503951fcce, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

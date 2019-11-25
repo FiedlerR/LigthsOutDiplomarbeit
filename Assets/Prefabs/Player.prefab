@@ -298,7 +298,6 @@ GameObject:
   - component: {fileID: 1751866559525262273}
   - component: {fileID: 1751866559525262274}
   - component: {fileID: 1751866559525262272}
-  - component: {fileID: 1991609821886712977}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -355,7 +354,7 @@ MonoBehaviour:
   m_CharacterController: {fileID: 0}
   slopeForce: 5
   slopeForceRayLength: 1.5
-  jumpMultiplier: 4
+  jumpMultiplier: 5
   jumpFallOff:
     serializedVersion: 2
     m_Curve:
@@ -369,8 +368,8 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.99998987
-      value: -0.006250762
+      time: 1.0043476
+      value: 0.008153558
       inSlope: -0.84213907
       outSlope: -0.84213907
       tangentMode: 0
@@ -386,96 +385,6 @@ MonoBehaviour:
   runBuildUpSpeed: 4
   runSlowDownSpeed: 2
   cameraScript: {fileID: 1751866559336296746}
---- !u!114 &1991609821886712977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751866559525262275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: ccd3d5571ed258f42a8b42166719d302,
-    type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.InputSystem.PlayerInput+DeviceLostEvent, Unity.InputSystem,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.InputSystem.PlayerInput+DeviceRegainedEvent, Unity.InputSystem,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.InputSystem.PlayerInput+ActionEvent, Unity.InputSystem,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_ActionId: f8674420-7572-4d4c-a9af-885a930cbce5
-    m_ActionName: Player/Shoot
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1751866559525262272}
-        m_MethodName: playerMovement
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.InputSystem.PlayerInput+ActionEvent, Unity.InputSystem,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_ActionId: 6e7eb8d7-b521-4ec8-b0d6-f86897bcb07e
-    m_ActionName: Player/Movement
-  - m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.InputSystem.PlayerInput+ActionEvent, Unity.InputSystem,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_ActionId: 506bcac7-d256-4442-b1ca-57490c125674
-    m_ActionName: Player/OpenInventory
-  - m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.InputSystem.PlayerInput+ActionEvent, Unity.InputSystem,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_ActionId: 983fe936-4f23-4ecb-86ec-e4894a37b2e2
-    m_ActionName: Player/CloseInventory
-  - m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.InputSystem.PlayerInput+ActionEvent, Unity.InputSystem,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_ActionId: c5ac11df-4c3b-44de-bbf9-77f2c9402878
-    m_ActionName: Player/Look
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1751866559525262272}
-        m_MethodName: jump
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.InputSystem.PlayerInput+ActionEvent, Unity.InputSystem,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_ActionId: 7d92be76-83b2-4e6a-b42e-cccd07f99c7c
-    m_ActionName: Player/Jump
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard & Mouse
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &7084779489299742513
 GameObject:
   m_ObjectHideFlags: 0

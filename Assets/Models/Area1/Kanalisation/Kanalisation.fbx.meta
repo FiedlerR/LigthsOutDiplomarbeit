@@ -7,7 +7,27 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: KanalisationBoden
+    second: {fileID: 2100000, guid: 2ec0c5ff110a18d4586d8c707508fced, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KanalisationWand
+    second: {fileID: 2100000, guid: bd961b95b6dd1164d8e45873d814b7be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KanalisationsDach
+    second: {fileID: 2100000, guid: 2ec0c5ff110a18d4586d8c707508fced, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material
+    second: {fileID: 2100000, guid: 2ec0c5ff110a18d4586d8c707508fced, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
     second: {fileID: 2100000, guid: 2ec0c5ff110a18d4586d8c707508fced, type: 2}
   - first:
       type: UnityEngine:Material
@@ -34,6 +54,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Texture.000
     second: {fileID: 2100000, guid: e01ec35e10993244ba810f228d997bf4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "T\xFCrGitter"
+    second: {fileID: 2100000, guid: 32bb4aaaf99c9694aa10831d5eb8618f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

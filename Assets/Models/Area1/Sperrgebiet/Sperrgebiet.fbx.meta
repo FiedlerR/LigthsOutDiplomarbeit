@@ -7,6 +7,136 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: "Alarms\xE4ule1"
+    second: {fileID: 2100000, guid: ed9602358d232bc4ea28ce6cb2f1d8ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Alarms\xE4ule2"
+    second: {fileID: 2100000, guid: 075a5385955b84043b517b53eae772b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BarakenDach1
+    second: {fileID: 2100000, guid: 075a5385955b84043b517b53eae772b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BarakenDach1.001
+    second: {fileID: 2100000, guid: 075a5385955b84043b517b53eae772b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BarakenDach2
+    second: {fileID: 2100000, guid: 6dbae185a5cc30c45a4aeb5b4f74a975, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BarakenDach2.001
+    second: {fileID: 2100000, guid: dae770d5146f96f41ab5ad386bc158fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "BarakenSt\xFCtze"
+    second: {fileID: 2100000, guid: ed9602358d232bc4ea28ce6cb2f1d8ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "BarakenSt\xFCtze.001"
+    second: {fileID: 2100000, guid: ed9602358d232bc4ea28ce6cb2f1d8ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "BarakenSt\xFCtze.002"
+    second: {fileID: 2100000, guid: ed9602358d232bc4ea28ce6cb2f1d8ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BarakenWand
+    second: {fileID: 2100000, guid: f1b96be4f98e5f54c82cca29207fbb8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Betonabsperre
+    second: {fileID: 2100000, guid: f1b96be4f98e5f54c82cca29207fbb8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bordstein
+    second: {fileID: 2100000, guid: 58ed066011f0cf64b8d65ca19635ff30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "FakeGitterT\xFCr1"
+    second: {fileID: 2100000, guid: 612ea8a3b1831b04a88876c401cc7e1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "FakeGitterT\xFCr2"
+    second: {fileID: 2100000, guid: 4dc50e1ef9ade1c4bac383c1110bdce1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Gel\xE4nder"
+    second: {fileID: 2100000, guid: dd3f81bdcfb1f9e4e9ee3715ce644b18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Gel\xE4nder.001"
+    second: {fileID: 2100000, guid: dd3f81bdcfb1f9e4e9ee3715ce644b18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Gel\xE4nder.002"
+    second: {fileID: 2100000, guid: dd3f81bdcfb1f9e4e9ee3715ce644b18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Gel\xE4nder.003"
+    second: {fileID: 2100000, guid: dd3f81bdcfb1f9e4e9ee3715ce644b18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Gel\xE4nder.004"
+    second: {fileID: 2100000, guid: cb63f9b98f13dce45877d5bc0294b8b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glas
+    second: {fileID: 2100000, guid: 798290d8304f91d4199ef302a8cd05dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kanaldeckel
+    second: {fileID: 2100000, guid: 121b4e62e6df558449e1f29cb0627eaf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "KisteAu\xDFen.002"
+    second: {fileID: 2100000, guid: 669be68f66a34f94b8286ace91ae8511, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KisteInnen.002
+    second: {fileID: 2100000, guid: 31a415e327ba9e5429329dd725361287, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lausprecher
+    second: {fileID: 2100000, guid: 075a5385955b84043b517b53eae772b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leiter
+    second: {fileID: 2100000, guid: 7673476d3af77614495bff77e3a709d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leiter1
+    second: {fileID: 2100000, guid: 7673476d3af77614495bff77e3a709d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material.000
     second: {fileID: 2100000, guid: 075a5385955b84043b517b53eae772b5, type: 2}
   - first:
@@ -257,8 +387,128 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Mauer.001
+    second: {fileID: 2100000, guid: 0ee584552b959e145b8de631acb1f1ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerSpitzen.001
+    second: {fileID: 2100000, guid: 7554d0752b75a514a848bd9f191fcdf7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerTopStein.001
+    second: {fileID: 2100000, guid: 58ed066011f0cf64b8d65ca19635ff30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.001
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.002
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.003
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.004
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.005
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.006
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.007
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.008
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.009
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.010
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.011
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.012
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.013
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.014
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallBoden.015
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: No Name
     second: {fileID: 2100000, guid: cb5e2a43e5c3032459b7e84d094c60d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RiesenMauer
+    second: {fileID: 2100000, guid: 7c178dee5378d91429198e1d44199a89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SperrgebeitBoden
+    second: {fileID: 2100000, guid: 7c178dee5378d91429198e1d44199a89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Stra\xDFe"
+    second: {fileID: 2100000, guid: 2f10ce19053e6644abaec8503951fcce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "St\xFCtze"
+    second: {fileID: 2100000, guid: ff0452e3d61e4084bb5e11c4bc9f3954, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "St\xFCtze2"
+    second: {fileID: 2100000, guid: 0b819ba855bdb6b4ea6292bca0bd246e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -319,6 +569,106 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Texture.033
     second: {fileID: 2100000, guid: dd3f81bdcfb1f9e4e9ee3715ce644b18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TurmBase
+    second: {fileID: 2100000, guid: 72754168b472a844e969ccefc2518d56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WachhausGitter
+    second: {fileID: 2100000, guid: 72754168b472a844e969ccefc2518d56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Wachh\xE4uschen1"
+    second: {fileID: 2100000, guid: 6dbae185a5cc30c45a4aeb5b4f74a975, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Wachh\xE4uschen2"
+    second: {fileID: 2100000, guid: bef173417c9c60d488220d604db217f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Wachh\xE4uschen3"
+    second: {fileID: 2100000, guid: f1b96be4f98e5f54c82cca29207fbb8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Wachh\xE4uschenFrontablage"
+    second: {fileID: 2100000, guid: dae770d5146f96f41ab5ad386bc158fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Wachh\xE4uschenSessel"
+    second: {fileID: 2100000, guid: af4a2ab7c3c0d9e49bb359d7f607a68b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Wachh\xE4uschenTisch"
+    second: {fileID: 2100000, guid: fc0d1b8b320529e4a83520856f581741, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wachschutz1
+    second: {fileID: 2100000, guid: 72754168b472a844e969ccefc2518d56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wachschutz1.001
+    second: {fileID: 2100000, guid: 72754168b472a844e969ccefc2518d56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wachschutz2
+    second: {fileID: 2100000, guid: 075a5385955b84043b517b53eae772b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wachschutz2.001
+    second: {fileID: 2100000, guid: 075a5385955b84043b517b53eae772b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wachtisch
+    second: {fileID: 2100000, guid: 72754168b472a844e969ccefc2518d56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WachtumTisch
+    second: {fileID: 2100000, guid: 72754168b472a844e969ccefc2518d56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WachtumTisch.001
+    second: {fileID: 2100000, guid: 72754168b472a844e969ccefc2518d56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zaun
+    second: {fileID: 2100000, guid: e1145b2b9e1fed24191b22bdf7e45233, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZentraleDach1
+    second: {fileID: 2100000, guid: 72754168b472a844e969ccefc2518d56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZentraleDach2
+    second: {fileID: 2100000, guid: 075a5385955b84043b517b53eae772b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZentraleTischMitte
+    second: {fileID: 2100000, guid: 72754168b472a844e969ccefc2518d56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZentraleWand
+    second: {fileID: 2100000, guid: f1b96be4f98e5f54c82cca29207fbb8a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
