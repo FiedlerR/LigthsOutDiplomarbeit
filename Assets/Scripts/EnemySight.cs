@@ -8,7 +8,7 @@ public class EnemySight : MonoBehaviour
     // Variablen für das Delay des "erkennen" des Spielers
     public float MaxReactionTime = 1.5f;
     [HideInInspector]
-    public float reactionTime = 0;
+    public float reactionTime = 0f;
 
     public float fieldOfViewAngle = 110f;
     public bool playerInSight;
@@ -29,6 +29,8 @@ public class EnemySight : MonoBehaviour
     {
         if (reactionTime > MaxReactionTime) {                                                                           // damit der Spieler nicht länger gesehen wird als er wiklich wird (Chase funktioniert normal)
             reactionTime = MaxReactionTime;
+        } else if (reactionTime < 0f) {
+            reactionTime = 0f;
         }
     }
 
@@ -53,7 +55,7 @@ public class EnemySight : MonoBehaviour
                     {
                         playerInSight = true;
                         reactionTime += Time.deltaTime;                                                                     // Delay für die Erkennung des Spielers
-                        if (reactionTime >= MaxReactionTime){
+                        if (reactionTime == MaxReactionTime){
                             GetComponent<Guard>().setSeen(true, other.GetComponent<Transform>());
                         }
                         //Debug.Log("Player was seen");
