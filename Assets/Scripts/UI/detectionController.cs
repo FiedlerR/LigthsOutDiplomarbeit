@@ -19,7 +19,7 @@ public class detectionController : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         enemySight = GetComponent<EnemySight>();
-        canvas = GetComponent<Canvas>();
+        canvas = gameObject.GetComponentInChildren<Canvas>();
         canvas.enabled = false;
         fillArea.fillAmount = 0;
 

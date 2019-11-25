@@ -17,10 +17,10 @@ public class PlayerLook : MonoBehaviour
     private void Awake()
     {
         Cursor.visible = false;
-        controls = new InputMaster();
+       // controls = new InputMaster();
     }
 
-
+    /*
     private void OnEnable()
     {
         controls.Player.Enable();
@@ -30,6 +30,7 @@ public class PlayerLook : MonoBehaviour
     {
         controls.Player.Disable();
     }
+    */
 
     // Start is called before the first frame update
     void Start()

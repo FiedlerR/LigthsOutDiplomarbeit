@@ -14,7 +14,7 @@ public class AIShoot : MonoBehaviour {
     private bool isShooting = false;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake ()
     {
         shootTriggerable = GetComponent<shootRaycastTriggerable>();
         guard = GetComponent<Guard>();
