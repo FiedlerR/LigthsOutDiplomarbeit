@@ -52,6 +52,24 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
+
+                    "interactions": "Press"
+                },
+                {
+                    "name": "Switch Weapon UP",
+                    "type": "Button",
+                    "id": "9c211298-8db0-4347-98a6-1155a710e80b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "Switch Weapon DOWN",
+                    "type": "Button",
+                    "id": "2d38f531-ab4c-441c-81b1-a8bdd76443ca",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press"
                 }
             ],
             "bindings": [
@@ -349,6 +367,28 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a1debe1-6bcf-425c-93ca-33cd4606e503",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "Switch Weapon UP",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bda057f0-1d24-40a7-abc8-071488ca4197",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "Switch Weapon DOWN",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

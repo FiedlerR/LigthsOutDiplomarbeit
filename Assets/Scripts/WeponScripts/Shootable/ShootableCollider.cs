@@ -41,4 +41,6 @@ public class ShootableCollider : ShootableObj
         //death stuff
         gameObject.SetActive(false);
     }
+
+    public override void CriticalDamage(float damageAmount){} //Option to give a critical spot 
 }

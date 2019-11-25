@@ -7,10 +7,12 @@ using UnityEngine.AI;
 
 public class Guard: AI
 {
+
     //Spieler wurde vom Bot gehört
     bool m_wasHeard = false;
     //Spieler wurde vom Bot gesehen
-    bool m_wasSeen = false;
+    [HideInInspector]
+    public bool m_wasSeen = false;
     // letzte bekannte Spielerposition
     Vector3 m_lastPlayerTransform;
     //NavmeshAgent Referenz
@@ -44,7 +46,6 @@ public class Guard: AI
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -285,6 +286,10 @@ public class Guard: AI
         navMeshAgent.isStopped = false;
 
     }
+
+    public Vector3 getLastPlayerV3() { return m_lastPlayerTransform; } // Um in AIShoot auf das Sehen zu reagieren
+
+    public float getSearchCounter() { return m_searchCounter; } // Um in AIShoot auf das Sehen zu reagieren und damit der Gegner auch wieder aufhört zu schießen
 
     /*
     private IEnumerator searchInFullSpeed(float time)

@@ -49,8 +49,7 @@ public class BuffPlayerTriggerable : MonoBehaviour {
         //Gun buffs
         gun.damagePerShot *= gDamageMult;
         gun.shotsPerSecond *= gFireRateMult;
-        gun.XrecoilPerShot *= gRecoilMult;
-        gun.YrecoilPerShot *= gRecoilMult;
+        gun.XrecoilMax *= gRecoilMult;
         gun.reloadtime *= gReloadTimeMult;
     }
 
@@ -65,8 +64,7 @@ public class BuffPlayerTriggerable : MonoBehaviour {
         //Gun buffs
         gun.damagePerShot = gunBackup.damagePerShot;
         gun.shotsPerSecond = gunBackup.shotsPerSecond;
-        gun.XrecoilPerShot = gunBackup.XrecoilPerShot;
-        gun.YrecoilPerShot = gunBackup.YrecoilPerShot;
+        gun.XrecoilMax = gunBackup.XrecoilMax;
         gun.reloadtime = gunBackup.reloadtime;
     }
 

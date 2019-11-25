@@ -6,6 +6,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Weapon", menuName ="Items/Weapon")]
 public class Weapon : ScriptableObject {
 
+    //Equipped
+    public bool isEquipped = false;
+
     //UI
     public new string name;
     public Sprite invIcon;
@@ -15,9 +18,11 @@ public class Weapon : ScriptableObject {
     public float shotsPerSecond;
 
     //Weaponcontrol
-    public float XrecoilPerShot;
-    public float YrecoilPerShot;
+    public float XrecoilMax;
+    public float recoilSpeed;
+    public float recoil;
     public float reloadtime;
+    public float range;
 
     //Ammomanagement
     public int clipSize;
@@ -41,16 +46,14 @@ public class Weapon : ScriptableObject {
     private bool shootable = true;
 
 
-    void reload() {
+    public void Reload()
+    {
         shootable = false;
         AudioSource.PlayClipAtPoint(reloadSound, soundSource);
         reloadAnim.Play();
-        if (! reloadAnim.IsPlaying(reloadAnim.name)) {
+        if (!reloadAnim.IsPlaying(reloadAnim.name))
+        {
             shootable = true;
         }
-    }
-
-    void fire() {
-        
     }
 }
