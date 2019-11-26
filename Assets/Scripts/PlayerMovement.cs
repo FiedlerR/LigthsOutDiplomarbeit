@@ -5,10 +5,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    // For applying the vignette
-    private Camera playerCam;
-
     public CharacterController m_CharacterController;
     public float slopeForce;
     public float slopeForceRayLength;
@@ -39,8 +35,6 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerCam = GetComponentInChildren<Camera>(); // To Apply vignette
-
         Cursor.visible = false;
         m_CharacterController = GetComponent<CharacterController>();
         m_Animator = GetComponentInChildren<Animator>();
