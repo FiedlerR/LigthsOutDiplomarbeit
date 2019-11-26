@@ -21,6 +21,9 @@ public class shootRaycastTriggerable : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
+        gAmmoInClip = gun.clipSize;
+        gCurrentAmmo = gun.maxAmmo - gAmmoInClip;
+
         gun.damagePerShot = 1;
         gun.shotsPerSecond = .25f;
         gun.reloadtime = 1.5f;

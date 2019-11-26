@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: "Gun\xDF1"
   m_EditorClassIdentifier: 
   weapon: {fileID: 11400000, guid: e661f3dae462515439503ecd52e9a49e, type: 2}
-  weaponObject: {fileID: 1755209384855503356, guid: 17f9db62b5998494e81ecabb534299a6,
+  weaponObject: {fileID: 6320408491735175864, guid: 786d51aef17d4bc4d94d84a36f8286b3,
     type: 3}

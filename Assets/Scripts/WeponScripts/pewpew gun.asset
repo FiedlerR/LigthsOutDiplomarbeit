@@ -12,15 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da4334bec673324b984acc1e318b0cb, type: 3}
   m_Name: pewpew gun
   m_EditorClassIdentifier: 
+  isEquipped: 1
   name: Pew Pew Gun
   invIcon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-  damagePerShot: 12
-  shotsPerSecond: 2.1
-  XrecoilPerShot: 10
-  YrecoilPerShot: 7
-  reloadtime: 1.56
+  damagePerShot: 1
+  shotsPerSecond: 0.25
+  XrecoilMax: -20
+  recoilSpeed: 0.5
+  recoil: 0
+  reloadtime: 1.5
+  range: 50
   clipSize: 30
-  maxAmmo: 12
+  maxAmmo: 120
   shotSound: {fileID: 0}
   shotVolume: 1
   reloadSound: {fileID: 0}

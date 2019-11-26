@@ -20,13 +20,16 @@ public class AmmoUIConnector : MonoBehaviour
     void Start()
     {
         triggerable = GetComponentInChildren<shootRaycastTriggerable>();
+        Debug.Log("inClip:" + triggerable.getAmmoinClip());
+        Debug.Log("Current Ammo:" + triggerable.getCurrentAmmo());
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        inClip.text = triggerable.getAmmoinClip().ToString();
-        currAmmo.text = triggerable.getCurrentAmmo().ToString();
+        
+        inClip.text = ""+ triggerable.getAmmoinClip();
+        currAmmo.text = ""+ triggerable.getCurrentAmmo();
         weaponIcon.sprite = triggerable.GetWeapon().invIcon;
     }
 }

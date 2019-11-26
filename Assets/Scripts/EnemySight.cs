@@ -75,6 +75,9 @@ public class EnemySight : MonoBehaviour
                 if (!other.GetComponent<PlayerMovement>().getIsSneaking())
                 {
                     GetComponent<Guard>().setHeard(true, other.GetComponent<Transform>());
+                    if (reactionTime <= MaxReactionTime/2) {
+                        reactionTime = MaxReactionTime / 2;
+                    }
                     //  Debug.Log("Player was heard");
                 }
                 else {
