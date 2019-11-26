@@ -6,6 +6,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+    // For applying the vignette
+    private Camera playerCam;
+
     public CharacterController m_CharacterController;
     public float slopeForce;
     public float slopeForceRayLength;
@@ -36,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerCam = GetComponentInChildren<Camera>(); // To Apply vignette
+
         Cursor.visible = false;
         m_CharacterController = GetComponent<CharacterController>();
         m_Animator = GetComponentInChildren<Animator>();
@@ -262,6 +267,7 @@ public class PlayerMovement : MonoBehaviour
             m_Animator.SetBool("isStanding", false);
             if (Input.GetButton("Sneak") && !Input.GetButton("Sprint") && !m_isOnLadder)
             {
+
                 GameObject mainCamera = GameObject.FindWithTag("MainCamera");
                 mainCamera.transform.localPosition = new Vector3(0.0008975412f, 0.2021998f, 0.091f);
                 m_Animator.SetBool("isSneaking", true);

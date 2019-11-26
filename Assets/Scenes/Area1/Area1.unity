@@ -45450,6 +45450,16 @@ PrefabInstance:
       propertyPath: fog.excludeSkybox
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1751866559336296747, guid: 0ec82af9fd68743479f45055a70c0e17,
+        type: 3}
+      propertyPath: m_ShowCustomSorter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1751866559336296747, guid: 0ec82af9fd68743479f45055a70c0e17,
+        type: 3}
+      propertyPath: m_ShowToolkit
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2491434525586476445, guid: 0ec82af9fd68743479f45055a70c0e17,
         type: 3}
       propertyPath: m_Center.y
@@ -45487,6 +45497,29 @@ PrefabInstance:
       objectReference: {fileID: 2028511219}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ec82af9fd68743479f45055a70c0e17, type: 3}
+--- !u!1 &1462794715 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1751866559336296743, guid: 0ec82af9fd68743479f45055a70c0e17,
+    type: 3}
+  m_PrefabInstance: {fileID: 1462794714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1462794716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462794715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: ab00f620f6abb004992ebaae3d713d66, type: 2}
+  isGlobal: 0
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1001 &1463628307
 PrefabInstance:
   m_ObjectHideFlags: 0
