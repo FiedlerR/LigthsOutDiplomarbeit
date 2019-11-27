@@ -8,8 +8,10 @@ public class detectionController : MonoBehaviour
     public Color32 startColor;
     public Color32 endColor;
     public Color32 alertColor;
+
     [SerializeField]
     private Image fillArea;
+
     private Canvas canvas;
     private EnemySight enemySight;
     private GameObject player;
@@ -19,8 +21,9 @@ public class detectionController : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         enemySight = GetComponent<EnemySight>();
-        canvas = gameObject.GetComponentInChildren<Canvas>();
-        canvas.enabled = false;
+        canvas = FindObjectOfType<Canvas>();
+        Debug.Log("Canvas:" + canvas.name);
+        canvas.gameObject.SetActive(false);
         fillArea.fillAmount = 0;
 
     }
@@ -33,15 +36,19 @@ public class detectionController : MonoBehaviour
     }
 
     private void UpdateDetection() {                          // Lerps Colors using the reaction time => how close you are to being detected
-        if (fillArea.fillAmount >= 0) {
+        fillArea.fillAmount = enemySight.reactionTime / enemySight.MaxReactionTime;
+        if (fillArea.fillAmount >= 0f) {
             if (fillArea.fillAmount == 1) {
                 fillArea.color = alertColor;
             }
-            canvas.enabled = true;
-            fillArea.color = Color.Lerp(startColor,endColor, enemySight.MaxReactionTime/enemySight.reactionTime);
+            else {
+                canvas.gameObject.SetActive(true);
+                fillArea.color = Color.Lerp(startColor, endColor, enemySight.reactionTime / enemySight.MaxReactionTime);
+                //Debug.Log("Reaction Time: "+ enemySight.reactionTime);
+            }
         }
         else {
-            canvas.enabled = false;
+            canvas.gameObject.SetActive(false);
         }
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     public CharacterController m_CharacterController;
     public float slopeForce;
     public float slopeForceRayLength;
@@ -262,6 +261,7 @@ public class PlayerMovement : MonoBehaviour
             m_Animator.SetBool("isStanding", false);
             if (Input.GetButton("Sneak") && !Input.GetButton("Sprint") && !m_isOnLadder)
             {
+
                 GameObject mainCamera = GameObject.FindWithTag("MainCamera");
                 mainCamera.transform.localPosition = new Vector3(0.0008975412f, 0.2021998f, 0.091f);
                 m_Animator.SetBool("isSneaking", true);
