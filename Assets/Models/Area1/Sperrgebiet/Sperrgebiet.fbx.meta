@@ -608,7 +608,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "Wachh\xE4uschenTisch"
-    second: {fileID: 2100000, guid: fc0d1b8b320529e4a83520856f581741, type: 2}
+    second: {fileID: 2100000, guid: 5807d16afd56c634393253895a8c2e03, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
