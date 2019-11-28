@@ -16,7 +16,7 @@ public class PostProcessingChanger : MonoBehaviour
     {
         ppVolume = GetComponent<PostProcessVolume>();
         ppVolume.profile.TryGetSettings(out ppSneakVignette);
-        ppSneakVignette.intensity.value = 0;
+        //ppSneakVignette.intensity.value = 0;
     }
 
     // Update is called once per frame
@@ -30,6 +30,5 @@ public class PostProcessingChanger : MonoBehaviour
         else {
             ppSneakVignette.intensity.value = 0f; // Vignette is inactive while not sneaking
         }
-
     }
 }

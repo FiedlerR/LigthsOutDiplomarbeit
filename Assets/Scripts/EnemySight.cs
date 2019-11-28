@@ -7,8 +7,11 @@ public class EnemySight : MonoBehaviour
 {
     // Variablen für das Delay des "erkennen" des Spielers
     public float MaxReactionTime = 1.5f;
+    public float MaxTimeToForgetAggro = 2f;
     [HideInInspector]
-    public float reactionTime = 0f;
+    public float timeToReact = 0f;
+    [HideInInspector]
+    public float timeToForgetAggro = 0f;
 
     public float fieldOfViewAngle = 110f;
     public bool playerInSight;
@@ -27,17 +30,12 @@ public class EnemySight : MonoBehaviour
 
     private void Update()
     {
-        if (reactionTime > MaxReactionTime) {                                                                           // damit der Spieler nicht länger gesehen wird als er wiklich wird (Chase funktioniert normal)
-            reactionTime = MaxReactionTime;
-        } else if (reactionTime < 0f) {
-            reactionTime = 0f;
-        }
+        ensureTimerBoundaries(timeToReact, MaxReactionTime, 0f);
+        ensureTimerBoundaries(timeToForgetAggro, MaxTimeToForgetAggro, 0f);
     }
 
     void OnTriggerStay(Collider other)
     {
-
-        //Debug.Log("reactionTime"+reactionTime+"/"+MaxReactionTime);
         //Spieler in Hör/Sichtbereich
         if (other.transform == player)
         {
@@ -55,29 +53,26 @@ public class EnemySight : MonoBehaviour
                     if (hit.collider.transform == player)
                     {
                         playerInSight = true;
-                        reactionTime += Time.deltaTime;                                                                     // Delay für die Erkennung des Spielers
-                        if (reactionTime >= MaxReactionTime){
-                
+                        if (timeToReact == MaxReactionTime){
                             GetComponent<Guard>().setSeen(true, other.GetComponent<Transform>());
-                        }   
+                        }
+                        //Debug.Log("Player was seen");
                         return;
                     }
                     else
                     {
                         GetComponent<Guard>().setSeen(false, other.GetComponent<Transform>());
                     }
-
                 }
             }
             if (!playerInSight) {
-                reactionTime -= Time.deltaTime;                                                                             // Gegner "vergisst" Spieler
             if (calculatePathLength(player.position) <= hearRadius) //col.radius)
             {
                 if (!other.GetComponent<PlayerMovement>().getIsSneaking())
                 {
                     GetComponent<Guard>().setHeard(true, other.GetComponent<Transform>());
-                    if (reactionTime <= MaxReactionTime/2) {
-                        reactionTime = MaxReactionTime / 2;
+                    if (timeToReact <= MaxReactionTime/2) {
+                        timeToReact = MaxReactionTime / 2;
                     }
                     //  Debug.Log("Player was heard");
                 }
@@ -99,8 +94,8 @@ public class EnemySight : MonoBehaviour
         //Spieler verlässt Hör/Sichtbereich
         if (other.transform == player) { 
             playerInSight = false;
-           GetComponent<Guard>().setSeen(false);
-           GetComponent<Guard>().setHeard(false);
+            GetComponent<Guard>().setSeen(false);
+            GetComponent<Guard>().setHeard(false);
         }
     }
 
@@ -128,7 +123,12 @@ public class EnemySight : MonoBehaviour
         return pathLength;
     }
 
-
-
-   
+    private void ensureTimerBoundaries(float val, float maxVal, float minVal) { // limits val between maxVal and minVal
+        if (val > maxVal) {
+            val = maxVal;
+        }
+        else if (val < minVal) {
+            val = minVal;
+        }
+    }
 }
