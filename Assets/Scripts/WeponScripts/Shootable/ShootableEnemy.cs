@@ -40,6 +40,7 @@ public class ShootableEnemy : ShootableObj
     }
 
     public override void Die() { //Tote Gegner aktivieren noch sachen nach ihrem Tod Bsp:(Animation, ragdoll, etc. )
+
         wasKilled = true;
         //Do death stuff here
         gameObject.SetActive(false);

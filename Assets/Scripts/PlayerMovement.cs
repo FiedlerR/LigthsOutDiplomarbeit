@@ -53,8 +53,13 @@ public class PlayerMovement : MonoBehaviour
         useSelectedObject();
         KOMove();
 
+        if (Input.GetButton("Fire1"))
+        {
+            Debug.Log("Ein Schuss!");
+            GetComponentsInChildren<shootRaycastTriggerable>()[0].Shoot();
+        }
 
-       // playerMoveHandler();
+        // playerMoveHandler();
 
         // Debug.Log(m_selectedGameObject);
     }

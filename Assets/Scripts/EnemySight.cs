@@ -37,6 +37,7 @@ public class EnemySight : MonoBehaviour
     void OnTriggerStay(Collider other)
     {
 
+        //Debug.Log("reactionTime"+reactionTime+"/"+MaxReactionTime);
         //Spieler in Hör/Sichtbereich
         if (other.transform == player)
         {
@@ -55,10 +56,10 @@ public class EnemySight : MonoBehaviour
                     {
                         playerInSight = true;
                         reactionTime += Time.deltaTime;                                                                     // Delay für die Erkennung des Spielers
-                        if (reactionTime == MaxReactionTime){
+                        if (reactionTime >= MaxReactionTime){
+                
                             GetComponent<Guard>().setSeen(true, other.GetComponent<Transform>());
-                        }
-                        //Debug.Log("Player was seen");
+                        }   
                         return;
                     }
                     else
@@ -98,8 +99,8 @@ public class EnemySight : MonoBehaviour
         //Spieler verlässt Hör/Sichtbereich
         if (other.transform == player) { 
             playerInSight = false;
-            GetComponent<Guard>().setSeen(false);
-            GetComponent<Guard>().setHeard(false);
+           GetComponent<Guard>().setSeen(false);
+           GetComponent<Guard>().setHeard(false);
         }
     }
 

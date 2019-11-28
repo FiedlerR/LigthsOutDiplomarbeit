@@ -18,20 +18,24 @@ public class shootRaycastTriggerable : MonoBehaviour {
     private Camera fpsCam;
     private ShootableObj shootable;
 
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
         gAmmoInClip = gun.clipSize;
         gCurrentAmmo = gun.maxAmmo - gAmmoInClip;
+        /* 
+                gun.damagePerShot = 1;
+                gun.shotsPerSecond = .25f;
+                gun.reloadtime = 1.5f;
+                gun.range = 50f;
 
-        gun.damagePerShot = 1;
-        gun.shotsPerSecond = .25f;
-        gun.reloadtime = 1.5f;
-        gun.range = 50f;
-
-        gun.recoilSpeed = .5f;
-        gun.XrecoilMax = -20f;
-        gun.recoil = 0f;
+                gun.recoilSpeed = .5f;
+                gun.XrecoilMax = -20f;
+                gun.recoil = 0f;*/
 
         fpsCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         nextFire = Time.time - gun.shotsPerSecond;                                                      // Verhindert einen Fehler, der den Spieler daran hindert anzufangen zu schießen
@@ -94,7 +98,12 @@ public class shootRaycastTriggerable : MonoBehaviour {
             Debug.Log("Hit detected");
             //hit
 
+     
 
+            if (hit.collider.GetComponent<ShootablePlayer>() != null)
+            {                              
+                shootable = hit.collider.GetComponent<ShootablePlayer>();
+            }else
             if (hit.collider.GetComponent<ShootableEnemy>() != null) {                                 // Wenn das getroffene Object eine Componente von ShootableEnemy hat -> true
                 shootable = hit.collider.GetComponent<ShootableEnemy>();
             }
@@ -104,14 +113,14 @@ public class shootRaycastTriggerable : MonoBehaviour {
             else {                                                                                     // Es wurde nichts Shootable getroffen also wird Shottable ein notShootable (Siehe notShottable für Erklärung)
                 shootable = new NotShootable();
             }
-
+          
             if (shootable != null) {                                                                   // Check nach einem Shootable
                 if (shootable.critHitbox == hit.collider)                                              // Check nach einem Headshot
                 {
                     shootable.CriticalDamage(gun.damagePerShot);
                 }
                 else {                                                                                 // nur ein normaler Treffer
-                    shootable.Damage(gun.damagePerShot);
+                    shootable.Damage(gun.damagePerShot); 
                 }
             }
             if (hit.rigidbody != null) {                                                               // Check nach einem rigidbody für hitForce

@@ -15,7 +15,7 @@ MonoBehaviour:
   isEquipped: 1
   name: Pew Pew Gun
   invIcon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-  damagePerShot: 1
+  damagePerShot: 20
   shotsPerSecond: 0.25
   XrecoilMax: -20
   recoilSpeed: 0.5

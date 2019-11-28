@@ -22,7 +22,7 @@ public class PostProcessingChanger : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        Debug.Log("isSneaking:" + movement.getIsSneaking());
+       // Debug.Log("isSneaking:" + movement.getIsSneaking());
         if (movement.getIsSneaking())
         {
             ppSneakVignette.intensity.value = VignetteIntensityonSneak; // Vignette is active while sneaking

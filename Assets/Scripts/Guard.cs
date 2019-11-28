@@ -37,7 +37,7 @@ public class Guard: AI
     //
     public bool isUnconscious = false;
     private bool m_wasSeenBefore;
-    private float m_searchCounter = 0;
+    public float m_searchCounter = 0;
     public float m_searchMaxTime = 0;
 
     //7
@@ -58,9 +58,9 @@ public class Guard: AI
             {
                 case 0: //waypatrol
                     navMeshAgent.speed = walkSpeed;
-                    if (GetComponent<WaypointPatrol>() != null) {
+                 //   if (GetComponent<WaypointPatrol>() != null) {
                         GetComponent<WaypointPatrol>().setIsPatrolActiv(true);
-                    }
+                  //  }
                     break;
                 case 1:// search
                     navMeshAgent.SetDestination(m_lastPlayerTransform);
@@ -89,6 +89,7 @@ public class Guard: AI
                         AIState = 2;
 
                     }
+                    GetComponent<shootRaycastTriggerable>().AIShoot(transform.Find("ShotOrigin").transform.position,(player.position - transform.position).normalized);
                     break;
                 default:
                     //navMeshAgent.SetDestination(m_lastPlayerTransform);
@@ -102,11 +103,13 @@ public class Guard: AI
         NavMeshLinkBehaviour(navMeshAgent);
 
         searchPlayerCounter();
-       
+       // Debug.Log(AIState);
+        //Debug.Log("searchCounter"+m_searchCounter);
     }
 
     private void searchPlayerCounter()
     {
+
         if (m_searchCounter < m_searchMaxTime)
         {
             m_searchCounter += Time.deltaTime;
@@ -196,11 +199,11 @@ public class Guard: AI
     public void setSeen(bool wasSeen)
     {
 
-        if (wasSeen)
-        {
+      /*  if (wasSeen)
+        {*/
             navMeshAgent.speed = runSpeed;
             m_searchCounter = 0;
-        }
+       // }
         m_wasSeen = wasSeen;
         if (m_wasSeen)
         {

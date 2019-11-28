@@ -154,6 +154,10 @@ public class WaypointPatrol : MonoBehaviour
     }
 
     public void setIsPatrolActiv(bool isActiv) {
+        if (isActiv) {
+            m_CurrentWaypointIndex = 0;
+            m_WaitingTimer = 0;
+        }
         isPatrolActiv = isActiv;
     }
 
