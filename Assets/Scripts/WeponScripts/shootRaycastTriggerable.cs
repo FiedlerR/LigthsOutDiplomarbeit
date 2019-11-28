@@ -103,8 +103,7 @@ public class shootRaycastTriggerable : MonoBehaviour {
             if (hit.collider.GetComponent<ShootablePlayer>() != null)
             {                              
                 shootable = hit.collider.GetComponent<ShootablePlayer>();
-            }else
-            if (hit.collider.GetComponent<ShootableEnemy>() != null) {                                 // Wenn das getroffene Object eine Componente von ShootableEnemy hat -> true
+            }else if (hit.collider.GetComponent<ShootableEnemy>() != null) {                                 // Wenn das getroffene Object eine Componente von ShootableEnemy hat -> true
                 shootable = hit.collider.GetComponent<ShootableEnemy>();
             }
             else if (hit.collider.GetComponent<ShootableCollider>() != null) {                         // Wenn das getroffene Object eine Componente von ShootableCollider hat -> true

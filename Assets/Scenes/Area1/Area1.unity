@@ -45268,6 +45268,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: e661f3dae462515439503ecd52e9a49e,
         type: 2}
+    - target: {fileID: 2317368536152451319, guid: 70ce0058320a9534ba81e58d7752188a,
+        type: 3}
+      propertyPath: reactionTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2425462641055430980, guid: 70ce0058320a9534ba81e58d7752188a,
         type: 3}
       propertyPath: startColor.rgba
@@ -68700,6 +68705,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 59.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140159283464988276, guid: eaad80ce3d27ccc4483f0dc67bacd57a,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaad80ce3d27ccc4483f0dc67bacd57a, type: 3}
