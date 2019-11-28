@@ -155,7 +155,7 @@ public class shootRaycastTriggerable : MonoBehaviour {
     }
 
     private void ReloadToFullFlexible() {                                                              // Manages Reloads from anyPoint to Full
-        if (gCurrentAmmo > gun.clipSize - gAmmoInClip) {
+        if (gCurrentAmmo >= gun.clipSize - gAmmoInClip) {
             gCurrentAmmo -= gun.clipSize - gAmmoInClip;
             gAmmoInClip = gun.clipSize;
         }
