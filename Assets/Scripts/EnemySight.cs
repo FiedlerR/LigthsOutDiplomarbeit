@@ -53,7 +53,7 @@ public class EnemySight : MonoBehaviour
                     if (hit.collider.transform == player)
                     {
                         playerInSight = true;
-                        if (timeToReact == MaxReactionTime){
+                        if (timeToReact >= MaxReactionTime){
                             GetComponent<Guard>().setSeen(true, other.GetComponent<Transform>());
                         }
                         //Debug.Log("Player was seen");
