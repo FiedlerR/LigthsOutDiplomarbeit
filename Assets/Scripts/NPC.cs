@@ -28,15 +28,6 @@ public class NPC : AI
     //
     int ísOtherNpcTalking = -1;
     //
-   // bool m_isOnLadder = false;
-    //
-   // Transform m_ladderTransform;
-
-
-
-
-
-    //
     Animator m_Animator;
 
   
@@ -120,36 +111,6 @@ public class NPC : AI
     {
         navMeshAgent.isStopped = true;
     }
-
-    /*
-    void rotateTo(Transform transfrom) {
-        Vector3 direction = (transfrom.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(direction);
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 2);
-    }
-
-    /*
-    public void setIsOnLadder(bool isOnLadder,Transform ladderTransform)
-    {
-        m_isOnLadder = isOnLadder;
-        m_ladderTransform = ladderTransform;
-        //Debug.Log("ladder: "+ isOnLadder);
-    }
-
-    public void setIsOnLadder(bool isOnLadder)
-    {
-        m_isOnLadder = isOnLadder;
-       // Debug.Log("ladder: " + isOnLadder);
-    }
-
-    public void lookTo(Transform targetTransform)
-    {
-        Vector3 direction = (targetTransform.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(direction);
-        lookRotation.x = 0;
-        lookRotation.z = 0;
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 12);
-    }*/
 
     void disableTalkMode()
     {

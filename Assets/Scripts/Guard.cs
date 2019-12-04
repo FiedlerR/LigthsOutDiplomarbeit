@@ -24,12 +24,6 @@ public class Guard: AI
     public float runSpeed = 6;
     //
     public float walkSpeed = 2;
-    //enum AIStates {};
-    // int AIState = 0;
-    //Ob der Bot auf einer Leiter ist
-    // bool m_isOnLadder = false;
-    // Die Position der Leiter auf der sich der Bot befindet
-    //Transform m_ladderTransform;
     //
     public float health = 300;
     //
@@ -39,9 +33,6 @@ public class Guard: AI
     private bool m_wasSeenBefore;
     public float m_searchCounter = 0;
     public float m_searchMaxTime = 0;
-
-    //7
-    //private bool MoveAcrossNavMesh = false;
 
     // Start is called before the first frame update
     void Start()
@@ -81,8 +72,8 @@ public class Guard: AI
                     }
                     break;
                 case 3: // chase Mode
-                        // Debug.Log("Shot");
                     lookToPlayer(player);
+                    navMeshAgent.isStopped = true;
                     if (Vector3.Distance(transform.position, player.position) >= 10)
                     {
                         m_lastPlayerTransform = player.position;
@@ -227,50 +218,6 @@ public class Guard: AI
         }
     }
 
-
-    /*
-    public void rotateToLadder(Transform ladderTransform) {
-        // transform.Rotate(Vector3.left);
-        transform.eulerAngles = new Vector3(0, ladderTransform.eulerAngles.y - 90, 0);
-        //Debug.Log("rotate");
-    }
-
-    public void setIsOnLadder(bool isOnLadder, Transform ladderTransform)
-    {
-        m_isOnLadder = isOnLadder;
-        m_ladderTransform = ladderTransform;
-    }
-
-    public void setIsOnLadder(bool isOnLadder)
-    {
-        m_isOnLadder = isOnLadder;
-    }
-
-    public void lookTo() {
-
-        Vector3 direction = (player.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(direction);
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 4);
-    }
-
-    public void lookTo(Transform targetTransform)
-    {
-        Vector3 direction = (targetTransform.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(direction);
-        lookRotation.x = 0;
-        lookRotation.z = 0;
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 12);
-    }
-
-    public void lookTo(Vector3 targetPosition)
-    {
-        Vector3 direction = (targetPosition - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(direction);
-        lookRotation.x = 0;
-        lookRotation.z = 0;
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 12);
-    }*/
-
     public void setIsUnconscious(bool isUnconscious) {
         Debug.Log("setIsUnconscious: " + isUnconscious);
         this.isUnconscious = isUnconscious;
@@ -293,49 +240,6 @@ public class Guard: AI
     public Vector3 getLastPlayerV3() { return m_lastPlayerTransform; } // Um in AIShoot auf das Sehen zu reagieren
 
     public float getSearchCounter() { return m_searchCounter; } // Um in AIShoot auf das Sehen zu reagieren und damit der Gegner auch wieder aufhört zu schießen
-
-    /*
-    private IEnumerator searchInFullSpeed(float time)
-    {
-
-        navMeshAgent.speed = runSpeed;
-        yield return new WaitForSeconds(time);
-        if (!getWasSeen())
-        {
-            navMeshAgent.speed = walkSpeed;
-            m_wasSeenBefore = false;
-        }
-     */
     }
-
-    /*
-    IEnumerator MoveAcrossNavMeshLink()
-    {
-        OffMeshLinkData data = navMeshAgent.currentOffMeshLinkData;
-        Object owner = navMeshAgent.navMeshOwner;
-        GameObject gameObject = (owner as Component).gameObject;
-        //(owner as Component).gameObject.transform.Find("DoorScript");
-        if (gameObject.GetComponentsInChildren<DoorScript>()[0].getBotCount() <= 1) { 
-            yield return new WaitForSeconds(2);
-    }
-
-        Vector3 endPos = data.endPos + Vector3.up * navMeshAgent.baseOffset;
-        while (navMeshAgent.transform.position != endPos)
-        {
-            if (AIState != 2 || AIState != 3) {
-                lookTo(endPos);
-            }
-            navMeshAgent.transform.position = Vector3.MoveTowards(navMeshAgent.transform.position, endPos, navMeshAgent.speed * Time.deltaTime);
-            yield return null;
-        }
-        navMeshAgent.CompleteOffMeshLink();
-
-        MoveAcrossNavMesh = false;
-        yield return new WaitForSeconds(2);
-        (owner as Component).gameObject.BroadcastMessage("subBotCount");
-        if (gameObject.GetComponentsInChildren<DoorScript>()[0].getBotCount() < 1) {
-            (owner as Component).gameObject.BroadcastMessage("close");
-        }
-    }*/
 
 
