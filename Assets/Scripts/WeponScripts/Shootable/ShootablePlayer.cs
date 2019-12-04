@@ -22,7 +22,7 @@ public class ShootablePlayer : ShootableObj
 
     public void Update()
     {
-        healthbar.fillAmount = MaxHealth / currentHealth;
+        healthbar.fillAmount = currentHealth / MaxHealth;
         reactionTime -= Time.deltaTime;
 
         if (reactionTime < 0) { // visual effect that makes the taken damage more visible
