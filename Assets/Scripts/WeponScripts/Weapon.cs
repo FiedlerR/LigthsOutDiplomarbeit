@@ -9,6 +9,10 @@ public class Weapon : ScriptableObject {
     //Equipped
     public bool isEquipped = false;
 
+    //Shotmode
+    public enum WeaponMode {Singleshot, Multishot};
+    public WeaponMode Mode;
+
     //UI
     public new string name;
     public Sprite invIcon;

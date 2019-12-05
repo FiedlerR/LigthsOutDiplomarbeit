@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0da4334bec673324b984acc1e318b0cb, type: 3}
-  m_Name: shootymctooty
+  m_Name: Weapon
   m_EditorClassIdentifier: 
   isEquipped: 0
-  Mode: 1
-  name: This gun sucks
+  Mode: 0
+  name: 
   invIcon: {fileID: 0}
   damagePerShot: 0
   shotsPerSecond: 0
