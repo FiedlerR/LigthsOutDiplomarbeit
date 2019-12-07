@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: 945f898278e409d42a3cae52864bbd08
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Asphaltplatz
+    second: {fileID: -43637106025980817, guid: f3cad3da7d9e3cc418e5dc9b0f429bd5, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Au\xDFen.004"
+    second: {fileID: 2100000, guid: 669be68f66a34f94b8286ace91ae8511, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boden
+    second: {fileID: 2100000, guid: d58ed702287a0364d9730521c0440453, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boden.001
+    second: {fileID: 2100000, guid: d58ed702287a0364d9730521c0440453, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boden.003
+    second: {fileID: 2100000, guid: d58ed702287a0364d9730521c0440453, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Gel\xE4nder.004"
+    second: {fileID: 2100000, guid: 1805508c4733e5b48a6b3a8aac46a93a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glas.001
+    second: {fileID: 2100000, guid: 798290d8304f91d4199ef302a8cd05dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Innen.004
+    second: {fileID: 2100000, guid: 31a415e327ba9e5429329dd725361287, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 7c178dee5378d91429198e1d44199a89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.013
+    second: {fileID: 2100000, guid: 2ec0c5ff110a18d4586d8c707508fced, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "MauerAu\xDFen.001"
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerInnen.001
+    second: {fileID: 2100000, guid: b73d8227a2265f149bf9c6edab448a21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerInnen.002
+    second: {fileID: 2100000, guid: b73d8227a2265f149bf9c6edab448a21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerInnen.003
+    second: {fileID: 2100000, guid: b73d8227a2265f149bf9c6edab448a21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerInnen.004
+    second: {fileID: 2100000, guid: b73d8227a2265f149bf9c6edab448a21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerInnen.005
+    second: {fileID: 2100000, guid: b73d8227a2265f149bf9c6edab448a21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerInnen.006
+    second: {fileID: 2100000, guid: b73d8227a2265f149bf9c6edab448a21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerInnen.007
+    second: {fileID: 2100000, guid: b73d8227a2265f149bf9c6edab448a21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerInnen.008
+    second: {fileID: 2100000, guid: b73d8227a2265f149bf9c6edab448a21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerInnen.009
+    second: {fileID: 2100000, guid: b73d8227a2265f149bf9c6edab448a21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerInnen.010
+    second: {fileID: 2100000, guid: b73d8227a2265f149bf9c6edab448a21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerInnen.011
+    second: {fileID: 2100000, guid: b73d8227a2265f149bf9c6edab448a21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerMetall.001
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerMetall.002
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerMetall.003
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerMetall.004
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerMetall.005
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerMetall.006
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerMetall.007
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerMetall.008
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerMetall.010
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerMetall.011
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MauerMetall.012
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Texture.000
+    second: {fileID: 2100000, guid: 7673476d3af77614495bff77e3a709d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Texture.002
+    second: {fileID: 2100000, guid: 2a716a6e32b7ebf4f8b8670e7b27277a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Texture.003
+    second: {fileID: 2100000, guid: e1145b2b9e1fed24191b22bdf7e45233, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "T\xFCrAu\xDFen.001"
+    second: {fileID: 2100000, guid: 41303eaa54c0b0140b075b1cb068d012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "T\xFCrInnen.001"
+    second: {fileID: 2100000, guid: b73d8227a2265f149bf9c6edab448a21, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 2
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 1
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
