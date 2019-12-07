@@ -23,12 +23,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Glas
-    second: {fileID: 2100000, guid: 798290d8304f91d4199ef302a8cd05dc, type: 2}
+    second: {fileID: 2100000, guid: 36d0fb335b77b054b96649942eb5f06a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Glas.002
-    second: {fileID: 2100000, guid: 798290d8304f91d4199ef302a8cd05dc, type: 2}
+    second: {fileID: 2100000, guid: 36d0fb335b77b054b96649942eb5f06a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
