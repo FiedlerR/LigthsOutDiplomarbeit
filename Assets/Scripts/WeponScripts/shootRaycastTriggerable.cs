@@ -18,9 +18,12 @@ public class shootRaycastTriggerable : MonoBehaviour {
     private Camera fpsCam;
     private ShootableObj shootable;
 
+    private InputManager inputManager;
 
-
-
+    private void Awake()
+    {
+        inputManager = GameObject.FindObjectOfType<InputManager>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +42,16 @@ public class shootRaycastTriggerable : MonoBehaviour {
 
         fpsCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         nextFire = Time.time - gun.shotsPerSecond;                                                      // Verhindert einen Fehler, der den Spieler daran hindert anzufangen zu schießen
+    }
+
+    private void Update()           // Handles shooting and reloads with the new custom InputSystem now
+    {
+        if (inputManager.GetKeyDown("shoot")) {
+            Shoot();
+        }
+        if (inputManager.GetKeyDown("reload")) {
+            Reload();
+        }
     }
 
     public void Shoot() {

@@ -24,30 +24,30 @@ public class InputManager : MonoBehaviour {
     }
 
     public bool GetKeyDown(string Action) {
-        return Input.GetKeyDown(keys[Action]);
+        return Input.GetKeyDown(keys[Action.ToLower()]);
     }
 
     public bool GetKeyUp(string Action) {
-        return Input.GetKeyUp(keys[Action]);
+        return Input.GetKeyUp(keys[Action.ToLower()]);
     }
 
     public bool GetKey(string Action) {
-        return Input.GetKey(keys[Action]);
+        return Input.GetKey(keys[Action.ToLower()]);
     }
 
     public void LoadKeyBindings() { // Gets keybinds from Playerprefs and has defaults 
         //Movement
-        keys.Add("Forward", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Forward", "W")));
-        keys.Add("Back", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Back", "S")));
-        keys.Add("Left", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Left", "A")));
-        keys.Add("Right", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Right", "D")));
-        keys.Add("Jump", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Jump", "Space")));
-        keys.Add("Sneak", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Sneak", "C")));
-        keys.Add("Sprint", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Sprint", "LeftShift")));
-        keys.Add("Use", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Use", "E")));
+        keys.Add("forward", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("forward", "W")));
+        keys.Add("back", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("back", "S")));
+        keys.Add("left", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("left", "A")));
+        keys.Add("right", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("right", "D")));
+        keys.Add("jump", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("jump", "Space")));
+        keys.Add("sneak", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("sneak", "C")));
+        keys.Add("sprint", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("sprint", "LeftShift")));
+        keys.Add("use", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("use", "E")));
 
         //Weaponhandling
-        keys.Add("Shoot", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Shoot", "Mouse0")));
-        keys.Add("Reload", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Reload", "R")));
+        keys.Add("shoot", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("shoot", "Mouse0")));
+        keys.Add("reload", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("reload", "R")));
     }
 }
