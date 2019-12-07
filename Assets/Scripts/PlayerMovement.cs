@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController m_CharacterController;
@@ -27,14 +28,19 @@ public class PlayerMovement : MonoBehaviour
     Transform m_transform;
 
     public PlayerLook cameraScript;
+    InputManager inputManager;
 
 
 
-
+    private void Awake()
+    {
+        inputManager = GameObject.FindObjectOfType<InputManager>();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        
         Cursor.visible = false;
         m_CharacterController = GetComponent<CharacterController>();
         m_Animator = GetComponentInChildren<Animator>();
@@ -53,9 +59,10 @@ public class PlayerMovement : MonoBehaviour
         useSelectedObject();
         KOMove();
 
-        if (Input.GetButton("Fire1"))
+
+        if (inputManager.GetKeyDown("Shoot"))
         {
-            Debug.Log("Ein Schuss!");
+         //   Debug.Log("Ein Schuss!");
             GetComponentsInChildren<shootRaycastTriggerable>()[0].Shoot();
         }
 
@@ -66,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void useSelectedObject()
     {
-        if (m_selectedGameObject != null && Input.GetButtonDown("Action"))
+        if (m_selectedGameObject != null && inputManager.GetKey("Use"))
         {
             if (m_selectedGameObject.CompareTag("ladder")) {
                 transform.transform.position = new Vector3( m_selectedGameObject.transform.position.x, transform.transform.position.y, m_selectedGameObject.transform.position.z) + m_selectedGameObject.GetComponent<LadderScript>().climpOffset;
@@ -105,13 +112,34 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void playerMovement() {
+        float verticalInput = 0;
+        float horizontalInput = 0;
+        if (inputManager.GetKey("Forward"))
+        {
+            verticalInput = 1;
 
-       // Debug.Log("move");
+        }else
+        if (inputManager.GetKey("Back"))
+        {
+            verticalInput = -1;
+
+        }
+        if (inputManager.GetKey("Right"))
+        {
+            horizontalInput = 1;
+
+        }else
+        if (inputManager.GetKey("Left"))
+        {
+            horizontalInput = -1;
+
+        }
+
+
+        // Debug.Log("move");
         //m_CharacterController.SimpleMove(Vector3.ClampMagnitude(transform.up*5, 1f) * m_MovementSpeed);
         if (m_isOnLadder)
         {
-            float verticalInput = Input.GetAxis("Vertical");
-            float horizontalInput = Input.GetAxis("Horizontal");
 
             if (verticalInput > 0)
             {
@@ -124,7 +152,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
 
-            if (Input.GetAxis("Vertical") <= 0 && m_CharacterController.collisionFlags == CollisionFlags.Below) {
+            if (verticalInput <= 0 && m_CharacterController.collisionFlags == CollisionFlags.Below) {
                 Vector3 forwardMovement = transform.forward * verticalInput;
                 Vector3 rightMovement = transform.right * horizontalInput;
                 setIsOnLadder(false);
@@ -132,8 +160,8 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         else {
-            float verticalInput = Input.GetAxis("Vertical");
-            float horizontalInput = Input.GetAxis("Horizontal");
+            //float verticalInput = Input.GetAxis("Vertical");
+            //float horizontalInput = Input.GetAxis("Horizontal");
 
             // Debug.Log(verticalInput);
            /* if (verticalInput != 0 || horizontalInput != 0)
@@ -160,12 +188,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        animationControl();
+        animationControl(verticalInput != 0, horizontalInput != 0);
     }
 
 
     public void jump() {
-        if (Input.GetButtonDown("Jump") && !m_IsJumping)
+        if (inputManager.GetKeyDown("Jump") && !m_IsJumping)
         {
            
             m_IsJumping = true;
@@ -204,12 +232,12 @@ public class PlayerMovement : MonoBehaviour
     void setMovementSpeed()
     {
 
-        if (Input.GetButton("Sprint") && !m_isOnLadder)
+        if (inputManager.GetKey("Sprint") && !m_isOnLadder)
         {
             m_MovementSpeed = Mathf.Lerp(m_MovementSpeed, runSpeed, Time.deltaTime * runBuildUpSpeed);
             isSneaking = false;
         }
-        else if (Input.GetButton("Sneak") && !m_isOnLadder)
+        else if (inputManager.GetKey("Sneak") && !m_isOnLadder)
         {
             isSneaking = true;
             m_MovementSpeed = Mathf.Lerp(m_MovementSpeed, sneakSpeed, Time.deltaTime * runSlowDownSpeed);
@@ -260,11 +288,11 @@ public class PlayerMovement : MonoBehaviour
         return m_isOnLadder;
     }
 
-    void animationControl() {
-        if (Input.GetButton("Vertical") || Input.GetButton("Horizontal"))
+    void animationControl(bool vertical, bool horizontal) {
+        if (vertical || horizontal)
         {
             m_Animator.SetBool("isStanding", false);
-            if (Input.GetButton("Sneak") && !Input.GetButton("Sprint") && !m_isOnLadder)
+            if (inputManager.GetKey("Sneak") && !inputManager.GetKey("Sprint") && !m_isOnLadder)
             {
 
                 GameObject mainCamera = GameObject.FindWithTag("MainCamera");

@@ -93,18 +93,19 @@ public class shootRaycastTriggerable : MonoBehaviour {
 
     private void ReactToRaycastHit(Vector3 rayOrigin, Vector3 shotDirection) {
         RaycastHit hit;
-
-        if (Physics.Raycast(rayOrigin, shotDirection, out hit, gun.range)) {                            // Wenn der Raycast in Richtung fpsCam.transform.forward etwas trifft -> true
-            Debug.Log("Hit detected");
+        if (Physics.Raycast(rayOrigin, shotDirection, out hit, gun.range, Physics.AllLayers, QueryTriggerInteraction.Ignore)) {                            // Wenn der Raycast in Richtung fpsCam.transform.forward etwas trifft -> true
+            //Debug.Log("Hit detected");
             //hit
 
-     
-
+         
             if (hit.collider.GetComponent<ShootablePlayer>() != null)
             {                              
                 shootable = hit.collider.GetComponent<ShootablePlayer>();
-            }else if (hit.collider.GetComponent<ShootableEnemy>() != null) {                                 // Wenn das getroffene Object eine Componente von ShootableEnemy hat -> true
-                shootable = hit.collider.GetComponent<ShootableEnemy>();
+            }
+            else if (hit.collider.GetComponentInParent<ShootableEnemy>() != null) {                                 // Wenn das getroffene Object eine Componente von ShootableEnemy hat -> true
+              
+                shootable = hit.collider.GetComponentInParent<ShootableEnemy>();
+                Debug.Log("Hit unit" + shootable.currentHealth);
             }
             else if (hit.collider.GetComponent<ShootableCollider>() != null) {                         // Wenn das getroffene Object eine Componente von ShootableCollider hat -> true
                 shootable = hit.collider.GetComponent<ShootableCollider>();
@@ -112,7 +113,7 @@ public class shootRaycastTriggerable : MonoBehaviour {
             else {                                                                                     // Es wurde nichts Shootable getroffen also wird Shottable ein notShootable (Siehe notShottable für Erklärung)
                 shootable = new NotShootable();
             }
-          
+           // Debug.Log(shootable);
             if (shootable != null) {                                                                   // Check nach einem Shootable
                 if (shootable.critHitbox == hit.collider)                                              // Check nach einem Headshot
                 {
@@ -122,8 +123,9 @@ public class shootRaycastTriggerable : MonoBehaviour {
                     shootable.Damage(gun.damagePerShot); 
                 }
             }
-            if (hit.rigidbody != null) {                                                               // Check nach einem rigidbody für hitForce
-                Debug.Log("rigidbody not null");
+            if (hit.rigidbody != null)
+            {                                                               // Check nach einem rigidbody für hitForce
+                                                                            // Debug.Log("rigidbody not null");
                 hit.rigidbody.AddForce(-hit.normal * hitForce);
             }
         }

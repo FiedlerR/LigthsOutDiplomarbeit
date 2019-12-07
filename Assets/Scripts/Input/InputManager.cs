@@ -43,6 +43,8 @@ public class InputManager : MonoBehaviour {
         keys.Add("Right", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Right", "D")));
         keys.Add("Jump", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Jump", "Space")));
         keys.Add("Sneak", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Sneak", "C")));
+        keys.Add("Sprint", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Sprint", "LeftShift")));
+        keys.Add("Use", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Use", "E")));
 
         //Weaponhandling
         keys.Add("Shoot", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Shoot", "Mouse0")));
