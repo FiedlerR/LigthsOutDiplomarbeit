@@ -3,7 +3,42 @@ guid: e1571f3c396e3fb458f2dcb5cef5381a
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glas
+    second: {fileID: 2100000, guid: 36d0fb335b77b054b96649942eb5f06a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gold.007
+    second: {fileID: 2100000, guid: 2928c81b607d5d24eb4aab760c49017e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Grundst\xFCckBoden"
+    second: {fileID: 2100000, guid: 95d9f510cf59f454eb7e88fc41360f3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarmorSchwarz.000
+    second: {fileID: 2100000, guid: d7f43d5c98630c641b8c927a66238e1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarmorSchwarz.003
+    second: {fileID: 2100000, guid: d7f43d5c98630c641b8c927a66238e1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Schwarzermarmor
+    second: {fileID: 2100000, guid: d7f43d5c98630c641b8c927a66238e1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WeisserMarmor
+    second: {fileID: 2100000, guid: da549f74e9c792142a3ccd5161e57c61, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

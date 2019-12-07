@@ -13,12 +13,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: GlasGelb
-    second: {fileID: 2100000, guid: cb5e2a43e5c3032459b7e84d094c60d1, type: 2}
+    second: {fileID: 2100000, guid: 3f781e4eb986a514a8bf95d1d156eca5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: GlasRot
-    second: {fileID: 2100000, guid: cb5e2a43e5c3032459b7e84d094c60d1, type: 2}
+    second: {fileID: 2100000, guid: a3604c9894cf0c24e98124ba94162796, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -43,7 +43,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Smaragd
-    second: {fileID: 2100000, guid: cb5e2a43e5c3032459b7e84d094c60d1, type: 2}
+    second: {fileID: 2100000, guid: 414f991d792962b4ead93b394452aacc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

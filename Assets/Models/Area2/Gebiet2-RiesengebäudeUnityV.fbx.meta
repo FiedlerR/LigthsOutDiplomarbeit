@@ -58,8 +58,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Weissermarmor.001
-    second: {fileID: -6227108293704515852, guid: 0ea5e395a741d044eaa32895aee512d5,
-      type: 3}
+    second: {fileID: 2100000, guid: da549f74e9c792142a3ccd5161e57c61, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

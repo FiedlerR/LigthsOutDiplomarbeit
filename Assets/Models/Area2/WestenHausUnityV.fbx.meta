@@ -3,7 +3,67 @@ guid: 0ea5e395a741d044eaa32895aee512d5
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 98d5502a62f9cc544b4af38295019921, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gold
+    second: {fileID: 2100000, guid: 2928c81b607d5d24eb4aab760c49017e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gold.000
+    second: {fileID: 2100000, guid: 2928c81b607d5d24eb4aab760c49017e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gold.001
+    second: {fileID: 2100000, guid: 2928c81b607d5d24eb4aab760c49017e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gold.002
+    second: {fileID: 2100000, guid: 2928c81b607d5d24eb4aab760c49017e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gold.003
+    second: {fileID: 2100000, guid: 2928c81b607d5d24eb4aab760c49017e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Grundst\xFCckBoden.001"
+    second: {fileID: 2100000, guid: 95d9f510cf59f454eb7e88fc41360f3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarmorSchwarz.000
+    second: {fileID: 2100000, guid: 3293ed26ab0b7fd4da717bf04b11bdc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarmorSchwarz.001
+    second: {fileID: 2100000, guid: d7f43d5c98630c641b8c927a66238e1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WeisserMarmor
+    second: {fileID: 2100000, guid: da549f74e9c792142a3ccd5161e57c61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WeisserMarmor.001
+    second: {fileID: 2100000, guid: da549f74e9c792142a3ccd5161e57c61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ziegel
+    second: {fileID: 2100000, guid: 75ba356d9e23c3340891af17c8705f29, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
