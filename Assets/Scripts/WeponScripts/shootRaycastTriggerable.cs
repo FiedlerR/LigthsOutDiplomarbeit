@@ -20,14 +20,11 @@ public class shootRaycastTriggerable : MonoBehaviour {
 
     private InputManager inputManager;
 
-    private void Awake()
+    // Start is called before the first frame update
+    void Awake()
     {
         inputManager = GameObject.FindObjectOfType<InputManager>();
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
         gAmmoInClip = gun.clipSize;
         gCurrentAmmo = gun.maxAmmo - gAmmoInClip;
         /* 

@@ -31,9 +31,10 @@ public class PlayerMovement : MonoBehaviour
     InputManager inputManager;
 
 
-
     private void Awake()
     {
+        QualitySettings.vSyncCount = 0;  // VSync must be disabled
+        Application.targetFrameRate = 30;
         inputManager = GameObject.FindObjectOfType<InputManager>();
     }
 
