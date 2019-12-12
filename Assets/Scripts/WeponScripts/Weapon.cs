@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+[Serializable]
 [CreateAssetMenu(fileName = "Weapon", menuName ="Items/Weapon")]
 public class Weapon : ScriptableObject {
 
@@ -29,8 +29,8 @@ public class Weapon : ScriptableObject {
     public float range;
 
     //Ammomanagement
-    public int clipSize;
-    public int maxAmmo;
+    public int clipSize = 12;
+    public int maxAmmo = 120;
 
     //sound
     public AudioClip shotSound;
