@@ -29,13 +29,14 @@ public class PlayerMovement : MonoBehaviour
 
     public PlayerLook cameraScript;
     InputManager inputManager;
+    GameObject mainCamera;
 
 
     private void Awake()
     {
-        QualitySettings.vSyncCount = 0;  // VSync must be disabled
-        Application.targetFrameRate = 30;
+
         inputManager = GameObject.FindObjectOfType<InputManager>();
+        mainCamera = GameObject.FindWithTag("MainCamera");
     }
 
     // Start is called before the first frame update
@@ -245,7 +246,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else {
             if (!isSneakingAnimation() && (!m_Animator.GetCurrentAnimatorStateInfo(0).IsName("walk") || m_Animator.GetCurrentAnimatorStateInfo(0).IsName("stand"))) {
-                GameObject mainCamera = GameObject.FindWithTag("MainCamera");
+                
                 mainCamera.transform.localPosition = new Vector3(0.0008975412f, 0.2021998f, 0.050f);
             }
             isSneaking = false;
