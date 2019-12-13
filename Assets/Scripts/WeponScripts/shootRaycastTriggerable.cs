@@ -20,21 +20,16 @@ public class shootRaycastTriggerable : MonoBehaviour {
 
     private InputManager inputManager;
 
-    // Start is called before the first frame update
-    void Awake()
+    private void Awake()
     {
         inputManager = GameObject.FindObjectOfType<InputManager>();
+    }
 
-
-        /* 
-                gun.damagePerShot = 1;
-                gun.shotsPerSecond = .25f;
-                gun.reloadtime = 1.5f;
-                gun.range = 50f;
-
-                gun.recoilSpeed = .5f;
-                gun.XrecoilMax = -20f;
-                gun.recoil = 0f;*/
+    // Start is called before the first frame update
+    void Start()
+    {
+        gAmmoInClip = gun.clipSize;
+        gCurrentAmmo = gun.maxAmmo - gAmmoInClip;
 
         fpsCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 
