@@ -25,8 +25,7 @@ public class shootRaycastTriggerable : MonoBehaviour {
     {
         inputManager = GameObject.FindObjectOfType<InputManager>();
 
-        gAmmoInClip = gun.clipSize;
-        gCurrentAmmo = gun.maxAmmo - gAmmoInClip;
+
         /* 
                 gun.damagePerShot = 1;
                 gun.shotsPerSecond = .25f;
@@ -38,6 +37,14 @@ public class shootRaycastTriggerable : MonoBehaviour {
                 gun.recoil = 0f;*/
 
         fpsCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+
+    }
+
+
+    private void Start()
+    {
+        gAmmoInClip = gun.clipSize;
+        gCurrentAmmo = gun.maxAmmo - gAmmoInClip;
         nextFire = Time.time - gun.shotsPerSecond;                                                      // Verhindert einen Fehler, der den Spieler daran hindert anzufangen zu schießen
     }
 
